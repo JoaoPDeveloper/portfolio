@@ -424,7 +424,7 @@ body {
   top: 30vh;
   margin-bottom: 22vh;
   position: relative;
-  transition: 1s;
+  transition: 0.5s;
   text-align: center;
   margin: 0;
   position: relative;               /* 2 */
@@ -446,12 +446,12 @@ body {
   border: 2px solid rgb(74, 21, 21);
   text-align: center;
   line-height: 100px;
-  transition: 1s;
+  transition: 0.5s;
   border-radius: 12px;
   height: 4.5rem;
 }
 .square:hover{
-  transform: translateY(-20%);
+  transform: translateY(-40%);
   opacity: 1;
 }
 .square img {
@@ -1235,3 +1235,20 @@ body::-webkit-scrollbar-thumb {
     position: relative;
   }
  }
+ @media only screen and (min-width: 1960px){
+  .imagemprincipal {
+    left: 38%;
+    margin-bottom: 11rem;
+    position: relative;
+    top: 14rem;
+    width: auto;
+ }
+ .linguagens{
+  margin-top: 100px;
+ }
+ .sobreProjetos,.project{
+  position: relative;
+  margin-bottom: 100px;
+  left: 10%;
+ }
+}
