@@ -78,6 +78,139 @@ body {
   color: #ffffff;
   text-decoration: none;
 }
+@property --progress-value {
+  syntax: '<integer>';
+  inherits: false;
+  initial-value: 0;
+}
+@keyframes html-progress {
+  to { --progress-value: 92; }
+}
+@keyframes css-progress {
+  to { --progress-value: 85; }
+}
+@keyframes js-progress {
+  to { --progress-value: 65; }
+}
+@keyframes ts-progress {
+  to { --progress-value: 45; }
+}
+@keyframes angular-progress {
+  to { --progress-value: 35; }
+}
+@keyframes php-progress {
+  to { --progress-value: 35; }
+}
+@keyframes sql-progress {
+  to { --progress-value: 80; }
+}
+
+.html,.php,.sql,.ts,.js,.angular,.css{
+  background-color: rgba(68, 65, 65, 0.6);
+  border-radius: 15px;
+  font-size: 28px;
+  width: 40vw;
+  height: 45vh;
+  grid-template-columns:  1fr 1fr 1fr 1fr ; 
+  grid-template-rows: 1fr 1fr 1fr;
+  top: 30vh;
+  margin-bottom: 22vh;
+  position: relative;
+  transition: 0.5s;
+  text-align: center;
+  margin: 0;
+  position: relative;               /* 2 */
+  top: 50%;                         /* 3 */
+  transform: translate(0, -50%) 
+}
+.progress-bar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+}
+.progress-bar::before {
+  counter-reset: percentage var(--progress-value);
+  content: counter(percentage) '%';
+}
+.html {
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+  animation: html-progress 2s 1 forwards;
+  color: black;
+}
+.html::before {
+  animation: html-progress 2s 1 forwards;
+}
+.css {
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0),
+    conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+  animation: css-progress 2s 1 forwards;
+  color: black;
+}
+.css::before {
+  animation: css-progress 2s 1 forwards;
+}
+.js {
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0),
+    conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+  animation: js-progress 2s 1 forwards;
+  color: black;
+}
+.js::before {
+  animation: js-progress 2s 1 forwards;
+}
+.ts {
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0),
+    conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+  animation: ts-progress 2s 1 forwards;
+  color: black;
+}
+.ts::before {
+  animation: ts-progress 2s 1 forwards;
+}
+.php {
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0),
+    conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+  animation: php-progress 2s 1 forwards;
+  color: black;
+}
+.php::before {
+  animation: php-progress 2s 1 forwards;
+}
+.sql {
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0),
+    conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+  animation: sql-progress 2s 1 forwards;
+  color: black;
+}
+.sql::before {
+  animation: sql-progress 2s 1 forwards;
+}
+.angular {
+  background: 
+    radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0),
+    conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+  animation: angular-progress 2s 1 forwards;
+  color: black;
+}
+.angular::before {
+  animation: angular-progress 2s 1 forwards;
+}
+progress {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 .headline {
   display: flex;
   flex-direction: column;
@@ -478,7 +611,6 @@ body {
 display: flex;
 }
 h4{
-
   border-radius: 12px;
   color: white;
 }
@@ -1199,6 +1331,9 @@ body::-webkit-scrollbar-thumb {
   }
   .container-about{
     margin-top: 18%;
+  }
+  .w3-bar{
+    width: 150%;
   }
   .botaoMostrar{
     text-align: center;
