@@ -141,7 +141,14 @@ label{
 }
 .conhecimentos{
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 200px;
   margin-top: 150px;
+}
+.conhecimento{
+  top: 200px;
+  left: 25px;
+  margin-bottom: 200px;
+  position: relative;
 }
 .progress-bar::before {
   counter-reset: percentage var(--progress-value);
@@ -151,11 +158,11 @@ label{
   background: 
     radial-gradient(closest-side, #17164f 79%, transparent 80% 100%),
     conic-gradient(rgb(4, 231, 99) calc(var(--progress-value) * 1%), pink 0);
-  animation: html-progress 2s 1 forwards;
+  animation: html-progress 8s 1 forwards;
   color: rgb(255, 255, 255);
 }
 .html::before {
-  animation: html-progress 2s 1 forwards;
+  animation: html-progress 8s 1 forwards;
 }
 .css {
   background: 
@@ -165,67 +172,67 @@ label{
   color: rgb(255, 255, 255);
 }
 .css::before {
-  animation: css-progress 2s 1 forwards;
+  animation: css-progress 8s 1 forwards;
 }
 .js {
   background: 
     radial-gradient(closest-side, #17164f 79%, transparent 80% 100%, white 0),
     conic-gradient(rgb(4, 231, 99)calc(var(--progress-value) * 1%), pink 0);
-  animation: js-progress 2s 1 forwards;
+  animation: js-progress 8s 1 forwards;
   color: rgb(255, 255, 255);
 }
 .js::before {
-  animation: js-progress 2s 1 forwards;
+  animation: js-progress 8s 1 forwards;
 }
 .ts {
   background: 
     radial-gradient(closest-side, #17164f 79%, transparent 80% 100%, white 0),
     conic-gradient(rgb(4, 231, 99) calc(var(--progress-value) * 1%), pink 0);
-  animation: ts-progress 2s 1 forwards;
+  animation: ts-progress 8s 1 forwards;
   color: rgb(255, 255, 255);
 }
 .ts::before {
-  animation: ts-progress 2s 1 forwards;
+  animation: ts-progress 8s 1 forwards;
 }
 .php {
   background: 
     radial-gradient(closest-side, #17164f 79%, transparent 80% 100%, white 0),
     conic-gradient(rgb(4, 231, 99) calc(var(--progress-value) * 1%), pink 0);
-  animation: php-progress 2s 1 forwards;
+  animation: php-progress 8s 1 forwards;
   color: rgb(255, 255, 255);
 }
 .php::before {
-  animation: php-progress 2s 1 forwards;
+  animation: php-progress 8s 1 forwards;
 }
 .sql {
   background: 
     radial-gradient(closest-side, #17164f 79%, transparent 80% 100%, white 0),
     conic-gradient(rgb(4, 231, 99) calc(var(--progress-value) * 1%), pink 0);
-  animation: sql-progress 2s 1 forwards;
+  animation: sql-progress 8s 1 forwards;
   color: rgb(255, 255, 255);
 }
 .sql::before {
-  animation: sql-progress 2s 1 forwards;
+  animation: sql-progress 8s 1 forwards;
 }
 .angular {
   background: 
     radial-gradient(closest-side, #17164f 79%, transparent 80% 100%, white 0),
     conic-gradient(rgb(4, 231, 99) calc(var(--progress-value) * 1%), pink 0);
-  animation: angular-progress 2s 1 forwards;
+  animation: angular-progress 8s 1 forwards;
   color: rgb(255, 255, 255);
 }
 .angular::before {
-  animation: angular-progress 2s 1 forwards;
+  animation: angular-progress 8s 1 forwards;
 }
 .tailwind {
   background: 
     radial-gradient(closest-side, #17164f 79%, transparent 80% 100%, white 0),
     conic-gradient(rgb(4, 231, 99) calc(var(--progress-value) * 1%), pink 0);
-  animation: tailwind-progress 2s 1 forwards;
+  animation: tailwind-progress 8s 1 forwards;
   color: rgb(255, 255, 255);
 }
 .tailwind::before {
-  animation: tailwind-progress 2s 1 forwards;
+  animation: tailwind-progress 8s 1 forwards;
 }
 progress {
   visibility: hidden;
