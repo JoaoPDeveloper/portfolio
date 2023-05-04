@@ -1033,7 +1033,7 @@ body::-webkit-scrollbar-thumb {
   .sobremim {
     width: 200px;
     text-align: center;
-    margin-left: -56px;
+    margin-left: -70px;
   }
   .conhecimentos {
     display: grid;
@@ -1072,7 +1072,7 @@ body::-webkit-scrollbar-thumb {
     bottom: -4rem;
     width: 320px;
     position: relative;
-    margin-top: 38px;
+    margin-top: 80px;
     transform: translate(-50%, -50%);
   }
   .headline p {
