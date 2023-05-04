@@ -2,11 +2,11 @@ var i = setInterval(function () {
   clearInterval(i);
   document.getElementById("carregando").style.display = "none";
       document.getElementById("container").style.display = "inline";
-    }, 1000);
-    // ScrollReveal().reveal('.headline',{delay:300})
-		// ScrollReveal().reveal('.container-about', { delay: 800 })
-		// ScrollReveal().reveal('.container', { delay: 800 })
-    // ScrollReveal().reveal('.square', { delay: 800 })  
+    }, 4000);
+    ScrollReveal().reveal('.headline',{delay:300})
+		ScrollReveal().reveal('.container-about', { delay: 800 })
+		ScrollReveal().reveal('.container', { delay: 800 })
+    ScrollReveal().reveal('.square', { delay: 800 })  
     window.onscroll = function() {
       var backToTopBtn = document.querySelector('.back-to-top');
       if (window.pageYOffset > 300) {
