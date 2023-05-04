@@ -2,14 +2,17 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  scroll-behavior: smooth;
+
 }
 html,
 body {
   font-family: 'Inter', sans-serif;
-  background-color: rgba(26, 26, 38, 0.9);
+  font-family: Calibri;
+  font-weight: 100;
+  background-color: rgba(10, 25, 47, 0.9);
   color: #ffffff;
   margin: 0;
+  scroll-behavior: smooth;
 }  
 #player {
   position: fixed;
@@ -38,6 +41,7 @@ body {
   margin-bottom: 5rem;
   border: 3px solid #102a9c;
   border-radius: 215px;
+  width: 1rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -127,9 +131,13 @@ body {
 }
 label{
   font-size: 12px;
-  margin: 0;
+  margin: 5px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 200;
+  text-align: center;
+  display: grid;
+  color: #64ffda;
 }
-
 .progress-bar {
   width: 70px;
   height: 70px;
@@ -142,7 +150,7 @@ label{
 .conhecimentos{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 200px;
-  margin-top: 150px;
+ 
 }
 .conhecimento{
   top: 200px;
@@ -251,6 +259,7 @@ progress {
   font-weight: 200;
   line-height: 1.3;
   max-width: 600px;
+  font-family: 'Space Mono', monospace;
   top:-15%;
   position: relative;
 }
@@ -264,6 +273,7 @@ progress {
   text-decoration: none;
   text-transform: capitalize;
   margin-right: 24px;
+  font-family: 'Space Mono', monospace;
   top:-15%;
   position: relative;
 }
@@ -274,6 +284,7 @@ progress {
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
+  font-family: 'Space Mono', monospace;
   border-radius: 10px;
   border: 2px dashed #00BFA6;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -490,23 +501,22 @@ progress {
   letter-spacing: 2px;
   text-transform: uppercase;
   display: inline-block;
-  text-align: center;
   cursor: pointer;
   font-weight: bold;
   background-color: rgb(36, 3, 111);
   padding: 0.7em 2em;
   border: 3px solid #FF0072;
-  border-radius: 2px;
+  font-family: 'Inter';
+  font-weight: 100;
   position: relative;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
   color: #fff;
   text-decoration: none;
   transition: 0.3s ease all;
   width: 10rem;
-  border-radius: 12px;
+  border-radius: 16px;
   bottom: 18rem;
-  margin-bottom: 0rem;
-  z-index: 1;
+z-index: 1;
 }
 .clique{
   bottom: 9rem;
@@ -544,7 +554,7 @@ progress {
   transform: scale(0.9);
 }
 .container-about{
-  background-color: rgba(27, 45, 56, 0.6);
+  background-color: rgba(10, 25, 47, 0.85);
   margin-top: -18%;
   position: relative;
   width: 100vw;
@@ -555,9 +565,11 @@ progress {
 }
 .joao-pedro-img  > p{
   font-size: 18px;
+  font-weight: 600;
   text-align: center;
   margin: 0;
-  top: 50%; 
+  top: 20px; 
+  font-family: Calibri;
   position: relative;
   left: 50%;
  transform: translate(-50%, -50%);
@@ -569,6 +581,7 @@ progress {
   width: 40vw;
   height: 45vh;
   grid-template-columns:  1fr 1fr 1fr 1fr ; 
+  font-family: 'Space Mono', monospace;
   grid-template-rows: 1fr 1fr 1fr;
   top: 30vh;
   margin-bottom: 22vh;
@@ -616,8 +629,6 @@ progress {
   font-size: 12px;
   text-decoration: none;
   margin: 0;
-  overflow-wrap: break-word;
-  word-break: break-word;
   height: 12px;
   display: flex;
   justify-content: space-around;
@@ -766,13 +777,6 @@ section{
 summary{
   font-size: 12px;
   width: 100%;
-}
-.imagemfooter{
-  position: absolute;
-  width: 25%;
-  margin-left: 25%;
-  cursor:default;
-  margin-top: rem;
 }
 .cardBox::before {
   content: "";
@@ -994,7 +998,143 @@ body::-webkit-scrollbar-thumb {
  .card-avatar-image:hover {
   transform: scale(1.1);
  }
- @media only screen and (max-width:425px) {
+ @media only screen and (min-width: 320px) and (max-width: 420px) {
+  .imagemprincipal {
+    width: 11rem;
+    left: 2rem;
+    position: relative;
+    margin-top: 131px;
+    bottom: 50px;
+  }
+  .botaoMostrar {
+    text-align: center;
+    left: 27%;
+    position: relative;
+    width: 10rem;
+    top: 0;
+    margin-bottom: 30rem;
+  }
+  #projetos{
+    grid-template-columns: 1fr 1fr;
+  }
+  .card,.cardBox{
+    width: 140px;
+  }
+  section{
+  grid-template-columns: 1fr 1fr;
+  margin: 2px;
+  top: 25%;
+  position: relative;
+}
+  .headline h2 {
+    width: 320px;
+    text-align: center;
+  }
+  .sobremim {
+    width: 200px;
+    text-align: center;
+    margin-left: -56px;
+  }
+  .conhecimentos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .project,
+  .sobreProjetos {
+    text-align: center;
+    width: 300px;
+    margin-left: -117px;
+  }
+  .clique {
+    bottom: 400px;
+    text-align: center;
+    font-size: 18px;
+  }
+  .conhecimento {
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    left: -71px;
+    position: relative;
+    top: 20px;
+  }
+  .container-about {
+    margin-top: -221px;
+    position: relative;
+  }
+  .joao-pedro-img > p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    bottom: -4rem;
+    width: 320px;
+    position: relative;
+    margin-top: 38px;
+    transform: translate(-50%, -50%);
+  }
+  .headline p {
+    width: 320px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+  .carde {
+    width: 89vw;
+    margin-left: -112px;
+  }
+  .card-social__item {
+    margin-left: -20px;
+  }
+  .linguagens {
+    position: relative;
+    height: auto;
+    top: 55vh;
+    margin-bottom: 25vh;
+    width: 93vw;
+    margin-top: -80%;
+    bottom: -34%;
+    justify-items: center;
+    right: 4px;
+  }
+  .square {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 70px;
+    height: 70px;
+  }
+  .square img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 2px;
+  }
+  .linguagens > h1 {
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10em;
+    position: relative;
+  }
+  .navbar {
+    flex-direction: column;
+    display: flex;
+    left: 0%;
+    position: relative;
+  }
+  .navbar .logo {
+    font-size: 18px;
+    display: flex;
+    position: relative;
+    left: 1%;
+    margin-top: 20px;
+  }
+} 
+@media only screen and (min-width:424px) and (max-width: 520px){
   body{
     max-width: 440px;
   }
@@ -1021,10 +1161,15 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     margin: 0;
     margin-top: 20%;
+    width: 100vw;
+    top: -127px;
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
-    } 
+  }
+  .card-social__item{
+    margin-left: -20px;
+  }
   .container-about{
     margin-top: 25%;
     width: 100%;
@@ -1047,11 +1192,8 @@ body::-webkit-scrollbar-thumb {
   .conhecimento{
     font-size: 28px;
     text-align: center;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10em;
-    right: 90px;
+    margin-left: -83px;
+    width: 7em;
     position: relative;
   }
   .sobremim,.project{
@@ -1112,6 +1254,9 @@ body::-webkit-scrollbar-thumb {
     top: 25%;
     position: relative;
   }
+  #projetos{
+    grid-template-columns: 1fr 1fr ;
+  }
   .sobreProjetos {
     width: 291px;
     right: 100px;
@@ -1126,11 +1271,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 12px;
     padding: 0;
   }
-  .imagemfooter{
-    margin-left: 10%;
-    bottom: 6%;
-    width: 45%;
-  }
+
   .clique{
     text-align: center;
     font-size: 18px;
@@ -1140,126 +1281,65 @@ body::-webkit-scrollbar-thumb {
     width: 75vw;
   }
 }
-@media only screen and (min-width: 320px) and (max-width: 375px) {
-  .imagemprincipal{
-    width: 12rem;
-    left: 2rem;
-    position: relative;
-  }
-  .botaoMostrar{
-    text-align: center;
-    left: 27%;
-    position: relative;
-    width: 10rem;
-    margin-bottom: 20rem;
-  }
-  .headline h2 {
-    width: 320px;
-    text-align: center;
+@media only screen and ( min-width: 521px) and (max-width: 767px){
+#projetos{
+  grid-template-columns: 1fr 1fr;
 }
-  .sobremim{
-    text-align: center;
-  }
-  .conhecimentos{
-    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-  }
-  .clique{
-    bottom: 400px;
-    text-align: center;
-    font-size: 18px;
-  }
-  .conhecimento{
-    font-size: 28px;
-    text-align: center;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em;
-    right: 89px;
-    position: relative;
-  }
-  .container-about{
-    margin-top: -221px;
-    position: relative;
-  }
-  .joao-pedro-img > p {
-    font-size: 18px;
-    text-align: center;
-    margin: 0;
-    bottom: -4rem;
-    width: 320px;
-    position: relative;
-    margin-top: 38px;
-    transform: translate(-50%, -50%);
- }
- .headline p{
-  width: 320px;
- }
- .buttons{
-  flex-direction: column;
- }
- .headline p{
-  width: 320px;
- }
- .linguagens {
-  position: relative;
-  height: auto;
-  top: 55vh;
-  margin-bottom: 25vh;
-  width: 100vw;
-  margin-top: -80%;
-  bottom: -34%;
-  justify-items: center; 
-}
-.square{
-  grid-template-columns: 1fr 1fr 1fr 1fr ;
-  width: 70px;
-  height: 70px;
-}
-.square img {
-  max-width: 50px;
-  max-height: 50px;
-  border-radius: 10px;
-  position: relative;
-  bottom: 2px;
-}
-  .linguagens > h1{
-  font-size: 28px;
+.botaoMostrar{
   text-align: center;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 10em;
+  left: 0%;
   position: relative;
-} 
- .navbar {
-   flex-direction: column;
-   display: flex;
-   left: 0%;
-   position: relative;
- }
- .navbar .logo {
-   font-size: 18px;
-   display: flex;
-   position: relative;
-   left: 1%;
-   margin-top: 20px;
- }
- #projetos{
-  grid-template-columns: 1fr;
-  display: grid;
-  margin: 20px;
- }
- .imagemfooter{
+  width: 10rem;
+  margin-bottom: 20rem;
+  margin-top: 20rem;
+}
+.sobreProjetos{
+  text-align: center;
+  width: 620px;
+  margin: auto;
   position: relative;
-  width: 200%;
-  margin-left: 15%;
-  cursor: default;
-  margin-top: 2rem;
- }
-} 
-@media only screen and (min-width: 768px) {
+  right: 230px;
+}
+.imagemprincipal {
+  left: 50%;
+  margin-bottom: 11rem;
+  position: relative;
+  top: 5rem;
+  width: 100%;
+}
+.linguagens{
+  margin-left: 0%;
+  height: auto;
+  width: 80vw;
+}
+.about{
+  width: 100vw;
+  margin-left: -25%;
+}
+.sobreProjetos{
+  text-align: center;
+  width: 520px;
+  margin: auto;
+  position: relative;
+  right: 178px;
+}
+.sobremim{
+  width: 200px;
+}
+.carde{
+  width: 80vw;
+  position: relative;
+  right: 200px;
+}
+.clique,.botaoMostrar{
+  margin-left: 250px;
+}
+.headline p , .headline h2{
+  width: 100vw;
+  text-align: center;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
   .container{
     text-align: center;
   }
@@ -1269,6 +1349,7 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     width: 10rem;
     margin-bottom: 20rem;
+    margin-top: 20rem;
   }
   .about{
     width: 40vw;
@@ -1301,7 +1382,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 11rem;
     position: relative;
     top: 5rem;
-    width: 100%;
+    width: 11rem;
 }
 #projetos{
   grid-template-columns: 1fr 1fr 1fr;
@@ -1309,6 +1390,12 @@ body::-webkit-scrollbar-thumb {
 }
 .cardBox{
   margin: -2px;
+}
+.conhecimento{
+  width: 41vw;
+  left: -86px;
+  margin-bottom: 200px;
+  position: relative;
 }
 .joao-pedro-img > p{
   left: 55%;
@@ -1318,34 +1405,37 @@ body::-webkit-scrollbar-thumb {
 .clique{
   bottom: 400px;
 }
-  .imagemfooter{
-    position: absolute;
-    width: 35%;
-    margin-left: 15%;
-    cursor:default;
-    margin-top:-1rem;
-    z-index: 1;
-  }
-  .carde{
-    width: 450px;
-    position: relative;
-    right: 200px;
-  }
+.carde{
+  width: 450px;
+  position: relative;
+  right: 200px;
 }
- @media only screen and (min-width: 1024px) {
+}
+ @media only screen and (min-width: 1024px) and (max-width: 1270px) {
   .linguagens{
     min-height: 10em;
     display: table-cell;
     vertical-align: middle;
     height: auto;
     right: 0%;
+    width: 70vw;
   }
-  .botaoMostrar{
+  .conhecimento{
+    top: 200px;
+    left: -86px;
+    margin-bottom: 200px;
+    position: relative;
+    width: 41vw;
+  }
+  .botaoMostrar,.clique{
     text-align: center;
     left: 0%;
     position: relative;
     width: 10rem;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
+    z-index: 1;
+    margin-left: 46%;
+    top: -80px;
   }
   .about{
     width:52rem;
@@ -1359,50 +1449,36 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
   }
-  .imagemfooter{
-    position: relative;
-    width: 100%;
-    margin-left: 27vh;
-    cursor: default;
-    top: 15.8rem;
-  }
+
   .imagemprincipal {
     left:50%;
-    top: 12rem;
+    top: 9rem;
     margin-bottom: 11rem;
     position: relative;
+    width: 11rem;
 }
   .square{
     margin-top: -20px;
   }
   .carde{
-    width: 35vw;
+    width: 60vw;
     position: relative;
     right: 12rem;
   }
 }
- @media only screen and (min-width: 1280px){
-  .imagemfooter{
-    position: relative;
-    width: 75%;
-    height: auto;
-    margin-left: 10%;
-    cursor:default;
-    margin-bottom: 15rem;
-  }
-  .clique{
-    bottom: 10px;
-  }
-  .container-about{
-    margin-top: 18%;
-  }
-  .botaoMostrar{
+ @media only screen and (min-width: 1280px) and (max-width: 1950px) {
+  .botaoMostrar, .clique{
     text-align: center;
     left: 0%;
     position: relative;
     width: 10rem;
-    bottom: 18rem;
-    margin-bottom: -1rem;
+    margin-bottom: 11rem;
+    z-index: 1;
+    margin-left: 46%;
+    top: 5px;
+  }
+  .container-about{
+    margin-top: 18%;
   }
   .sobreProjetos{
     width: 520px;
@@ -1410,12 +1486,16 @@ body::-webkit-scrollbar-thumb {
     top: 50%;
     position: relative;
   }
+  .linguagens{
+    height: auto;
+    width: 60vw;
+  }
   .imagemprincipal{
     left: 50%;
     margin-bottom: 11rem;
     position: relative;
     top: 11rem;
-    width: auto;
+    width: 11rem;
  }
   .joao-pedro-img > p {
     width: 900px;
@@ -1437,10 +1517,28 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 11rem;
     position: relative;
     top: 14rem;
-    width: auto;
+    width: 11rem;
  }
+ .clique{
+  left: 45%;
+  width: auto;
+  margin-bottom: 500px;
+}
+ .botaoMostrar{
+  text-align: center;
+  left: 0%;
+  position: relative;
+  width: 10rem;
+  margin-bottom: 11rem;
+  z-index: 1;
+  margin-left: 46%;
+}
+.sobremim{
+  margin-left: 100px;
+}
  .linguagens{
   margin-top: 100px;
+  height: auto;
  }
  .sobreProjetos,.project{
   position: relative;
