@@ -282,6 +282,7 @@ progress {
   padding: 14px 40px;
   color: #fff;
   text-transform: uppercase;
+  display: none;
   letter-spacing: 2px;
   cursor: pointer;
   font-family: 'Space Mono', monospace;
@@ -322,6 +323,7 @@ progress {
   cursor: pointer;
   position: relative;
   border-radius: 5px;
+  display: none;
   z-index: 0;
   font-size: 14px;
   font-weight: 500;
@@ -333,7 +335,7 @@ progress {
   color: var(--color);
   background: var(--bg, var(--background));
 }
-.continue-application > div {
+/* .continue-application > div {
   top: 0;
   left: 0;
   bottom: 0;
@@ -480,7 +482,7 @@ progress {
   --pby: -3px;
   --pbd: .15s;
   --pex: -24px;
-}
+} */
 .joao-pedro-img{
   width: 20%;
 }
