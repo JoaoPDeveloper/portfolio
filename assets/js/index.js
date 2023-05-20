@@ -2,7 +2,7 @@ var i = setInterval(function () {
   clearInterval(i);
   document.getElementById("carregando").style.display = "none";
       document.getElementById("container").style.display = "inline";
-    }, 4000);
+    }, 1000);
     ScrollReveal().reveal('.headline',{delay:300})
 		ScrollReveal().reveal('.container-about', { delay: 800 })
 		ScrollReveal().reveal('.container', { delay: 800 })
@@ -21,6 +21,19 @@ var i = setInterval(function () {
     document.getElementById('botaoMostrar').addEventListener('click', function() {
   document.querySelector('.conteudo').classList.add('mostrando');
 });
+// Função para colorir a imagem
+function colorirImagem(event) {
+    var quadrado = document.getElementById("quadrado");
+    quadrado.classList.remove('foto');
+}
+function restaurarImagem(event){
+  var quadrado = document.getElementById("quadrado");
+  quadrado.classList.add('foto')
+}
+var quadrado = document.getElementById("quadrado");
+quadrado.addEventListener("mouseover", colorirImagem);
+quadrado.addEventListener("mouseout", restaurarImagem);
+
 
 document.getElementById('botaoMostrar').addEventListener('click', function(event) {
   event.preventDefault();
@@ -55,3 +68,12 @@ phpProgress.style.setProperty('--progress-value', '35');
 angularProgress.style.setProperty('--progress-value', '35');
 sqlProgress.style.setProperty('--progress-value', '75');
 tailwindProgress.style.setProperty('--progress-value', '35');
+
+
+function openModal() {
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+</head>
+<body>
+ <div class="cardBox">
+  <div class="card">
+    <div class="h4">🤔 Buzz-feed</div>
+    <div class="content">
+      <div class="h3">Projeto Buzzfeed</div>
+      <summary>Tecnologias utilizadas : <br> Typscript,CSS e Angular!</summary>
+      <br>
+      <img src="https://i.ibb.co/3zgg7M4/buzz-feed.png" style="border-radius: 16px;" alt="buzz-feed">
+      <a href="https://joaopdeveloper-buzzquizz.vercel.app/">
+        <h5 style="text-decoration: none; color: white; font-size: 16px;">Link do Projeto</h5>
+      </a>
+      <button onclick="openModal()">Abrir Modal</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img src="https://i.ibb.co/3zgg7M4/buzz-feed.png" style="border-radius: 16px;" alt="buzz-feed">
+    <h2>Projeto Buzzfeed</h2>
+    <p>Tecnologias utilizadas: TypeScript, CSS e Angular!</p>
+    <a href="https://joaopdeveloper-buzzquizz.vercel.app/">Link do Projeto</a>
+  </div>
+</div>
+
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 16px;
+  margin: 15% auto;
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</body>
+
+<script>
+function openModal() {
+  document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+
+</html>
