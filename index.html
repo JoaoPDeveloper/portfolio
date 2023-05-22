@@ -245,128 +245,193 @@
         <h3 class="sobreProjetos">Aqui você pode verificar alguns projetos já prontos e outros em produção, todos utilizando alguma das Tecnologias citadas acima!</h3>
         <br>
   <section id="projetos">
+    <!-- Pokedex -->
     <div class="cardBox">
       <div class="card">
         <div class="content">
-          <div class="h3">Projeto Buzzfeed</div>
-          <summary>Tecnologias utilizadas : <br> Typscript,CSS e Angular!</summary>
-          <br>
-          <img src="https://i.ibb.co/T2Tgqv5/pokedex.png" style="border-radius: 16px;" alt="buzz-feed">
-          <button onclick="openModal()">Abrir Projeto</button>
+          <div class="h3">🦁 Pokedex</div>
+          <br><br>
+          <img src="https://i.ibb.co/T2Tgqv5/pokedex.png" style="border-radius: 16px;" alt="pokedex" class="imagemProjeto">
+          <button class="btn" onclick="openPokedexModal()">Abrir Projeto</button>
         </div>
       </div>
     </div> 
     <div class="modal" id="modal">
       <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img src="https://i.ibb.co/T2Tgqv5/pokedex.png" style="border-radius: 16px;" alt="buzz-feed">
-        <h2>Projeto Buzzfeed</h2>
-        <p>Tecnologias utilizadas: TypeScript, CSS e Angular!</p>
+        <span class="close" onclick="closePokedexModal()">&times;</span>
+        <h2>Projeto Pokedex</h2>
+        <img src="https://i.ibb.co/bLYYS49/image.png" class="imagemModal"style="border-radius: 16px;" alt="pokedex">
+        <p>Esse projeto foi um grande desafio puxar os dados da Api e aplicar no front-end, porém com muito estudo e dedicação, consegui concluir ele de maneira até que rápida, Adicionei um Modal para cada Pokemon e utilizando a cor de cada elemento que também é puxada da API!
+          <br><br>
+          Tecnologias utilizadas: JavaScript, HTML, CSS3 e APi do Pokemon!</p>
         <a href="https://pokedex-joaopdeveloper.netlify.app/">
-          <h5 style="text-decoration: none; color: black; font-size: 16px;">
+          <h5 style="text-decoration: none; font-size: 16px;">
             Link do Projeto
           </h5>
         </a>
       </div>
     </div >
-      <div class="cardBox">
-        <div class="card">
-          <div class="content">
-            <div class="h3">Projeto Buzzfeed</div>
-            <summary>Tecnologias utilizadas : <br> Typscript,CSS e Angular!</summary>
-            <br>
-            <img src="https://i.ibb.co/3zgg7M4/buzz-feed.png" style="border-radius: 16px;" alt="buzz-feed">
-            <button onclick="openModal()">Abrir Projeto</button>
-          </div>
+    <!-- Fim Pokedex -->
+    <!-- Buzz-feed -->
+    <div class="cardBox">
+      <div class="card">
+        <div class="content">
+          <div class="h3">Buzz Feed</div>
+          <br><br>
+          <img src="https://i.ibb.co/3zgg7M4/buzz-feed.png" style="border-radius: 16px;" alt="pokedex" id="buzzfeed" class="imagemProjeto">
+          <button class="btn" onclick="openBuzzfeedModal()">Abrir Projeto</button>
         </div>
-      </div> 
-      <div class="modal" id="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <img src="https://i.ibb.co/3zgg7M4/buzz-feed.png" style="border-radius: 16px;" alt="buzz-feed">
-          <h2>Projeto Buzzfeed</h2>
-          <p>Tecnologias utilizadas: TypeScript, CSS e Angular!</p>
-          <a href="https://pokedex-joaopdeveloper.netlify.app/">
-            <h5 style="text-decoration: none; color: black; font-size: 16px;">
-              Link do Projeto
-            </h5>
-          </a>
+      </div>
+    </div> 
+    <div class="modal-buzz" id="modal-buzz">
+      <div class="modal-content">
+        <span class="close" onclick="closeBuzzfeedModal()">&times;</span>
+        <img src="https://i.ibb.co/3zgg7M4/buzz-feed.png" class="imagemModal"style="border-radius: 16px;" alt="pokedex">
+        <h2>Projeto Buzz-Feed</h2>
+        <p>Projeto de um Clone do Buzz-feed utilizando TypeScript, Angular e Json para gerar novas perguntas e no final dar um resultado para o usuário, o Grande desafio desse projeto foi fazer as rotas para as perguntas e puxar um resultado final para o usuário,Site ficou totalmente responsivo sendo perfeito para se utilizar em Mobile,  utilizei o Vercel para dar o deploy e host para o site!
+          <br><br>
+          Tecnologias utilizadas: JavaScript,TypeScript,Angular, HTML5 e CSS3</p>
+        <a href="https://joaopdeveloper-buzzquizz.vercel.app/">
+          <h5 style="text-decoration: none; font-size: 16px;">
+            Link do Projeto
+          </h5>
+        </a>
+      </div>
+    </div>
+    <!-- fim buzz feed -->
+    <!-- inverted-world -->
+    <div class="cardBox">
+      <div class="card">
+        <div class="content">
+          <div class="h3"> 🌍 Mundo Invertido </div>
+          <br><br>
+          <img src="https://i.ibb.co/dPn3jKR/inverted-world.png"  style="border-radius: 16px;" alt="pokedex" id="inverted-world" style="border-radius: 16px; " class="imagemProjeto">
+          <button class="btn" onclick="openInvertedModal()">Abrir Projeto</button>
         </div>
-      </div >
-      <div class="cardBox">
-        <div class="card">
-          <h1> 🌎 Inverted World </h1>
-          <div class="content">
-            <summary>Tecnologias utilizadas : <br> HTML, CSS, JavaScript e Google FireBase!</summary>
-                  <img src="https://i.ibb.co/dPn3jKR/inverted-world.png" style="border-radius: 16px;height: 150px;" alt="inverted-world">
-                  <a href="https://inverted-world-z4rk01.netlify.app/">
-                    <h5 style="text-decoration: none; color: white; font-size: 16px;">
-                      Link do Projeto
-                    </h5>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="cardBox">
-              <div class="card">
-                <h1>💰 Simulador Financeiro</h1>
-                <div class="content">
-                  <div class="h3" >Simulador Financeiro</div>                     
-                  <summary>Tecnologias utilizadas : <br>
-                    HTML, CSS, JavaScript </summary>                        
-                    <img src="https://i.ibb.co/28P2dRP/simulador-financeiro.png"style="border-radius: 16px; " alt="simulador-financeamento">
-                    <a href="https://simulador-financeamento.vercel.app/">
-                      <h5 style="text-decoration: none; color: white; font-size: 16px;">
+      </div>
+    </div> 
+    <div class="modal-world" id="modal-world">
+      <div class="modal-content">
+        <span class="close" onclick="closeInvertedModal()">&times;</span>
+        <img src="https://i.ibb.co/dPn3jKR/inverted-world.png" class="imagemModal" style="border-radius: 16px; "alt="pokedex">
+        <h2>Projeto Inverted World</h2>
+        <p>Projeto Feito em comemoração ao lançamento da Quarta Temporada de Stranger Things, o mundo se inverte de acordo com o que o usuário decide a partir do botão e no final da pagina, tem um formulario para o usuário colocar a descrição do seu personagem!
+          <br><br>
+          Tecnologias utilizadas: JavaScript, HTML, CSS3 e Google FireBase</p>
+        <a href="https://pokedex-joaopdeveloper.netlify.app/">
+          <h5 style="text-decoration: none; font-size: 16px;">
+            Link do Projeto
+          </h5>
+        </a>
+      </div>
+    </div>
+                <!-- fim inverter-world -->
+                <!-- Mario -->
+                <div class="cardBox">
+                  <div class="card">
+                    <div class="content">
+                      <div class="h3"> 🎮 Game Mario </div>
+                      <br><br>
+                      <img src="https://i.ibb.co/mcGJ2tx/mario.png"  alt="pokedex" id="mario-world" style="border-radius: 16px; height: 90px; margin-top: 40px;" class="imagemProjeto">
+                      <button class="btn" onclick="openMarioModal()">Abrir Projeto</button>
+                    </div>
+                  </div>
+                </div> 
+                <div class="modal-mario" id="modal-mario">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeMarioModal()">&times;</span>
+                    <img src="https://i.ibb.co/mcGJ2tx/mario.png" class="imagemModal" style="border-radius: 16px; "alt="pokedex">
+                    <h2>Projeto inverted-world</h2>
+                    <p>Game do Mário com a musica original e botão de restart para o usuário reiniciar a sessão, 
+                      <br><br>
+                      Tecnologias utilizadas: JavaScript, HTML, CSS3!</p>
+                      <a href="https://inverted-world-z4rk01.netlify.app/">
+                      <h5 style="text-decoration: none; font-size: 16px;">
                         Link do Projeto
                       </h5>
                     </a>
-                    </div>
                   </div>
                 </div>
+                <!--Fim Mario -->
+                <!-- Conversor de Dólar -->
                 <div class="cardBox">
                   <div class="card">
-                    <h1>🎮 Mario World </h1>
                     <div class="content">
-                      <div class="h3"> Mario World </div>
-                      <summary>Tecnologias utilizadas : <br> HTML, CSS, JavaScript </summary>
-                      <img src="https://i.ibb.co/mcGJ2tx/mario.png" style="border-radius: 16px; width: 220px;" alt="mario-game">
-                      <a href="https://joaopdeveloper-mario-game.vercel.app/">
-                        <h5 style="text-decoration: none; color: white; font-size: 16px;">
-                                  Link do Projeto
-                                </h5>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="cardBox">
-                          <div class="card">
-                            <h1>💸 Conversor Dólar  </h1>
-                            <div class="content">
-                              <br>
-                              <div class="h3"> Conversor de Dólar <br> usando API</div>
-                              <summary>Tecnologias utilizadas : <br> HTML, CSS, PHP e API BancoCentral </summary>
-                              <br>
-                              <img src="https://i.ibb.co/tDJfL8J/conversor-de-dolar.png" style="border-radius: 16px; width: 220px;" alt="buzz-feed">
-                                      </a>
-                                    </div>
-                                  </div>
-                                </div>
+                      <div class="h3">💵 Conversor Dólar </div>
+                      <br><br>
+                      <img src="https://i.ibb.co/tDJfL8J/conversor-de-dolar.png"  alt="pokedex" id="conversor-dolar" style="border-radius: 16px; width: 125px; height: 90px; margin-top: 40px;" class="imagemProjeto">
+                      <button class="btn" onclick="openDolarModal()">Abrir Projeto</button>
+                    </div>
+                  </div>
+                </div> 
+                <div class="modal-dolar" id="modal-dolar">
+                  <div class="modal-content">
+                    <span class="close" onclick="closeDolarModal()">&times;</span>
+                    <img src="https://i.ibb.co/tDJfL8J/conversor-de-dolar.png" class="imagemModal" style="border-radius: 16px; "alt="pokedex">
+                    <h2>Projeto Conversor de Real Para Dolar</h2>
+                    <p>Conversor de Dolares para Real utilizando a API do Banco Central que fornece os dados da moeda em tempo real, Projeto Feito totalmente em PHP 
+                      <br><br>
+                      Tecnologias utilizadas: PHP, HTML, CSS3 e APi do banco central!</p>
+                      <a href="">
+                      <h5 style="text-decoration: none; font-size: 16px;">
+                        Link do Projeto
+                      </h5>
+                    </a>
+                  </div>
+                </div>
+                                <!-- Fim Conversor de Dolar -->
+                                <!-- Simulador Financeiro -->
                                 <div class="cardBox">
                                   <div class="card">
-                                    <h1>🔃 Loading  </h1>
                                     <div class="content">
-                                      <br>
-                                      <div class="h3"> Em Construção </div>
-                                      <summary>Tecnologias utilizadas : <br> HTML, CSS, PHP, Typescript/Angular</summary>
-                                      <br>
-                                      <img src="/assets/imgs/loading-animations-preloader-gifs-ui-ux-effects-11.gif" style="border-radius: 16px; width: 220px;" alt="buzz-feed">
-                                              </a>
-                                            </div>
-                                          </div>
-                                        </div>
+                                      <div class="h3"> 🪙 Simulador Financeiro </div>
+                                      <br><br>
+                                      <img src="https://i.ibb.co/28P2dRP/simulador-financeiro.png"  alt="financeiro" id="simulador-financeiro" style="border-radius: 16px; height: 90px; margin-top: 40px;" class="imagemProjeto">
+                                      <button class="btn" onclick="openFinanceiroModal()">Abrir Projeto</button>
+                                    </div>
+                                  </div>
+                                </div> 
+                                <div class="modal-financeiro" id="modal-financeiro">
+                                  <div class="modal-content">
+                                    <span class="close" onclick="closeFinanceiroModal()">&times;</span>
+                                    <img src="https://i.ibb.co/28P2dRP/simulador-financeiro.png" class="imagemModal" style="border-radius: 16px; "alt="pokedex">
+                                    <h2>Projeto Simulador Financeiro com SAC</h2>
+                                    <p>Projeto que trás informações e calculo baseado no valor que o usuario fornece, juntamente com o valor de entrada, porcentagem de juros e Prazo para a finalização do processo, Foi Adicionado uma nova função que é a Carência, com ela o usuário decide se quer a carência no eu financiamento e a quantidade de meses para o inicio da mesma!
+                                      <br><br>
+                                      Tecnologias utilizadas: JavaScript, HTML, CSS3</p>
+                                      <a href="https://simulador-financeamento.vercel.app/">
+                                      <h5 style="text-decoration: none; font-size: 16px;">
+                                        Link do Projeto
+                                      </h5>
+                                    </a>
+                                  </div>
+                                </div>
+                                <!-- Fim Simulador Financeiro -->
+                                <div class="cardBox">
+                                  <div class="card">
+                                    <div class="content">
+                                      <div class="h3">⚒️ Em Construção </div>
+                                      <br><br>
+                                      <img src="/assets/imgs/loading-animations-preloader-gifs-ui-ux-effects-11.gif"  alt="financeiro" id="simulador-financeiro" style="border-radius: 16px;  height: 90px; margin-top: 40px;" class="imagemProjeto">
+                                      <button class="btn" onclick="openLoadinModal()">Abrir Projeto</button>
+                                    </div>
+                                  </div>
+                                </div> 
+                                <div class="modal-carregar" id="modal-carregar">
+                                  <div class="modal-content">
+                                    <span class="close" onclick="closeLoadingModal()">&times;</span>
+                                    <img src="/assets/imgs/loading-animations-preloader-gifs-ui-ux-effects-11.gif" class="imagemModal" style="border-radius: 16px; "alt="pokedex">
+                                    <h2>
+                                      Tecnologias utilizadas: JavaScript,TypeScript,SQL,MongoDB/Firebase,Angular or React, HTML, CSS3</p>
+                                      <!-- <a href="">
+                                      <h5 style="text-decoration: none; font-size: 16px;">
+                                        Link do Projeto
+                                      </h5> -->
+                                    </a>
+                                  </div>
+                                </div>
                       </section>    
                       <a href="#" class="back-to-top">&uarr;</a>
-
             <footer id="footer">
               <div class="carde">
                 <div class="card-info">

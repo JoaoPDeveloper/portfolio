@@ -21,36 +21,117 @@ body {
   z-index: -1;
   min-height: 100%;
 }
-.modal {
+.h3{
+  font-size:19px;
+}
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  color: #ffedd3;
+  text-transform: capitalize;
+  position: relative;
+  transition: .5s ease;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffc506;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  color: #ffc506;
+  transition-delay: .5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #ffc506;
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+.modal,
+.modal-buzz,
+.modal-world,
+.modal-mario,
+.modal-dolar,
+.modal-financeiro,
+.modal-carregar{
   display: none;
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
-  color: black;
+  background: rgb(33, 34, 36) ;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
-.modal-content {
-  background-color: #fefefe;
+h5{
+    color: rgb(132, 127, 127);
+    text-decoration: none;
+  }
+  h5:hover{
+    color: bisque;
+  }
+.modal-content{
+  background-color: #000711;
   border-radius: 16px;
   margin: 15% auto;
   padding: 20px;
-  max-width: 400px;
+  max-width: 60%;
   text-align: center;
 }
+.modal-content{
+  width: 758px;
+  color: white;
+}
+.imagemProjeto,
+#inverted-world{
+  bottom: 20px;
+  width: 200px;
+  position: relative;
+}
+.modal-content{
+  width: 758px;
+  color: white;
+}
+.imagemModal{
+  width: 460px;
+  right: 0px;
+}
 .close {
-  color: rgb(0, 0, 0);
+  color: bisque;
   float: right;
-  font-size: 28px;
+  font-size: 42px;
   font-weight: bold;
   cursor: pointer;
 }
-
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #f0ebeb;
   text-decoration: none;
   cursor: pointer;
 }
@@ -557,7 +638,7 @@ section{
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #000814;
+  background: #120934;
   text-align: center;
   color: #ffffff;
   overflow: hidden;
@@ -570,6 +651,7 @@ section{
   display: flex;
   margin-top: 16vh;
   top: -5vh;
+  color: bisque;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -808,6 +890,40 @@ body::-webkit-scrollbar-thumb {
     margin-top: 131px;
     bottom: 50px;
   }
+  .modal-content{
+    width: 320px;
+    color: white;
+  }
+  .modal,
+  .modal-buzz,
+  .modal-world,
+  .modal-mario,
+  .modal-dolar,
+  .modal-financeiro,
+  .modal-carregar{
+    width: 503px;
+    height: 100%;
+    left: -92px;
+  }
+  #mario-world{
+    width: 125px;
+  }
+  #inverted-world{
+    width: 120px;
+  }
+  .imagemProjeto{
+    right: 12px;
+    margin-top: 20px;
+    bottom: 20px;
+    width: auto;
+    position: relative;
+  }
+  .imagemModal{
+    width: 273px;
+    margin-top: 33%;
+    right: 8px;
+    top: -60px;
+  }
   .botaoMostrar {
     text-align: center;
     left: 27%;
@@ -821,6 +937,7 @@ body::-webkit-scrollbar-thumb {
   }
   .card,.cardBox{
     width: 140px;
+    margin: 6px;
   }
   section{
   grid-template-columns: 1fr 1fr;
@@ -947,6 +1064,40 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     width: 12rem;
     margin-top: 10rem;
+  } 
+  .modal-content{
+    width: 420px;
+    color: white;
+  }
+  .modal,
+  .modal-buzz,
+  .modal-world,
+  .modal-mario,
+  .modal-dolar,
+  .modal-financeiro,
+  .modal-carregar{
+    width: 700px;
+    height: 100%;
+    left: -142px;
+  }
+  #inverted-world{
+    width: 120px;
+  }
+  #mario-world{
+    width: 150px;
+    align-items: center;
+  }
+  .imagemProjeto{
+    margin-top: 20px;
+    bottom: 20px;
+    width: auto;
+    position: relative;
+  }
+  .imagemModal{
+    width: 400px;
+    margin-top: 33%;
+    right: 8px;
+    top: -60px;
   }
   .headline p {
     width: 370px;
@@ -1067,7 +1218,7 @@ body::-webkit-scrollbar-thumb {
 }
   .cardBox {
     width: 43vw;
-    margin: 0;
+    margin: 5px;
   }
   h4 {
     margin-left: 0px;
@@ -1102,6 +1253,40 @@ body::-webkit-scrollbar-thumb {
   margin: auto;
   position: relative;
   right: 230px;
+}
+.modal-content{
+  width: 420px;
+  color: white;
+}
+.modal,
+.modal-buzz,
+.modal-world,
+.modal-mario,
+.modal-dolar,
+.modal-financeiro,
+.modal-carregar{
+  width: 700px;
+  height: 100%;
+  left: -142px;
+}
+#inverted-world{
+  width: 120px;
+}
+#mario-world{
+  width: 150px;
+  align-items: center;
+}
+.imagemProjeto{
+  margin-top: 20px;
+  bottom: 20px;
+  width: auto;
+  position: relative;
+}
+.imagemModal{
+  width: 400px;
+  margin-top: 33%;
+  right: 8px;
+  top: -60px;
 }
 .imagemprincipal {
   left: 50%;
@@ -1154,6 +1339,43 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 20rem;
     margin-top: 20rem;
   }
+  .modal-content{
+    width: 758px;
+    color: white;
+  }
+  .modal,
+  .modal-buzz,
+  .modal-world,
+  .modal-mario,
+  .modal-dolar,
+  .modal-financeiro,
+  .modal-carregar{
+    width: 1000px;
+    height: 100%;
+    left: -142px;
+  }
+  #inverted-world{
+    width: 180px;
+  }
+  #buzzfeed{
+    width: 220px;
+  }
+  #mario-world{
+    width: 150px;
+    align-items: center;
+  }
+  .imagemProjeto{
+    /* margin-top: 20px; */
+    bottom: 20px;
+    width: 180px;
+    position: relative;
+  }
+  .imagemModal{
+    width: 460px;
+    margin-top: 20%;
+    right: 0px;
+    top: -60px;
+  }
   .about{
     width: 40vw;
     margin-left: -25%;
@@ -1192,7 +1414,8 @@ body::-webkit-scrollbar-thumb {
   display: grid;
 }
 .cardBox{
-  margin: -2px;
+  margin: 4px;
+  right:  10px;
 }
 .conhecimento{
   width: 41vw;
@@ -1209,9 +1432,9 @@ body::-webkit-scrollbar-thumb {
   bottom: 400px;
 }
 .carde{
-  width: 450px;
+  width: 700px;
   position: relative;
-  right: 200px;
+  right: 265px;
 }
 }
  @media only screen and (min-width: 1024px) and (max-width: 1270px) {
@@ -1229,6 +1452,43 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 200px;
     position: relative;
     width: 41vw;
+  }
+  .modal-content{
+    width: 758px;
+    color: white;
+  }
+  .modal,
+  .modal-buzz,
+  .modal-world,
+  .modal-mario,
+  .modal-dolar,
+  .modal-financeiro,
+  .modal-carregar{
+    width: 1000px;
+    height: 100%;
+    left: -142px;
+  }
+  #inverted-world{
+    width: 180px;
+  }
+  #buzzfeed{
+    width: 220px;
+  }
+  #mario-world{
+    width: 150px;
+    align-items: center;
+  }
+  .imagemProjeto{
+    /* margin-top: 20px; */
+    bottom: 20px;
+    width: 180px;
+    position: relative;
+  }
+  .imagemModal{
+    width: 460px;
+    margin-top: 20%;
+    right: 0px;
+    top: -60px;
   }
   .botaoMostrar,.clique{
     text-align: center;
@@ -1283,6 +1543,7 @@ body::-webkit-scrollbar-thumb {
   .container-about{
     margin-top: 18%;
   }
+  
   .sobreProjetos{
     width: 520px;
     margin:auto;
@@ -1338,6 +1599,14 @@ body::-webkit-scrollbar-thumb {
 }
 .sobremim{
   margin-left: 100px;
+}
+.container-about{
+  margin-top: 50px;
+}
+.modal-content{
+  width: 1208px;
+  color: white;
+  margin-top: 250px;
 }
  .linguagens{
   margin-top: 100px;

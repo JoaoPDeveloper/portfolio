@@ -21,19 +21,6 @@ var i = setInterval(function () {
     document.getElementById('botaoMostrar').addEventListener('click', function() {
   document.querySelector('.conteudo').classList.add('mostrando');
 });
-// Função para colorir a imagem
-function colorirImagem(event) {
-    var quadrado = document.getElementById("quadrado");
-    quadrado.classList.remove('foto');
-}
-function restaurarImagem(event){
-  var quadrado = document.getElementById("quadrado");
-  quadrado.classList.add('foto')
-}
-var quadrado = document.getElementById("quadrado");
-quadrado.addEventListener("mouseover", colorirImagem);
-quadrado.addEventListener("mouseout", restaurarImagem);
-
 
 document.getElementById('botaoMostrar').addEventListener('click', function(event) {
   event.preventDefault();
@@ -70,10 +57,47 @@ sqlProgress.style.setProperty('--progress-value', '75');
 tailwindProgress.style.setProperty('--progress-value', '35');
 
 
-function openModal() {
+function openPokedexModal() {
   document.getElementById("modal").style.display = "block";
 }
-
-function closeModal() {
+function closePokedexModal() {
   document.getElementById("modal").style.display = "none";
 }
+function openBuzzfeedModal() {
+  document.getElementById("modal-buzz").style.display = "block";
+}
+function closeBuzzfeedModal() {
+  document.getElementById("modal-buzz").style.display = "none";
+}
+function openInvertedModal() {
+  document.getElementById("modal-world").style.display = "block";
+}
+function closeInvertedModal() {
+  document.getElementById("modal-world").style.display = "none";
+}
+function openMarioModal() {
+  document.getElementById("modal-mario").style.display = "block";
+}
+function closeMarioModal() {
+  document.getElementById("modal-mario").style.display = "none";
+}
+function openDolarModal() {
+  document.getElementById("modal-dolar").style.display = "block";
+}
+function closeDolarModal() {
+  document.getElementById("modal-dolar").style.display = "none";
+}
+function openFinanceiroModal() {
+  document.getElementById("modal-financeiro").style.display = "block";
+}
+function closeFinanceiroModal() {
+  document.getElementById("modal-financeiro").style.display = "none";
+}
+function openLoadinModal() {
+  document.getElementById("modal-carregar").style.display = "block";
+}
+function closeLoadingModal() {
+  document.getElementById("modal-carregar").style.display = "none";
+}
+
+
