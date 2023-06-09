@@ -2,18 +2,17 @@
 *::before,
 *::after {
   box-sizing: border-box;
-
 }
 html,
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-family: Calibri;
   font-weight: 100;
   background-color: rgba(10, 25, 47, 0.9);
   color: #ffffff;
   margin: 0;
   scroll-behavior: smooth;
-}  
+}
 #player {
   position: fixed;
   min-width: 100%;
@@ -21,8 +20,8 @@ body {
   z-index: -1;
   min-height: 100%;
 }
-.h3{
-  font-size:19px;
+.h3 {
+  font-size: 19px;
 }
 .btn {
   font-size: 17px;
@@ -32,24 +31,24 @@ body {
   color: #ffedd3;
   text-transform: capitalize;
   position: relative;
-  transition: .5s ease;
+  transition: 0.5s ease;
   cursor: pointer;
 }
 
 .btn::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   height: 2px;
   width: 0;
   background-color: #ffc506;
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
 .btn:hover {
   color: #ffc506;
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 
 .btn:hover::before {
@@ -57,14 +56,14 @@ body {
 }
 
 .btn::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   height: 0;
   width: 100%;
   background-color: #ffc506;
-  transition: .4s ease;
+  transition: 0.4s ease;
   z-index: -1;
 }
 
@@ -79,24 +78,24 @@ body {
 .modal-mario,
 .modal-dolar,
 .modal-financeiro,
-.modal-carregar{
+.modal-carregar {
   display: none;
   position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
-  background: rgb(33, 34, 36) ;
+  background: rgb(33, 34, 36);
   width: 100%;
   height: 100%;
 }
-h5{
-    color: rgb(132, 127, 127);
-    text-decoration: none;
-  }
-  h5:hover{
-    color: bisque;
-  }
-.modal-content{
+h5 {
+  color: rgb(132, 127, 127);
+  text-decoration: none;
+}
+h5:hover {
+  color: bisque;
+}
+.modal-content {
   background-color: #000711;
   border-radius: 16px;
   margin: 15% auto;
@@ -104,21 +103,21 @@ h5{
   max-width: 60%;
   text-align: center;
 }
-.modal-content{
+.modal-content {
   width: 758px;
   color: white;
 }
 .imagemProjeto,
-#inverted-world{
+#inverted-world {
   bottom: 20px;
   width: 200px;
   position: relative;
 }
-.modal-content{
+.modal-content {
   width: 758px;
   color: white;
 }
-.imagemModal{
+.imagemModal {
   width: 460px;
   right: 0px;
 }
@@ -135,7 +134,7 @@ h5{
   text-decoration: none;
   cursor: pointer;
 }
-.progress{
+.progress {
   position: fixed;
   top: 0;
   left: 0;
@@ -144,14 +143,14 @@ h5{
   height: 5px;
   background-color: #2c2c2c;
 }
-.bar{
+.bar {
   display: block;
   width: 0;
   position: absolute;
   height: inherit;
-  background-image: linear-gradient(90deg,#420880,#2f0b78,#0353a3,#0170f0);
+  background-image: linear-gradient(90deg, #420880, #2f0b78, #0353a3, #0170f0);
 }
-.imagemprincipal{
+.imagemprincipal {
   margin-bottom: 5rem;
   border: 3px solid #102a9c;
   border-radius: 215px;
@@ -159,7 +158,7 @@ h5{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 .navbar {
   display: flex;
@@ -167,7 +166,7 @@ h5{
   justify-content: space-around;
   height: 96px;
 }
-.navbar ul li:hover{
+.navbar ul li:hover {
   transform: translateY(-30%);
   transition: 0.5s;
   opacity: 1;
@@ -203,50 +202,73 @@ h5{
   flex: 1;
   padding-bottom: 96px;
 }
-.about{
+.about {
   width: 75vw;
   margin-left: -25%;
   text-align: center;
 }
 @property --progress-value {
-  syntax: '<integer>';
+  syntax: "<integer>";
   inherits: false;
   initial-value: 0;
 }
 @keyframes html-progress {
-  to { --progress-value: 92; }
+  to {
+    --progress-value: 92;
+  }
 }
 @keyframes css-progress {
-  to { --progress-value: 85; }
+  to {
+    --progress-value: 85;
+  }
 }
 @keyframes sql-progress {
-  to { --progress-value: 80; }
+  to {
+    --progress-value: 80;
+  }
 }
 @keyframes js-progress {
-  to { --progress-value: 65; }
+  to {
+    --progress-value: 65;
+  }
 }
 @keyframes ts-progress {
-  to { --progress-value: 45; }
+  to {
+    --progress-value: 45;
+  }
 }
 @keyframes php-progress {
-  to { --progress-value: 40; }
+  to {
+    --progress-value: 40;
+  }
 }
 @keyframes angular-progress {
-  to { --progress-value: 35; }
+  to {
+    --progress-value: 35;
+  }
 }
 @keyframes tailwind-progress {
-  to { --progress-value: 30; }
+  to {
+    --progress-value: 30;
+  }
 }
-.html,.php,.sql,.ts,.js,.angular,.css,.tailwind{
+.html,
+.php,
+.sql,
+.ts,
+.js,
+.angular,
+.css,
+.tailwind {
   display: table-cell;
   vertical-align: middle;
   height: auto;
   right: 0%;
 }
-label{
+label {
   font-size: 12px;
   margin: 5px;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 200;
   text-align: center;
   display: grid;
@@ -261,12 +283,11 @@ label{
   margin: 10px;
   align-items: center;
 }
-.conhecimentos{
+.conhecimentos {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 200px;
- 
 }
-.conhecimento{
+.conhecimento {
   top: 200px;
   left: 25px;
   margin-bottom: 200px;
@@ -274,13 +295,15 @@ label{
 }
 .progress-bar::before {
   counter-reset: percentage var(--progress-value);
-  content: counter(percentage) '%';
+  content: counter(percentage) "%";
 }
 
 .html {
-  background: 
-    radial-gradient(closest-side, #1D1E1F 79%, transparent 80% 100%),
-    conic-gradient(rgba(20, 5, 134, 0.475)calc(var(--progress-value) * 1%), pink 0);
+  background: radial-gradient(closest-side, #1d1e1f 79%, transparent 80% 100%),
+    conic-gradient(
+      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
+      pink 0
+    );
   animation: html-progress 10s 1 forwards;
   color: rgb(255, 255, 255);
 }
@@ -288,9 +311,16 @@ label{
   animation: html-progress 10s 1 forwards;
 }
 .css {
-  background: 
-    radial-gradient(closest-side, #1D1E1F 79%, transparent 80% 100%, rgba(20, 5, 134, 0.475) 0),
-    conic-gradient(rgba(20, 5, 134, 0.475)calc(var(--progress-value) * 1%), pink 0);
+  background: radial-gradient(
+      closest-side,
+      #1d1e1f 79%,
+      transparent 80% 100%,
+      rgba(20, 5, 134, 0.475) 0
+    ),
+    conic-gradient(
+      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
+      pink 0
+    );
   animation: css-progress 10s 1 forwards;
   color: rgb(255, 255, 255);
 }
@@ -298,9 +328,16 @@ label{
   animation: css-progress 10s 1 forwards;
 }
 .js {
-  background: 
-    radial-gradient(closest-side, #1D1E1F 79%, transparent 80% 100%, rgba(20, 5, 134, 0.475) 0),
-    conic-gradient(rgba(20, 5, 134, 0.475)calc(var(--progress-value) * 1%), pink 0);
+  background: radial-gradient(
+      closest-side,
+      #1d1e1f 79%,
+      transparent 80% 100%,
+      rgba(20, 5, 134, 0.475) 0
+    ),
+    conic-gradient(
+      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
+      pink 0
+    );
   animation: js-progress 10s 1 forwards;
   color: rgb(255, 255, 255);
 }
@@ -308,9 +345,16 @@ label{
   animation: js-progress 10s 1 forwards;
 }
 .ts {
-  background: 
-    radial-gradient(closest-side, #1D1E1F 79%, transparent 80% 100%, rgba(20, 5, 134, 0.475) 0),
-    conic-gradient(rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%), pink 0);
+  background: radial-gradient(
+      closest-side,
+      #1d1e1f 79%,
+      transparent 80% 100%,
+      rgba(20, 5, 134, 0.475) 0
+    ),
+    conic-gradient(
+      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
+      pink 0
+    );
   animation: ts-progress 10s 1 forwards;
   color: rgb(255, 255, 255);
 }
@@ -318,9 +362,16 @@ label{
   animation: ts-progress 10s 1 forwards;
 }
 .php {
-  background: 
-    radial-gradient(closest-side, #1D1E1F 79%, transparent 80% 100%, rgba(20, 5, 134, 0.475) 0),
-    conic-gradient(rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%), pink 0);
+  background: radial-gradient(
+      closest-side,
+      #1d1e1f 79%,
+      transparent 80% 100%,
+      rgba(20, 5, 134, 0.475) 0
+    ),
+    conic-gradient(
+      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
+      pink 0
+    );
   animation: php-progress 10s 1 forwards;
   color: rgb(255, 255, 255);
 }
@@ -328,9 +379,16 @@ label{
   animation: php-progress 10s 1 forwards;
 }
 .sql {
-  background: 
-    radial-gradient(closest-side, #1D1E1F 79%, transparent 80% 100%, rgba(20, 5, 134, 0.475) 0),
-    conic-gradient(rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%), pink 0);
+  background: radial-gradient(
+      closest-side,
+      #1d1e1f 79%,
+      transparent 80% 100%,
+      rgba(20, 5, 134, 0.475) 0
+    ),
+    conic-gradient(
+      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
+      pink 0
+    );
   animation: sql-progress 10s 1 forwards;
   color: rgb(255, 255, 255);
 }
@@ -338,9 +396,16 @@ label{
   animation: sql-progress 10s 1 forwards;
 }
 .angular {
-  background: 
-    radial-gradient(closest-side, #1D1E1F 79%, transparent 80% 100%, rgba(20, 5, 134, 0.475) 0),
-    conic-gradient(rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%), pink 0);
+  background: radial-gradient(
+      closest-side,
+      #1d1e1f 79%,
+      transparent 80% 100%,
+      rgba(20, 5, 134, 0.475) 0
+    ),
+    conic-gradient(
+      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
+      pink 0
+    );
   animation: angular-progress 10s 1 forwards;
   color: rgb(255, 255, 255);
 }
@@ -348,9 +413,16 @@ label{
   animation: angular-progress 10s 1 forwards;
 }
 .tailwind {
-  background: 
-    radial-gradient(closest-side, #1D1E1F 79%, transparent 80% 100%, rgba(20, 5, 134, 0.475) 0),
-    conic-gradient(rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%), pink 0);
+  background: radial-gradient(
+      closest-side,
+      #1d1e1f 79%,
+      transparent 80% 100%,
+      rgba(20, 5, 134, 0.475) 0
+    ),
+    conic-gradient(
+      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
+      pink 0
+    );
   animation: tailwind-progress 10s 1 forwards;
   color: rgb(255, 255, 255);
 }
@@ -368,19 +440,19 @@ progress {
   text-transform: uppercase;
   position: relative;
   max-width: 600px;
-  top:-15%;
+  top: -15%;
 }
 .headline p {
   font-weight: 200;
   line-height: 1.3;
   max-width: 600px;
-  font-family: 'Space Mono', monospace;
-  top:-15%;
+  font-family: "Space Mono", monospace;
+  top: -15%;
   position: relative;
 }
 .headline .buttons {
   margin-top: 52px;
-  top:-15%;
+  top: -15%;
   position: relative;
 }
 .headline .buttons a {
@@ -388,19 +460,19 @@ progress {
   text-decoration: none;
   text-transform: capitalize;
   margin-right: 24px;
-  font-family: 'Space Mono', monospace;
-  top:-15%;
+  font-family: "Space Mono", monospace;
+  top: -15%;
   position: relative;
 }
 .get-started {
   display: none;
- }
-
-.continue-application {
-display: none;
 }
 
-.joao-pedro-img{
+.continue-application {
+  display: none;
+}
+
+.joao-pedro-img {
   width: 20%;
 }
 /* Seu estilo CSS */
@@ -424,8 +496,8 @@ display: none;
   font-weight: bold;
   background-color: red;
   padding: 0.7em 2em;
-  border: 3px solid #110A34;
-  font-family: 'Inter';
+  border: 3px solid #110a34;
+  font-family: "Inter";
   font-weight: 100;
   position: relative;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -435,19 +507,19 @@ display: none;
   width: 10rem;
   border-radius: 16px;
   bottom: 18rem;
-z-index: 1;
+  z-index: 1;
 }
-.clique{
+.clique {
   bottom: 9rem;
   cursor: none;
   position: relative;
   text-decoration: none;
   color: white;
 }
-.clique::after{
+.clique::after {
   display: none;
 }
-.botaoMostrar::before{
+.botaoMostrar::before {
   transition: 0.5s all ease;
   position: absolute;
   top: 0;
@@ -456,24 +528,26 @@ z-index: 1;
   right: 50%;
   bottom: 0;
   opacity: 0;
-  content: '';
+  content: "";
   z-index: -1;
 }
-.botaoMostrar:hover, .botaoMostrar:focus{
+.botaoMostrar:hover,
+.botaoMostrar:focus {
   color: white;
-  background-color:#353333;
+  background-color: #353333;
 }
-.botaoMostrar:hover::before,.botaoMostrar:focus::before{
+.botaoMostrar:hover::before,
+.botaoMostrar:focus::before {
   transition: 0.5s all ease;
   left: 0;
   right: 0;
   opacity: 1;
 }
-.botaoMostrar:active{
+.botaoMostrar:active {
   transform: scale(0.9);
 }
-.container-about{
-  background-color: #1D1E1F;
+.container-about {
+  background-color: #1d1e1f;
   margin-top: -18%;
   position: relative;
   width: 100vw;
@@ -482,26 +556,26 @@ z-index: 1;
   border-radius: 35px;
   justify-content: center;
 }
-.joao-pedro-img  > p{
+.joao-pedro-img > p {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
   margin: 0;
-  top: 20px; 
+  top: 20px;
   font-family: Calibri;
   position: relative;
   left: 50%;
- transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-.linguagens{
+.linguagens {
   background-color: rgba(68, 65, 65, 0.6);
   border-radius: 15px;
   font-size: 28px;
   width: 40vw;
-  color:  #FFFF00;
+  color: #ffff00;
   height: 45vh;
-  grid-template-columns:  1fr 1fr 1fr 1fr ; 
-  font-family: 'Space Mono', monospace;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: "Space Mono", monospace;
   grid-template-rows: 1fr 1fr 1fr;
   top: 30vh;
   margin-bottom: 22vh;
@@ -509,23 +583,23 @@ z-index: 1;
   transition: 0.5s;
   text-align: center;
   margin: 0;
-  position: relative;               /* 2 */
-  top: 50%;                         /* 3 */
-  transform: translate(0, -50%) 
-}   /* 4 */
-.linguagens > h1{
+  position: relative; /* 2 */
+  top: 50%; /* 3 */
+  transform: translate(0, -50%);
+} /* 4 */
+.linguagens > h1 {
   font-size: 28px;
   font-weight: 100;
   position: relative;
   margin: 20px;
 }
-.square{
+.square {
   display: inline-block;
   position: relative;
   top: -5vh;
   filter: grayscale(100%);
-  width: 4.5rem;
-  background-color: #1D1E1F;
+  width: 5rem;
+  background-color: #1d1e1f;
   border: 2px solid rgb(74, 21, 21);
   text-align: center;
   line-height: 100px;
@@ -533,19 +607,19 @@ z-index: 1;
   border-radius: 12px;
   height: 4.5rem;
 }
-.square:hover{
-  transform: translateY(-40%);
+.square:hover {
+  transform: translateY(10%);
   filter: none;
   opacity: 1;
 }
 .square img {
-  max-width: 60px;
+  max-width: 65px;
   max-height: 50px;
   border-radius: 10px;
   position: relative;
   bottom: 2px;
 }
-.square p{
+.square p {
   position: relative;
   bottom: 100%;
   font-size: 12px;
@@ -555,16 +629,15 @@ z-index: 1;
   display: flex;
   justify-content: space-around;
 }
-.buttons{
+.buttons {
   text-align: center;
-display: flex;
+  display: flex;
 }
-h4{
-
+h4 {
   border-radius: 12px;
   color: white;
 }
-#github:hover{
+#github:hover {
   background-color: rgb(32, 8, 79);
   padding: 0;
   opacity: 1;
@@ -572,7 +645,7 @@ h4{
   animation-delay: 1s;
   color: white;
 }
-#linkedin:hover{
+#linkedin:hover {
   background-color: rgb(32, 8, 79);
   padding: 0;
   opacity: 1;
@@ -580,7 +653,7 @@ h4{
   color: white;
   animation-delay: 1s;
 }
-#email:hover{
+#email:hover {
   background-color: rgb(32, 8, 79);
   padding: 0;
   opacity: 1;
@@ -588,28 +661,28 @@ h4{
   transition: 0.5s;
   color: white;
 }
-#kofi:hover{
+#kofi:hover {
   padding: 0;
   opacity: 1;
   animation-delay: 1s;
   transition: 0.5s;
   color: white;
 }
-#vercel:hover{
+#vercel:hover {
   padding: 0;
   opacity: 1;
   animation-delay: 1s;
   transition: 0.5s;
   color: white;
 }
-#vercel{
+#vercel {
   width: 90px;
   justify-content: space-around;
   border-radius: 12px;
   top: 10px;
   position: relative;
 }
-.vercel > h4{
+.vercel > h4 {
   top: 30px;
   position: relative;
 }
@@ -626,7 +699,7 @@ h4{
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
     rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
 }
-section{
+section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -647,10 +720,8 @@ section{
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
 }
-.project{
+.project {
   display: flex;
-  margin-top: 16vh;
-  top: -5vh;
   color: bisque;
   display: block;
   margin-left: auto;
@@ -668,7 +739,7 @@ section{
   opacity: 1;
 }
 
-summary{
+summary {
   font-size: 12px;
   width: 100%;
 }
@@ -708,12 +779,15 @@ summary{
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   transition: 1s;
-  background: rgb(251, 255, 11); 
+  background: rgb(251, 255, 11);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(216, 213, 9, 0.785); 
+  background: rgba(216, 213, 9, 0.785); 
+
+  background: rgba(216, 213, 9, 0.785);
 
 }
 
@@ -751,32 +825,42 @@ body::-webkit-scrollbar-thumb {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  transition: .4s;
+  transition: 0.4s;
   border-radius: 5px;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: .5em;
+  height: 0.5em;
   width: 2.4em;
   border-radius: 5px;
   left: -0.6em;
   top: 0.2em;
   background-color: white;
-  box-shadow: 0 6px 7px rgba(0,0,0,0.3);
-  transition: .4s;
+  box-shadow: 0 6px 7px rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
 }
 
-.slider:before, .slider:after {
+.slider:before,
+.slider:after {
   content: "";
   display: block;
 }
 
 .slider:after {
-  background: linear-gradient(transparent 50%, rgba(255, 255, 255, 0.15) 0) 0 50% / 50% 100%,
-		repeating-linear-gradient(90deg,rgb(255, 255, 255) 0,rgb(255, 255, 255),rgb(255, 255, 255) 20%,rgb(255, 255, 255) 20%,rgb(255, 255, 255) 40%) 0 50% / 50% 100%,
-		radial-gradient(circle at 50% 50%,rgb(255, 255, 255) 25%, transparent 26%);
+  background: linear-gradient(transparent 50%, rgba(255, 255, 255, 0.15) 0) 0
+      50% / 50% 100%,
+    repeating-linear-gradient(
+        90deg,
+        rgb(255, 255, 255) 0,
+        rgb(255, 255, 255),
+        rgb(255, 255, 255) 20%,
+        rgb(255, 255, 255) 20%,
+        rgb(255, 255, 255) 40%
+      )
+      0 50% / 50% 100%,
+    radial-gradient(circle at 50% 50%, rgb(255, 255, 255) 25%, transparent 26%);
   background-repeat: no-repeat;
   border: 0.25em solid transparent;
   border-left: 0.4em solid #ffffff;
@@ -805,29 +889,30 @@ body::-webkit-scrollbar-thumb {
 }
 
 .chk:checked + .slider:after {
-  transform: rotateZ(90deg) rotateY(180deg) translateY(0.45em) translateX(-1.4em);
+  transform: rotateZ(90deg) rotateY(180deg) translateY(0.45em)
+    translateX(-1.4em);
 }
-.carde{
+.carde {
   width: 100%;
   background-color: white;
   color: rgb(255, 247, 0);
   height: 13rem;
-  background: linear-gradient(to top, #110338 0%, #0c023ea3 100%);;
+  background: linear-gradient(to top, #110338 0%, #0c023ea3 100%);
   border-radius: 1rem;
-  transition: box-shadow .3s ease, transform .2s ease;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
   margin-top: 20%;
   /* margin-bottom: 20px; */
   text-align: center;
- }
+}
 
- .card-info {
+.card-info {
   display: flex;
   top: 20px;
   position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform .2s ease, opacity .2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 /*Image*/
 .card-avatar-image {
@@ -837,18 +922,18 @@ body::-webkit-scrollbar-thumb {
   width: var(--size);
   height: var(--size);
   border-radius: 50%;
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
   margin-bottom: 1rem;
 }
- /*Card footer*/
- .card-social {
+/*Card footer*/
+.card-social {
   transform: translateY(200%);
   display: flex;
   justify-content: space-around;
   opacity: 0;
-  transition: transform .2s ease, opacity .2s ease;
- }
- .card-social__item {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.card-social__item {
   list-style: none;
 }
 .card-social__item svg {
@@ -859,30 +944,30 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   fill: #c4c7c7;
   cursor: pointer;
-  transition: fill 0.2s ease ,transform 0.2s ease;
- }
- .carde:hover {
+  transition: fill 0.2s ease, transform 0.2s ease;
+}
+.carde:hover {
   box-shadow: 0 8px 5px #045f7b33;
- }
+}
 
- .carde:hover .card-info {
+.carde:hover .card-info {
   transform: translateY(-5%);
- }
+}
 
- .carde:hover .card-social {
+.carde:hover .card-social {
   transform: translateY(100%);
   opacity: 1;
- }
+}
 
- .card-social__item svg:hover {
+.card-social__item svg:hover {
   fill: #748eb4;
   transform: scale(1.1);
- }
+}
 
- .card-avatar-image:hover {
+.card-avatar-image:hover {
   transform: scale(1.1);
- }
- @media only screen and (min-width: 320px) and (max-width: 420px) {
+}
+@media only screen and (min-width: 320px) and (max-width: 420px) {
   .imagemprincipal {
     width: 11rem;
     left: 2rem;
@@ -890,9 +975,12 @@ body::-webkit-scrollbar-thumb {
     margin-top: 131px;
     bottom: 50px;
   }
-  .modal-content{
-    width: 320px;
+  .modal-content {
+    width: 97vw;
     color: white;
+    left: -15px;
+    max-width: 80%;
+    position: relative;
   }
   .modal,
   .modal-buzz,
@@ -900,15 +988,15 @@ body::-webkit-scrollbar-thumb {
   .modal-mario,
   .modal-dolar,
   .modal-financeiro,
-  .modal-carregar{
+  .modal-carregar {
     width: 503px;
     height: 100%;
-    left: -92px;
+    left: -52px;
   }
-  #mario-world{
+  #mario-world {
     width: 125px;
   }
-  #inverted-world{
+  #inverted-world {
     width: 120px;
   }
   .imagemProjeto{
@@ -918,7 +1006,7 @@ body::-webkit-scrollbar-thumb {
     width: auto;
     position: relative;
   }
-  .imagemModal{
+  .imagemModal {
     width: 273px;
     margin-top: 33%;
     right: 8px;
@@ -932,19 +1020,21 @@ body::-webkit-scrollbar-thumb {
     top: 0;
     margin-bottom: 30rem;
   }
-  #projetos{
+  #projetos {
     grid-template-columns: 1fr 1fr;
   }
-  .card,.cardBox{
-    width: 140px;
+  .card,
+  .cardBox {
+    width: 145px;
+    height: 320px;
     margin: 6px;
   }
-  section{
-  grid-template-columns: 1fr 1fr;
-  margin: 2px;
-  top: 25%;
-  position: relative;
-}
+  section {
+    grid-template-columns: 1fr 1fr;
+    margin: 2px;
+    top: 25%;
+    position: relative;
+  }
   .headline h2 {
     width: 320px;
     text-align: center;
@@ -1023,7 +1113,7 @@ body::-webkit-scrollbar-thumb {
     width: 70px;
     height: 70px;
   }
-
+  
   .square img {
     max-width: 50px;
     max-height: 50px;
@@ -1053,19 +1143,19 @@ body::-webkit-scrollbar-thumb {
     left: 1%;
     margin-top: 20px;
   }
-} 
-@media only screen and (min-width:424px) and (max-width: 520px){
-  body{
+}
+@media only screen and (min-width: 424px) and (max-width: 520px) {
+  body {
     max-width: 440px;
   }
-  .botaoMostrar{
+  .botaoMostrar {
     text-align: center;
     left: 25%;
     position: relative;
     width: 12rem;
     margin-top: 10rem;
-  } 
-  .modal-content{
+  }
+  .modal-content {
     width: 420px;
     color: white;
   }
@@ -1075,29 +1165,30 @@ body::-webkit-scrollbar-thumb {
   .modal-mario,
   .modal-dolar,
   .modal-financeiro,
-  .modal-carregar{
+  .modal-carregar {
     width: 700px;
     height: 100%;
     left: -142px;
   }
-  #inverted-world{
+  #inverted-world {
     width: 120px;
   }
-  #mario-world{
+  #mario-world {
     width: 150px;
     align-items: center;
   }
-  .imagemProjeto{
+  .imagemProjeto {
     margin-top: 20px;
     bottom: 20px;
     width: auto;
     position: relative;
   }
-  .imagemModal{
+  .imagemModal {
     width: 400px;
     margin-top: 33%;
-    right: 8px;
+    right: 10px;
     top: -60px;
+    position: relative;
   }
   .headline p {
     width: 370px;
@@ -1106,7 +1197,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     margin-bottom: 40px;
   }
-  .headline h2{
+  .headline h2 {
     width: 420px;
     text-align: center;
   }
@@ -1121,17 +1212,17 @@ body::-webkit-scrollbar-thumb {
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .card-social__item{
+  .card-social__item {
     margin-left: -20px;
   }
-  .container-about{
+  .container-about {
     margin-top: 25%;
     width: 100%;
-}
-  .buttons{
+  }
+  .buttons {
     flex-direction: column;
   }
-  label{
+  label {
     position: relative;
     bottom: 100%;
     font-size: 12px;
@@ -1143,14 +1234,15 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-around;
   }
-  .conhecimento{
+  .conhecimento {
     font-size: 28px;
     text-align: center;
     margin-left: -83px;
     width: 7em;
     position: relative;
   }
-  .sobremim,.project{
+  .sobremim,
+  .project {
     font-size: 28px;
     text-align: center;
     right: 8rem;
@@ -1167,7 +1259,7 @@ body::-webkit-scrollbar-thumb {
     bottom: -34%;
     justify-items: center;
   }
-    .linguagens > h1{
+  .linguagens > h1 {
     font-size: 28px;
     text-align: center;
     margin: 0;
@@ -1175,19 +1267,19 @@ body::-webkit-scrollbar-thumb {
     margin-right: auto;
     width: 10em;
     position: relative;
-  } 
-  .sobreProjetos{
+  }
+  .sobreProjetos {
     width: 320px;
     right: 100px;
     position: relative;
   }
-  .imagemprincipal{
+  .imagemprincipal {
     width: 15rem;
     left: 3rem;
     position: relative;
     margin-bottom: 20rem;
     top: 7rem;
-}
+  }
   .navbar {
     flex-direction: column;
     display: flex;
@@ -1208,14 +1300,14 @@ body::-webkit-scrollbar-thumb {
     top: 25%;
     position: relative;
   }
-  #projetos{
-    grid-template-columns: 1fr 1fr ;
+  #projetos {
+    grid-template-columns: 1fr 1fr;
   }
   .sobreProjetos {
     width: 291px;
     right: 100px;
     position: relative;
-}
+  }
   .cardBox {
     width: 43vw;
     margin: 5px;
@@ -1226,112 +1318,20 @@ body::-webkit-scrollbar-thumb {
     padding: 0;
   }
 
-  .clique{
+  .clique {
     text-align: center;
     font-size: 18px;
   }
-  .carde{
+  .carde {
     margin-left: -130%;
     width: 75vw;
   }
 }
-@media only screen and ( min-width: 521px) and (max-width: 767px){
-#projetos{
-  grid-template-columns: 1fr 1fr;
-}
-.botaoMostrar{
-  text-align: center;
-  left: 0%;
-  position: relative;
-  width: 10rem;
-  margin-bottom: 20rem;
-  margin-top: 20rem;
-}
-.sobreProjetos{
-  text-align: center;
-  width: 620px;
-  margin: auto;
-  position: relative;
-  right: 230px;
-}
-.modal-content{
-  width: 420px;
-  color: white;
-}
-.modal,
-.modal-buzz,
-.modal-world,
-.modal-mario,
-.modal-dolar,
-.modal-financeiro,
-.modal-carregar{
-  width: 700px;
-  height: 100%;
-  left: -142px;
-}
-#inverted-world{
-  width: 120px;
-}
-#mario-world{
-  width: 150px;
-  align-items: center;
-}
-.imagemProjeto{
-  margin-top: 20px;
-  bottom: 20px;
-  width: auto;
-  position: relative;
-}
-.imagemModal{
-  width: 400px;
-  margin-top: 33%;
-  right: 8px;
-  top: -60px;
-}
-.imagemprincipal {
-  left: 50%;
-  margin-bottom: 11rem;
-  position: relative;
-  top: 5rem;
-  width: 100%;
-}
-.linguagens{
-  margin-left: 0%;
-  height: auto;
-  width: 80vw;
-}
-.about{
-  width: 100vw;
-  margin-left: -25%;
-}
-.sobreProjetos{
-  text-align: center;
-  width: 520px;
-  margin: auto;
-  position: relative;
-  right: 178px;
-}
-.sobremim{
-  width: 200px;
-}
-.carde{
-  width: 80vw;
-  position: relative;
-  right: 200px;
-}
-.clique,.botaoMostrar{
-  margin-left: 250px;
-}
-.headline p , .headline h2{
-  width: 100vw;
-  text-align: center;
-}
-}
-@media only screen and (min-width: 768px) and (max-width: 1020px) {
-  .container{
-    text-align: center;
+@media only screen and (min-width: 521px) and (max-width: 767px) {
+  #projetos {
+    grid-template-columns: 1fr 1fr;
   }
-  .botaoMostrar{
+  .botaoMostrar {
     text-align: center;
     left: 0%;
     position: relative;
@@ -1339,7 +1339,100 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 20rem;
     margin-top: 20rem;
   }
-  .modal-content{
+  .sobreProjetos {
+    text-align: center;
+    width: 620px;
+    margin: auto;
+    position: relative;
+    right: 230px;
+  }
+  .modal-content {
+    width: 420px;
+    color: white;
+  }
+  .modal,
+  .modal-buzz,
+  .modal-world,
+  .modal-mario,
+  .modal-dolar,
+  .modal-financeiro,
+  .modal-carregar {
+    width: 100vw;
+    height: 100%;
+  }
+  #inverted-world {
+    width: 120px;
+  }
+  #mario-world {
+    width: 150px;
+    align-items: center;
+  }
+  .imagemProjeto {
+    margin-top: 20px;
+    bottom: 20px;
+    width: auto;
+    position: relative;
+  }
+  .imagemModal {
+    width: 380px;
+    margin-top: 33%;
+    right: 8px;
+    top: -60px;
+  }
+  .imagemprincipal {
+    left: 50%;
+    margin-bottom: 11rem;
+    position: relative;
+    top: 5rem;
+    width: 100%;
+  }
+  .linguagens {
+    margin-left: 0%;
+    height: auto;
+    width: 80vw;
+  }
+  .about {
+    width: 100vw;
+    margin-left: -25%;
+  }
+  .sobreProjetos {
+    text-align: center;
+    width: 520px;
+    margin: auto;
+    position: relative;
+    right: 178px;
+  }
+  .sobremim {
+    width: 200px;
+  }
+  .carde {
+    width: 80vw;
+    position: relative;
+    right: 200px;
+  }
+  .clique,
+  .botaoMostrar {
+    margin-left: 250px;
+  }
+  .headline p,
+  .headline h2 {
+    width: 100vw;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+  .container {
+    text-align: center;
+  }
+  .botaoMostrar {
+    text-align: center;
+    left: 0%;
+    position: relative;
+    width: 10rem;
+    margin-bottom: 20rem;
+    margin-top: 20rem;
+  }
+  .modal-content {
     width: 758px;
     color: white;
   }
@@ -1349,53 +1442,52 @@ body::-webkit-scrollbar-thumb {
   .modal-mario,
   .modal-dolar,
   .modal-financeiro,
-  .modal-carregar{
-    width: 1000px;
+  .modal-carregar {
+    width: 100vw;
     height: 100%;
-    left: -142px;
   }
-  #inverted-world{
+  #inverted-world {
     width: 180px;
   }
-  #buzzfeed{
+  #buzzfeed {
     width: 220px;
   }
-  #mario-world{
+  #mario-world {
     width: 150px;
     align-items: center;
   }
-  .imagemProjeto{
+  .imagemProjeto {
     /* margin-top: 20px; */
     bottom: 20px;
     width: 180px;
     position: relative;
   }
-  .imagemModal{
-    width: 460px;
+  .imagemModal {
+    width: 420px;
     margin-top: 20%;
     right: 0px;
     top: -60px;
   }
-  .about{
+  .about {
     width: 40vw;
     margin-left: -25%;
   }
-  section{
+  section {
     grid-template-columns: 1fr 1fr;
     display: grid;
   }
-  .square img{
+  .square img {
     bottom: 5px;
   }
-  .square{
+  .square {
     margin-top: -20px;
   }
-  .linguagens{
+  .linguagens {
     margin-left: 0%;
     height: auto;
     width: 59vw;
-}
-  .sobreProjetos{
+  }
+  .sobreProjetos {
     text-align: center;
     width: 620px;
     margin: auto;
@@ -1408,37 +1500,37 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     top: 5rem;
     width: 11rem;
+  }
+  #projetos {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+  }
+  .cardBox {
+    margin: 4px;
+    right: 10px;
+  }
+  .conhecimento {
+    width: 41vw;
+    left: -86px;
+    margin-bottom: 200px;
+    position: relative;
+  }
+  .joao-pedro-img > p {
+    left: 55%;
+    width: 85vw;
+    top: 55px;
+  }
+  .clique {
+    bottom: 400px;
+  }
+  .carde {
+    width: 700px;
+    position: relative;
+    right: 265px;
+  }
 }
-#projetos{
-  grid-template-columns: 1fr 1fr 1fr;
-  display: grid;
-}
-.cardBox{
-  margin: 4px;
-  right:  10px;
-}
-.conhecimento{
-  width: 41vw;
-  left: -86px;
-  margin-bottom: 200px;
-  position: relative;
-}
-.joao-pedro-img > p{
-  left: 55%;
-  width: 85vw;
-  top: 55px;
-}
-.clique{
-  bottom: 400px;
-}
-.carde{
-  width: 700px;
-  position: relative;
-  right: 265px;
-}
-}
- @media only screen and (min-width: 1024px) and (max-width: 1270px) {
-  .linguagens{
+@media only screen and (min-width: 1024px) and (max-width: 1270px) {
+  .linguagens {
     min-height: 10em;
     display: table-cell;
     vertical-align: middle;
@@ -1446,14 +1538,14 @@ body::-webkit-scrollbar-thumb {
     right: 0%;
     width: 70vw;
   }
-  .conhecimento{
+  .conhecimento {
     top: 200px;
     left: -86px;
     margin-bottom: 200px;
     position: relative;
     width: 41vw;
   }
-  .modal-content{
+  .modal-content {
     width: 758px;
     color: white;
   }
@@ -1463,34 +1555,34 @@ body::-webkit-scrollbar-thumb {
   .modal-mario,
   .modal-dolar,
   .modal-financeiro,
-  .modal-carregar{
-    width: 1000px;
+  .modal-carregar {
+    width: 100vw;
     height: 100%;
-    left: -142px;
   }
-  #inverted-world{
+  #inverted-world {
     width: 180px;
   }
-  #buzzfeed{
+  #buzzfeed {
     width: 220px;
   }
-  #mario-world{
+  #mario-world {
     width: 150px;
     align-items: center;
   }
-  .imagemProjeto{
+  .imagemProjeto {
     /* margin-top: 20px; */
     bottom: 20px;
     width: 180px;
     position: relative;
   }
-  .imagemModal{
+  .imagemModal {
     width: 460px;
     margin-top: 20%;
     right: 0px;
     top: -60px;
   }
-  .botaoMostrar,.clique{
+  .botaoMostrar,
+  .clique {
     text-align: center;
     left: 0%;
     position: relative;
@@ -1500,37 +1592,38 @@ body::-webkit-scrollbar-thumb {
     margin-left: 46%;
     top: -80px;
   }
-  .about{
-    width:52rem;
+  .about {
+    width: 52rem;
   }
-  .sobreProjetos{
+  .sobreProjetos {
     width: 450px;
     right: 6rem;
-    position: relative
+    position: relative;
   }
-  section{
+  section {
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
   }
 
   .imagemprincipal {
-    left:50%;
+    left: 50%;
     top: 9rem;
     margin-bottom: 11rem;
     position: relative;
     width: 11rem;
-}
-  .square{
+  }
+  .square {
     margin-top: -20px;
   }
-  .carde{
+  .carde {
     width: 60vw;
     position: relative;
     right: 12rem;
   }
 }
- @media only screen and (min-width: 1280px) and (max-width: 1950px) {
-  .botaoMostrar, .clique{
+@media only screen and (min-width: 1280px) and (max-width: 1950px) {
+  .botaoMostrar,
+  .clique {
     text-align: center;
     left: 0%;
     position: relative;
@@ -1540,81 +1633,82 @@ body::-webkit-scrollbar-thumb {
     margin-left: 46%;
     top: 5px;
   }
-  .container-about{
+  .container-about {
     margin-top: 18%;
   }
-  
-  .sobreProjetos{
+
+  .sobreProjetos {
     width: 520px;
-    margin:auto;
+    margin: auto;
     top: 50%;
     position: relative;
   }
-  .linguagens{
+  .linguagens {
     height: auto;
     width: 60vw;
   }
-  .imagemprincipal{
+  .imagemprincipal {
     left: 50%;
     margin-bottom: 11rem;
     position: relative;
     top: 11rem;
     width: 11rem;
- }
+  }
   .joao-pedro-img > p {
     width: 900px;
   }
-  .carde{
+  .carde {
     margin-top: 0%;
     right: 50%;
     position: relative;
     width: 40vw;
   }
-  .sobremim{
+  .sobremim {
     left: 5%;
     position: relative;
   }
- }
- @media only screen and (min-width: 1960px){
+}
+@media only screen and (min-width: 1960px) {
   .imagemprincipal {
     left: 38%;
     margin-bottom: 11rem;
     position: relative;
     top: 14rem;
     width: 11rem;
- }
- .clique{
-  left: 45%;
-  width: auto;
-  margin-bottom: 500px;
-}
- .botaoMostrar{
-  text-align: center;
-  left: 0%;
-  position: relative;
-  width: 10rem;
-  margin-bottom: 11rem;
-  z-index: 1;
-  margin-left: 46%;
-}
-.sobremim{
-  margin-left: 100px;
-}
-.container-about{
-  margin-top: 50px;
-}
-.modal-content{
-  width: 1208px;
-  color: white;
-  margin-top: 250px;
-}
- .linguagens{
-  margin-top: 100px;
-  height: auto;
- }
- .sobreProjetos,.project{
-  position: relative;
-  margin-bottom: 100px;
-  left: 10%;
- }
+  }
+  .clique {
+    left: 45%;
+    width: auto;
+    margin-bottom: 500px;
+  }
+  .botaoMostrar {
+    text-align: center;
+    left: 0%;
+    position: relative;
+    width: 10rem;
+    margin-bottom: 11rem;
+    z-index: 1;
+    margin-left: 46%;
+  }
+  .sobremim {
+    margin-left: 100px;
+  }
+  .container-about {
+    margin-top: 50px;
+  }
+  .modal-content {
+    width: 1208px;
+    color: white;
+    margin-top: 250px;
+  }
+  .linguagens {
+    margin-top: 100px;
+    height: auto;
+  }
+  .sobreProjetos,
+  .project {
+    position: relative;
+    margin-bottom: 100px;
+    left: 10%;
+  }
 }
