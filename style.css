@@ -1,40 +1,35 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-html,
-body {
-  font-family: "Inter", sans-serif;
-  font-family: Calibri;
-  font-weight: 100;
-  background-color: rgba(10, 25, 47, 0.9);
-  color: #ffffff;
+* {
   margin: 0;
-  scroll-behavior: smooth;
-}
-#player {
-  position: fixed;
-  min-width: 100%;
-  opacity: 0.8;
-  z-index: -1;
-  min-height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Space Mono";
 }
 .h3 {
   font-size: 19px;
 }
+#alterarTemaSite{
+  background-color: none;
+  font-size: 11px;
+  border-radius: 12px;
+}
 .btn {
   font-size: 17px;
-  background: transparent;
   border: none;
   padding: 10px;
-  color: #ffedd3;
-  text-transform: capitalize;
+  background-color: #353637;
+  color: yellow;
+  text-transform: lowercase;
   position: relative;
   transition: 0.5s ease;
   cursor: pointer;
 }
-
+#botaoCorProjeto,
+#ButtonProjeto {
+  color: rgb(2, 162, 127);
+  font-family: "Inter";
+}
 .btn::before {
   content: "";
   position: absolute;
@@ -45,49 +40,35 @@ body {
   background-color: #ffc506;
   transition: 0.5s ease;
 }
-
+#textAbout,
+#textoAbout,
+#aboutText{
+  color: rgb(255, 255, 255);
+}
 .btn:hover {
-  color: #ffc506;
+  color: #765d0b;
   transition-delay: 0.5s;
 }
-
 .btn:hover::before {
   width: 100%;
 }
-
 .btn::after {
   content: "";
   position: absolute;
   left: 0;
   bottom: 0;
   height: 0;
+  color: #000000;
   width: 100%;
-  background-color: #ffc506;
+  background-color: #000000;
   transition: 0.4s ease;
   z-index: -1;
 }
-
 .btn:hover::after {
-  height: 100%;
   transition-delay: 0.4s;
   color: aliceblue;
 }
-.modal,
-.modal-buzz,
-.modal-world,
-.modal-mario,
-.modal-dolar,
-.modal-financeiro,
-.modal-carregar {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  background: rgb(33, 34, 36);
-  width: 100%;
-  height: 100%;
-}
+
 h5 {
   color: rgb(132, 127, 127);
   text-decoration: none;
@@ -95,31 +76,11 @@ h5 {
 h5:hover {
   color: bisque;
 }
-.modal-content {
-  background-color: #000711;
-  border-radius: 16px;
-  margin: 15% auto;
-  padding: 20px;
-  max-width: 60%;
-  text-align: center;
-}
-.modal-content {
-  width: 758px;
-  color: white;
-}
 .imagemProjeto,
 #inverted-world {
   bottom: 20px;
   width: 200px;
   position: relative;
-}
-.modal-content {
-  width: 758px;
-  color: white;
-}
-.imagemModal {
-  width: 460px;
-  right: 0px;
 }
 .close {
   color: bisque;
@@ -151,14 +112,9 @@ h5:hover {
   background-image: linear-gradient(90deg, #420880, #2f0b78, #0353a3, #0170f0);
 }
 .imagemprincipal {
-  margin-bottom: 5rem;
-  border: 3px solid #102a9c;
+  margin-bottom: 8rem;
   border-radius: 215px;
-  width: 1rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 12rem;
 }
 .navbar {
   display: flex;
@@ -202,77 +158,10 @@ h5:hover {
   flex: 1;
   padding-bottom: 96px;
 }
-.about {
-  width: 75vw;
-  margin-left: -25%;
+#about {
+  width: 42vw;
+  margin-left: 25%;
   text-align: center;
-}
-@property --progress-value {
-  syntax: "<integer>";
-  inherits: false;
-  initial-value: 0;
-}
-@keyframes html-progress {
-  to {
-    --progress-value: 92;
-  }
-}
-@keyframes css-progress {
-  to {
-    --progress-value: 85;
-  }
-}
-@keyframes sql-progress {
-  to {
-    --progress-value: 80;
-  }
-}
-@keyframes js-progress {
-  to {
-    --progress-value: 65;
-  }
-}
-@keyframes ts-progress {
-  to {
-    --progress-value: 45;
-  }
-}
-@keyframes php-progress {
-  to {
-    --progress-value: 40;
-  }
-}
-@keyframes angular-progress {
-  to {
-    --progress-value: 35;
-  }
-}
-@keyframes tailwind-progress {
-  to {
-    --progress-value: 30;
-  }
-}
-.html,
-.php,
-.sql,
-.ts,
-.js,
-.angular,
-.css,
-.tailwind {
-  display: table-cell;
-  vertical-align: middle;
-  height: auto;
-  right: 0%;
-}
-label {
-  font-size: 12px;
-  margin: 5px;
-  font-family: "Space Mono", monospace;
-  font-weight: 200;
-  text-align: center;
-  display: grid;
-  color: #64ffda;
 }
 .progress-bar {
   width: 70px;
@@ -296,143 +185,6 @@ label {
 .progress-bar::before {
   counter-reset: percentage var(--progress-value);
   content: counter(percentage) "%";
-}
-
-.html {
-  background: radial-gradient(closest-side, #1d1e1f 79%, transparent 80% 100%),
-    conic-gradient(
-      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
-      pink 0
-    );
-  animation: html-progress 10s 1 forwards;
-  color: rgb(255, 255, 255);
-}
-.html::before {
-  animation: html-progress 10s 1 forwards;
-}
-.css {
-  background: radial-gradient(
-      closest-side,
-      #1d1e1f 79%,
-      transparent 80% 100%,
-      rgba(20, 5, 134, 0.475) 0
-    ),
-    conic-gradient(
-      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
-      pink 0
-    );
-  animation: css-progress 10s 1 forwards;
-  color: rgb(255, 255, 255);
-}
-.css::before {
-  animation: css-progress 10s 1 forwards;
-}
-.js {
-  background: radial-gradient(
-      closest-side,
-      #1d1e1f 79%,
-      transparent 80% 100%,
-      rgba(20, 5, 134, 0.475) 0
-    ),
-    conic-gradient(
-      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
-      pink 0
-    );
-  animation: js-progress 10s 1 forwards;
-  color: rgb(255, 255, 255);
-}
-.js::before {
-  animation: js-progress 10s 1 forwards;
-}
-.ts {
-  background: radial-gradient(
-      closest-side,
-      #1d1e1f 79%,
-      transparent 80% 100%,
-      rgba(20, 5, 134, 0.475) 0
-    ),
-    conic-gradient(
-      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
-      pink 0
-    );
-  animation: ts-progress 10s 1 forwards;
-  color: rgb(255, 255, 255);
-}
-.ts::before {
-  animation: ts-progress 10s 1 forwards;
-}
-.php {
-  background: radial-gradient(
-      closest-side,
-      #1d1e1f 79%,
-      transparent 80% 100%,
-      rgba(20, 5, 134, 0.475) 0
-    ),
-    conic-gradient(
-      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
-      pink 0
-    );
-  animation: php-progress 10s 1 forwards;
-  color: rgb(255, 255, 255);
-}
-.php::before {
-  animation: php-progress 10s 1 forwards;
-}
-.sql {
-  background: radial-gradient(
-      closest-side,
-      #1d1e1f 79%,
-      transparent 80% 100%,
-      rgba(20, 5, 134, 0.475) 0
-    ),
-    conic-gradient(
-      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
-      pink 0
-    );
-  animation: sql-progress 10s 1 forwards;
-  color: rgb(255, 255, 255);
-}
-.sql::before {
-  animation: sql-progress 10s 1 forwards;
-}
-.angular {
-  background: radial-gradient(
-      closest-side,
-      #1d1e1f 79%,
-      transparent 80% 100%,
-      rgba(20, 5, 134, 0.475) 0
-    ),
-    conic-gradient(
-      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
-      pink 0
-    );
-  animation: angular-progress 10s 1 forwards;
-  color: rgb(255, 255, 255);
-}
-.angular::before {
-  animation: angular-progress 10s 1 forwards;
-}
-.tailwind {
-  background: radial-gradient(
-      closest-side,
-      #1d1e1f 79%,
-      transparent 80% 100%,
-      rgba(20, 5, 134, 0.475) 0
-    ),
-    conic-gradient(
-      rgba(20, 5, 134, 0.475) calc(var(--progress-value) * 1%),
-      pink 0
-    );
-  animation: tailwind-progress 10s 1 forwards;
-  color: rgb(255, 255, 255);
-}
-.tailwind::before {
-  animation: tailwind-progress 10s 1 forwards;
-}
-progress {
-  visibility: hidden;
-  width: 0;
-  height: 0;
 }
 .headline h2 {
   font-size: 50px;
@@ -476,82 +228,12 @@ progress {
   width: 20%;
 }
 /* Seu estilo CSS */
-.conteudo {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0.5s;
-}
 
-.conteudo.mostrando {
-  opacity: 1;
-  visibility: visible;
+.container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-.botaoMostrar {
-  font-size: 18px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  display: inline-block;
-  cursor: pointer;
-  font-weight: bold;
-  background-color: red;
-  padding: 0.7em 2em;
-  border: 3px solid #110a34;
-  font-family: "Inter";
-  font-weight: 100;
-  position: relative;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s ease all;
-  width: 10rem;
-  border-radius: 16px;
-  bottom: 18rem;
-  z-index: 1;
-}
-.clique {
-  bottom: 9rem;
-  cursor: none;
-  position: relative;
-  text-decoration: none;
-  color: white;
-}
-.clique::after {
-  display: none;
-}
-.botaoMostrar::before {
-  transition: 0.5s all ease;
-  position: absolute;
-  top: 0;
-  border-radius: 12px;
-  left: 50%;
-  right: 50%;
-  bottom: 0;
-  opacity: 0;
-  content: "";
-  z-index: -1;
-}
-.botaoMostrar:hover,
-.botaoMostrar:focus {
-  color: white;
-  background-color: #353333;
-}
-.botaoMostrar:hover::before,
-.botaoMostrar:focus::before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
-}
-.botaoMostrar:active {
-  transform: scale(0.9);
-}
-.container-about {
+#container-about {
   background-color: #1d1e1f;
-  margin-top: -18%;
-  position: relative;
-  width: 100vw;
-  display: flex;
   align-items: center;
   border-radius: 35px;
   justify-content: center;
@@ -574,17 +256,15 @@ progress {
   width: 40vw;
   color: #ffff00;
   height: 45vh;
+  display: inline-block;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  font-family: "Space Mono", monospace;
   grid-template-rows: 1fr 1fr 1fr;
   top: 30vh;
   margin-bottom: 22vh;
   position: relative;
   transition: 0.5s;
   text-align: center;
-  margin: 0;
   position: relative; /* 2 */
-  top: 50%; /* 3 */
   transform: translate(0, -50%);
 } /* 4 */
 .linguagens > h1 {
@@ -617,7 +297,7 @@ progress {
   max-height: 50px;
   border-radius: 10px;
   position: relative;
-  bottom: 2px;
+  bottom: 20px;
 }
 .square p {
   position: relative;
@@ -687,39 +367,6 @@ h4 {
   position: relative;
 }
 
-.cardBox {
-  width: 250px;
-  height: 300px;
-  position: relative;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  margin: 16px;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
-    rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
-}
-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-left: 15%;
-}
-.card {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #120934;
-  text-align: center;
-  color: #ffffff;
-  overflow: hidden;
-  padding: 20px;
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
-}
 .project {
   display: flex;
   color: bisque;
@@ -728,17 +375,6 @@ section {
   margin-right: auto;
   position: relative;
 }
-.card .h4 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  font-weight: 800;
-  pointer-events: none;
-  opacity: 1;
-}
-
 summary {
   font-size: 12px;
   width: 100%;
@@ -750,18 +386,17 @@ summary {
   height: 1px;
 }
 
-.back-to-top {
-  display: none;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px;
-  background-color: #d25513;
-  color: #000000;
-  border-radius: 50%;
+#back-to-top {
+  background-color: #110332;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  position: relative;
+  border-radius: 25px;
   cursor: pointer;
-  transition: 1s;
   z-index: 999;
+  display: inline-block;
 }
 
 /* Estilos de hover do botão */
@@ -784,11 +419,10 @@ body::-webkit-scrollbar-thumb {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(216, 213, 9, 0.785); 
-  background: rgba(216, 213, 9, 0.785); 
-
+  background: rgba(216, 213, 9, 0.785);
   background: rgba(216, 213, 9, 0.785);
 
+  background: rgba(216, 213, 9, 0.785);
 }
 
 @keyframes glowing_401 {
@@ -968,66 +602,22 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.1);
 }
 @media only screen and (min-width: 320px) and (max-width: 420px) {
-  .imagemprincipal {
-    width: 11rem;
-    left: 2rem;
-    position: relative;
-    margin-top: 131px;
-    bottom: 50px;
-  }
-  .modal-content {
-    width: 97vw;
-    color: white;
-    left: -15px;
-    max-width: 80%;
-    position: relative;
-  }
-  .modal,
-  .modal-buzz,
-  .modal-world,
-  .modal-mario,
-  .modal-dolar,
-  .modal-financeiro,
-  .modal-carregar {
-    width: 503px;
-    height: 100%;
-    left: -52px;
-  }
   #mario-world {
     width: 125px;
   }
   #inverted-world {
     width: 120px;
   }
-  .imagemProjeto{
+  
+  .imagemProjeto {
     right: 12px;
     margin-top: 20px;
     bottom: 20px;
     width: auto;
     position: relative;
   }
-  .imagemModal {
-    width: 273px;
-    margin-top: 33%;
-    right: 8px;
-    top: -60px;
-  }
-  .botaoMostrar {
-    text-align: center;
-    left: 27%;
-    position: relative;
-    width: 10rem;
-    top: 0;
-    margin-bottom: 30rem;
-  }
   #projetos {
     grid-template-columns: 1fr 1fr;
-  }
-  .card,
-  .cardBox {
-    width: 145px;
-    height: 320px;
-    margin: 6px;
   }
   section {
     grid-template-columns: 1fr 1fr;
@@ -1054,11 +644,7 @@ body::-webkit-scrollbar-thumb {
     width: 300px;
     margin-left: -117px;
   }
-  .clique {
-    bottom: 400px;
-    text-align: center;
-    font-size: 18px;
-  }
+
   .conhecimento {
     font-size: 28px;
     text-align: center;
@@ -1070,9 +656,13 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     top: 20px;
   }
-  .container-about {
-    margin-top: -221px;
-    position: relative;
+  #textAbout,
+  #textoAbout,
+  #aboutText {
+    margin-left: -66px;
+    width: 280px;
+    font-size: 17px;
+    color: yellow;
   }
   .joao-pedro-img > p {
     font-size: 18px;
@@ -1090,10 +680,7 @@ body::-webkit-scrollbar-thumb {
   .buttons {
     flex-direction: column;
   }
-  .carde {
-    width: 89vw;
-    margin-left: -112px;
-  }
+
   .card-social__item {
     margin-left: -20px;
   }
@@ -1101,9 +688,9 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     height: auto;
     top: 55vh;
+    display: inline-block;
     margin-bottom: 25vh;
     width: 93vw;
-    margin-top: -80%;
     bottom: -34%;
     justify-items: center;
     right: 4px;
@@ -1113,13 +700,13 @@ body::-webkit-scrollbar-thumb {
     width: 70px;
     height: 70px;
   }
-  
+
   .square img {
     max-width: 50px;
     max-height: 50px;
     border-radius: 10px;
     position: relative;
-    bottom: 2px;
+    bottom: 20px;
   }
   .linguagens > h1 {
     font-size: 28px;
@@ -1141,34 +728,19 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     position: relative;
     left: 1%;
-    margin-top: 20px;
+    margin-top: 40px;
   }
 }
 @media only screen and (min-width: 424px) and (max-width: 520px) {
   body {
     max-width: 440px;
   }
-  .botaoMostrar {
-    text-align: center;
-    left: 25%;
-    position: relative;
-    width: 12rem;
-    margin-top: 10rem;
-  }
-  .modal-content {
-    width: 420px;
-    color: white;
-  }
-  .modal,
-  .modal-buzz,
-  .modal-world,
-  .modal-mario,
-  .modal-dolar,
-  .modal-financeiro,
-  .modal-carregar {
-    width: 700px;
-    height: 100%;
-    left: -142px;
+  #textAbout,
+  #textoAbout,
+  #aboutText {
+    width: 350px;
+    font-size: 22px;
+    margin-left: -70px;
   }
   #inverted-world {
     width: 120px;
@@ -1183,17 +755,11 @@ body::-webkit-scrollbar-thumb {
     width: auto;
     position: relative;
   }
-  .imagemModal {
-    width: 400px;
-    margin-top: 33%;
-    right: 10px;
-    top: -60px;
-    position: relative;
-  }
+
   .headline p {
     width: 370px;
     position: relative;
-    font-size: 19px;
+    font-size: 26px;
     flex-direction: column;
     margin-bottom: 40px;
   }
@@ -1214,10 +780,6 @@ body::-webkit-scrollbar-thumb {
   }
   .card-social__item {
     margin-left: -20px;
-  }
-  .container-about {
-    margin-top: 25%;
-    width: 100%;
   }
   .buttons {
     flex-direction: column;
@@ -1254,8 +816,8 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     top: 55vh;
     margin-bottom: 25vh;
-    width: 100vw;
-    margin-top: -80%;
+    width: 93vw;
+    margin-top: -80px;
     bottom: -34%;
     justify-items: center;
   }
@@ -1273,13 +835,7 @@ body::-webkit-scrollbar-thumb {
     right: 100px;
     position: relative;
   }
-  .imagemprincipal {
-    width: 15rem;
-    left: 3rem;
-    position: relative;
-    margin-bottom: 20rem;
-    top: 7rem;
-  }
+
   .navbar {
     flex-direction: column;
     display: flex;
@@ -1288,11 +844,11 @@ body::-webkit-scrollbar-thumb {
     position: relative;
   }
   .navbar .logo {
-    font-size: 18px;
+    font-size: 25px;
     display: flex;
     position: relative;
     left: 0%;
-    margin-top: 20px;
+    margin-top: 40px;
   }
   section {
     grid-template-columns: 1fr 1fr;
@@ -1317,27 +873,10 @@ body::-webkit-scrollbar-thumb {
     font-size: 12px;
     padding: 0;
   }
-
-  .clique {
-    text-align: center;
-    font-size: 18px;
-  }
-  .carde {
-    margin-left: -130%;
-    width: 75vw;
-  }
 }
 @media only screen and (min-width: 521px) and (max-width: 767px) {
   #projetos {
     grid-template-columns: 1fr 1fr;
-  }
-  .botaoMostrar {
-    text-align: center;
-    left: 0%;
-    position: relative;
-    width: 10rem;
-    margin-bottom: 20rem;
-    margin-top: 20rem;
   }
   .sobreProjetos {
     text-align: center;
@@ -1345,20 +884,6 @@ body::-webkit-scrollbar-thumb {
     margin: auto;
     position: relative;
     right: 230px;
-  }
-  .modal-content {
-    width: 420px;
-    color: white;
-  }
-  .modal,
-  .modal-buzz,
-  .modal-world,
-  .modal-mario,
-  .modal-dolar,
-  .modal-financeiro,
-  .modal-carregar {
-    width: 100vw;
-    height: 100%;
   }
   #inverted-world {
     width: 120px;
@@ -1373,28 +898,19 @@ body::-webkit-scrollbar-thumb {
     width: auto;
     position: relative;
   }
-  .imagemModal {
-    width: 380px;
-    margin-top: 33%;
-    right: 8px;
-    top: -60px;
-  }
-  .imagemprincipal {
+  /* .imagemprincipal {
     left: 50%;
     margin-bottom: 11rem;
     position: relative;
     top: 5rem;
     width: 100%;
-  }
+  } */
   .linguagens {
     margin-left: 0%;
     height: auto;
     width: 80vw;
   }
-  .about {
-    width: 100vw;
-    margin-left: -25%;
-  }
+
   .sobreProjetos {
     text-align: center;
     width: 520px;
@@ -1410,10 +926,6 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     right: 200px;
   }
-  .clique,
-  .botaoMostrar {
-    margin-left: 250px;
-  }
   .headline p,
   .headline h2 {
     width: 100vw;
@@ -1423,28 +935,6 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (min-width: 768px) and (max-width: 1020px) {
   .container {
     text-align: center;
-  }
-  .botaoMostrar {
-    text-align: center;
-    left: 0%;
-    position: relative;
-    width: 10rem;
-    margin-bottom: 20rem;
-    margin-top: 20rem;
-  }
-  .modal-content {
-    width: 758px;
-    color: white;
-  }
-  .modal,
-  .modal-buzz,
-  .modal-world,
-  .modal-mario,
-  .modal-dolar,
-  .modal-financeiro,
-  .modal-carregar {
-    width: 100vw;
-    height: 100%;
   }
   #inverted-world {
     width: 180px;
@@ -1462,30 +952,22 @@ body::-webkit-scrollbar-thumb {
     width: 180px;
     position: relative;
   }
-  .imagemModal {
-    width: 420px;
-    margin-top: 20%;
-    right: 0px;
-    top: -60px;
-  }
-  .about {
-    width: 40vw;
-    margin-left: -25%;
-  }
+
   section {
     grid-template-columns: 1fr 1fr;
     display: grid;
   }
   .square img {
-    bottom: 5px;
+    bottom: 20px;
   }
   .square {
     margin-top: -20px;
   }
   .linguagens {
-    margin-left: 0%;
+    margin-left: 19px;
     height: auto;
-    width: 59vw;
+    width: 86vw;
+    display: inline-block;
   }
   .sobreProjetos {
     text-align: center;
@@ -1494,13 +976,13 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     right: 230px;
   }
-  .imagemprincipal {
+  /* .imagemprincipal {
     left: 50%;
     margin-bottom: 11rem;
     position: relative;
     top: 5rem;
     width: 11rem;
-  }
+  } */
   #projetos {
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
@@ -1520,23 +1002,13 @@ body::-webkit-scrollbar-thumb {
     width: 85vw;
     top: 55px;
   }
-  .clique {
-    bottom: 400px;
-  }
-  .carde {
-    width: 700px;
-    position: relative;
-    right: 265px;
-  }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1270px) {
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .linguagens {
-    min-height: 10em;
-    display: table-cell;
-    vertical-align: middle;
+    margin-left: 23px;
     height: auto;
-    right: 0%;
-    width: 70vw;
+    width: 87vw;
+    display: inline-block;
   }
   .conhecimento {
     top: 200px;
@@ -1544,20 +1016,6 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 200px;
     position: relative;
     width: 41vw;
-  }
-  .modal-content {
-    width: 758px;
-    color: white;
-  }
-  .modal,
-  .modal-buzz,
-  .modal-world,
-  .modal-mario,
-  .modal-dolar,
-  .modal-financeiro,
-  .modal-carregar {
-    width: 100vw;
-    height: 100%;
   }
   #inverted-world {
     width: 180px;
@@ -1575,26 +1033,7 @@ body::-webkit-scrollbar-thumb {
     width: 180px;
     position: relative;
   }
-  .imagemModal {
-    width: 460px;
-    margin-top: 20%;
-    right: 0px;
-    top: -60px;
-  }
-  .botaoMostrar,
-  .clique {
-    text-align: center;
-    left: 0%;
-    position: relative;
-    width: 10rem;
-    margin-bottom: 10rem;
-    z-index: 1;
-    margin-left: 46%;
-    top: -80px;
-  }
-  .about {
-    width: 52rem;
-  }
+
   .sobreProjetos {
     width: 450px;
     right: 6rem;
@@ -1605,38 +1044,18 @@ body::-webkit-scrollbar-thumb {
     display: grid;
   }
 
-  .imagemprincipal {
+  /* .imagemprincipal {
     left: 50%;
     top: 9rem;
     margin-bottom: 11rem;
     position: relative;
     width: 11rem;
-  }
+  } */
   .square {
     margin-top: -20px;
   }
-  .carde {
-    width: 60vw;
-    position: relative;
-    right: 12rem;
-  }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1950px) {
-  .botaoMostrar,
-  .clique {
-    text-align: center;
-    left: 0%;
-    position: relative;
-    width: 10rem;
-    margin-bottom: 11rem;
-    z-index: 1;
-    margin-left: 46%;
-    top: 5px;
-  }
-  .container-about {
-    margin-top: 18%;
-  }
-
   .sobreProjetos {
     width: 520px;
     margin: auto;
@@ -1645,61 +1064,31 @@ body::-webkit-scrollbar-thumb {
   }
   .linguagens {
     height: auto;
-    width: 60vw;
-  }
-  .imagemprincipal {
-    left: 50%;
-    margin-bottom: 11rem;
-    position: relative;
-    top: 11rem;
-    width: 11rem;
+    width: 80vw;
   }
   .joao-pedro-img > p {
     width: 900px;
   }
-  .carde {
-    margin-top: 0%;
-    right: 50%;
-    position: relative;
-    width: 40vw;
-  }
+
   .sobremim {
     left: 5%;
     position: relative;
   }
 }
 @media only screen and (min-width: 1960px) {
-  .imagemprincipal {
+  /* .imagemprincipal {
     left: 38%;
     margin-bottom: 11rem;
     position: relative;
     top: 14rem;
     width: 11rem;
-  }
-  .clique {
-    left: 45%;
-    width: auto;
-    margin-bottom: 500px;
-  }
-  .botaoMostrar {
-    text-align: center;
-    left: 0%;
-    position: relative;
-    width: 10rem;
-    margin-bottom: 11rem;
-    z-index: 1;
-    margin-left: 46%;
-  }
+  } */
   .sobremim {
     margin-left: 100px;
   }
-  .container-about {
-    margin-top: 50px;
-  }
-  .modal-content {
-    width: 1208px;
-    color: white;
-    margin-top: 250px;
+  #about {
+    margin-left: 0;
+    width: auto;
   }
   .linguagens {
     margin-top: 100px;

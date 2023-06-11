@@ -1,96 +1,67 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-br" data-bs-theme="Light">
 
 <head>
-
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="shortcut icon" href="/assets/imgs/favicon-32x32.png" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JoaoP Developer.</title>
-  <link rel="stylesheet" href="style_principal.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <script src="https://unpkg.com/scrollreveal"></script>
   <script>
     ScrollReveal().reveal('.headline');
   </script>
+  <title>Portfólio - JoaoPDeveloper</title>
 </head>
 
 <body>
-  <!-- <div> -->
   <div class="progress">
     <span class="bar"></span>
-  </div>
-  <video autoplay muted loop id="player">
-    <source src="/assets/imgs/pexels-nino-souza-2278095-426x240-30fps.mp4" type="video/mp4" />
-  </video>
   </div>
 
   <div class="container">
     <div class="content">
       <nav class="navbar">
-        <h2 class="logo">!= JoaoPDeveloper_</h2>
-
+        <h2 class="logo">!=JoaoPDeveloper_</h2>
+        <button id="alterarTemaSite" class="btn btn-secondary mb-lg-5 position-absolute top-0 end-0"
+          onclick="alterarTemaSite()" title="Dark Mode!">Light Mode
+          <i class="bi bi-brightness-high-fill"></i>
+        </button>
       </nav>
       <div class="headline" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-        <h2 alt="texto-iniciativo">
+        <h2 alt="texto-iniciativo" class="text-center" id="textoInicial">
           < Olá, Seja bem vindo ao web portfólio />
         </h2>
-        <p alt="sobre-mim">
-          Meu Nome é João Pedro e sou um desenvolvedor web, Convido você a explorar o meu portfólio e conhecer um pouco
-          mais sobre o que eu tenho a oferecer. Estou sempre em busca de novos desafios e oportunidades para crescer
-          como profissional no mundo do desenvolvimento! 🚀😁
+        <p alt="sobre-mim" class="text-center" id="textoPrincipal">
+          Meu Nome é João Pedro e sou um desenvolvedor web, Estou sempre em busca de novos desafios e oportunidades para
+          crescer como profissional no mundo do desenvolvimento! 🚀😁
         </p>
-        <div class="buttons">
-          <a href="#footer" class="get-started" alt="botao de contato">Contato </a>
-          <a href="#projetos" alt="BotaoDeprojetos">
-            <button class="continue-application">
-              <div>
-                <div class="pencil"></div>
-                <div class="folder">
-                  <div class="top">
-                    <svg viewBox="0 0 24 27">
-                      <path
-                        d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
-                      </path>
-                    </svg>
-                  </div>
-                  <div class="paper"></div>
-                </div>
-              </div>
-              Projetos
-            </button>
-          </a>
-        </div>
-      </div>
-      <a href="#container-about">
-        <button id="botaoMostrar" class="botaoMostrar">Let's rock! 🤘
-        </button>
 
-        <div class="conteudo">
-      </a>
-      <div class="container-about" id="container-about">
-        <span class="joao-pedro-img">
-          <h2 class="sobremim" id="sobremim" alt="FotoJoao">Um pouco sobre mim...</h2>
-          <img class="imagemprincipal" src="/assets/imgs/95835981.png" </span>
-          <p class="about" alt="SobreMim">
-            Meu nome é João Pedro Lima Pereira, tenho 25 anos e sou apaixonado por jogos e desenvolvimento em geral.
-            Atualmente, trabalho como Help-Desk Nível 2 e estou cursando Análise e Desenvolvimento de Sistemas na
-            Faculdade Estácio.
-            Desde que me envolvi com programação, mergulhei de cabeça em estudos para aprimorar minhas habilidades.
-            Hoje, tenho conhecimento em várias linguagens, como JavaScript, TypeScript, PHP e SQL, e utilizo essas
-            habilidades para desenvolver projetos incríveis, sejam jogos ou aplicativos.
-            Aqui neste espaço, você pode conferir alguns dos meus projetos já concluídos, assim como aqueles que estão
-            em fase de desenvolvimento. Cada projeto é uma oportunidade de aprender e aprimorar minhas habilidades,
-            buscando sempre soluções criativas e eficientes.
-            Fique à vontade para entrar em contato comigo e quem sabe podemos trabalhar juntos para criar projetos
-            incríveis!</p>
-          </p>
+      </div>
+      <div class="text-center" id="container-about">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="text-center" id="container-about">
+              <br><br>
+              <span class="joao-pedro-img">
+                <img class="imagemprincipal" src="/assets/imgs/95835981.png">
+              </span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <br><br>
+            <div id="about">
+              <p class="text-center" id="textAbout">🏫 Atualmente estou cursando Análise e Desenvolvimento de Sistemas na Faculdade Estácio.</p>
+              <p class="text-center" id="textoAbout">🏢 Estou em mudança de área de Suporte para Desenvolvimento.</p>
+              <p class="text-center" id="aboutText">😁 Fique à vontade para entrar em contato comigo e quem sabe podemos trabalhar juntos para criar projetos incríveis!</p>
+            </div>
+          </div>
+        </div>
           <section>
             <div class="linguagens">
               <h1>Principais <strong>Tecnologias</strong> e Frameworks</h1>
@@ -107,7 +78,7 @@
                 <a href="https://www.php.net/" target="_blank"
                   style="text-decoration: none;color: white; transition: 0.5s; opacity: 1; ">
                   <img class="img_php" id="quadrado" src="https://www.php.net/images/logos/new-php-logo.svg" style="position: relative; 
-              bottom: 20%">
+            bottom: 20%">
                   <p class="ph" id="php">PHP</p>
                 </a>
               </div>
@@ -156,7 +127,7 @@
                   style="text-decoration: none; color: white; transition: 0.5s; opacity: 1;">
                   <img id="quadrado" class="foto"
                     src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-                    style="background-color: bisque; position: relative; bottom: 10%; padding: 12px">
+                    style="background-color: bisque; position: relative; padding: 12px">
                   <p>AWS</p>
                 </a>
               </div>
@@ -217,300 +188,32 @@
             </div>
           </section>
 
-          <h1 class="conhecimento">=! Niveis de Conhecimentos => </h1>
-          <section class="conhecimentos">
-            <div class="progress-bar-container">
-              <h2>
-                <label for="html">HTML</label>
-              </h2>
-              <div class="progress-bar html">
-                <progress id="html" min="0" max="100" value="90"></progress>
-              </div>
-            </div>
-            <div class="progress-bar-container">
-              <h2>
-                <label for="css">CSS</label>
-              </h2>
-              <div class="progress-bar css">
-                <progress id="css" min="0" max="100" value="85"></progress>
-              </div>
-            </div>
-            <div class="progress-bar-container">
-              <h2>
-                <label for="sql">SQL</label>
-              </h2>
-              <div class="progress-bar sql">
-                <progress id="sql" min="0" max="100" value="80"></progress>
-              </div>
-            </div>
-            <div class="progress-bar-container">
-              <h2>
-                <label for="js">JavaScript</label>
-              </h2>
-              <div class="progress-bar js">
-                <progress id="js" min="0" max="100" value="65"></progress>
-              </div>
-            </div>
-            <div class="progress-bar-container">
-              <h2>
-                <label for="ts">TypeScript</label>
-              </h2>
-              <div class="progress-bar ts">
-                <progress id="ts" min="0" max="100" value="45"></progress>
-              </div>
-            </div>
 
-            <div class="progress-bar-container">
-              <h2>
-                <label for="php">PHP</label>
-              </h2>
-              <div class="progress-bar php">
-                <progress id="php" min="0" max="100" value="40"></progress>
-              </div>
-            </div>
-            <div class="progress-bar-container">
-              <h2>
-                <label for="angular">Angular</label>
-              </h2>
-              <div class="progress-bar angular">
-                <progress id="angular" min="0" max="100" value="35"></progress>
-              </div>
-            </div>
-            <div class="progress-bar-container">
-              <h2>
-                <label for="Tailwind">Tailwind </label>
-              </h2>
-              <div class="progress-bar tailwind">
-                <progress id="tailwind" min="0" max="100" value="35"></progress>
-              </div>
-            </div>
-          </section>
+          <h1 class="text-center text-white p-3 mb-4">Lista de Projetos</h1>
 
-          <h1 class="project">Projetos</h1>
-          <h3 class="sobreProjetos">Aqui você pode verificar alguns projetos já prontos e outros em produção, todos
-            utilizando alguma das Tecnologias citadas acima!</h3>
-          <br>
-          <section id="projetos">
-            <!-- Pokedex -->
-            <div class="cardBox">
-              <div class="card">
-                <div class="content">
-                  <div class="h3">🦁 Pokedex</div>
-                  <br><br>
-                  <img src="https://i.ibb.co/T2Tgqv5/pokedex.png" style="border-radius: 16px;" alt="pokedex"
-                    class="imagemProjeto">
-                  <button class="btn" onclick="openPokedexModal()">Abrir Projeto</button>
+          <div class="container text-center">
+            <div class="row" id="cards">
+            </div>
+          </div>
+
+          <div class="modal fade" id="modalZoomImg" tabindex="-1" aria-labelledby="modalZoomImgNomeProjeto"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="modalZoomImgNomeProjeto">Carregando...</h1>
+                </div>
+                <div class="modal-body">
+                  <img src="" id="modalZoomImgProjeto" class="card-img-top" alt="Imagem do Projeto">
+                  <p id="modalZoomImgDescricaoProjeto" class="mt-3"></p>
+                  <a class="btn btn-primary btn-sm" href="" id="ButtonProjeto" onclick="" role="button">Ir Para o Projeto</a>
+                  <a class="btn btn-light" href="" id="ButtonGitHub" onclick="" role="button">Ir Para o Repositório</a>
                 </div>
               </div>
             </div>
-            <div class="modal" id="modal">
-              <div class="modal-content">
-                <span class="close" onclick="closePokedexModal()">&times;</span>
-                <h2>Projeto Pokedex</h2>
-                <img src="https://i.ibb.co/bLYYS49/image.png" class="imagemModal" style="border-radius: 16px;"
-                  alt="pokedex">
-                <p>Esse projeto foi um grande desafio puxar os dados da Api e aplicar no front-end, porém com muito
-                  estudo e dedicação, consegui concluir ele de maneira até que rápida, Adicionei um Modal para cada
-                  Pokemon e utilizando a cor de cada elemento que também é puxada da API!
-                  <br><br>
-                  Tecnologias utilizadas: JavaScript, HTML, CSS3 e APi do Pokemon!
-                </p>
-                <a href="https://pokedex-joaopdeveloper.netlify.app/">
-                  <h5 style="text-decoration: none; font-size: 16px;">
-                    Link do Projeto
-                  </h5>
-                </a>
-              </div>
-            </div>
-            <!-- Fim Pokedex -->
-            <!-- Buzz-feed -->
-            <div class="cardBox">
-              <div class="card">
-                <div class="content">
-                  <div class="h3">Buzz Feed</div>
-                  <br><br>
-                  <img src="https://i.ibb.co/3zgg7M4/buzz-feed.png" style="border-radius: 16px;" alt="pokedex"
-                    id="buzzfeed" class="imagemProjeto">
-                  <button class="btn" onclick="openBuzzfeedModal()">Abrir Projeto</button>
-                </div>
-              </div>
-            </div>
-            <div class="modal-buzz" id="modal-buzz">
-              <div class="modal-content">
-                <span class="close" onclick="closeBuzzfeedModal()">&times;</span>
-                <img src="https://i.ibb.co/3zgg7M4/buzz-feed.png" class="imagemModal" style="border-radius: 16px;"
-                  alt="pokedex">
-                <h2>Projeto Buzz-Feed</h2>
-                <p>Projeto de um Clone do Buzz-feed utilizando TypeScript, Angular e Json para gerar novas perguntas e
-                  no final dar um resultado para o usuário, o Grande desafio desse projeto foi fazer as rotas para as
-                  perguntas e puxar um resultado final para o usuário,Site ficou totalmente responsivo sendo perfeito
-                  para se utilizar em Mobile, utilizei o Vercel para dar o deploy e host para o site!
-                  <br><br>
-                  Tecnologias utilizadas: JavaScript,TypeScript,Angular, HTML5 e CSS3
-                </p>
-                <a href="https://joaopdeveloper-buzzquizz.vercel.app/">
-                  <h5 style="text-decoration: none; font-size: 16px;">
-                    Link do Projeto
-                  </h5>
-                </a>
-              </div>
-            </div>
-            <!-- fim buzz feed -->
-            <!-- inverted-world -->
-            <div class="cardBox">
-              <div class="card">
-                <div class="content">
-                  <div class="h3"> 🌍 Mundo Invertido </div>
-                  <br><br>
-                  <img src="https://i.ibb.co/dPn3jKR/inverted-world.png" style="border-radius: 16px;" alt="pokedex"
-                    id="inverted-world" style="border-radius: 16px; " class="imagemProjeto">
-                  <button class="btn" onclick="openInvertedModal()">Abrir Projeto</button>
-                </div>
-              </div>
-            </div>
-            <div class="modal-world" id="modal-world">
-              <div class="modal-content">
-                <span class="close" onclick="closeInvertedModal()">&times;</span>
-                <img src="https://i.ibb.co/dPn3jKR/inverted-world.png" class="imagemModal" style="border-radius: 16px; "
-                  alt="pokedex">
-                <h2>Projeto Inverted World</h2>
-                <p>Projeto Feito em comemoração ao lançamento da Quarta Temporada de Stranger Things, o mundo se inverte
-                  de acordo com o que o usuário decide a partir do botão e no final da pagina, tem um formulario para o
-                  usuário colocar a descrição do seu personagem!
-                  <br><br>
-                  Tecnologias utilizadas: JavaScript, HTML, CSS3 e Google FireBase
-                </p>
-                <a href="https://inverted-world-z4rk01.netlify.app/">
-                  <h5 style="text-decoration: none; font-size: 16px;">
-                    Link do Projeto
-                  </h5>
-                </a>
-              </div>
-            </div>
-            <!-- fim inverter-world -->
-            <!-- Mario -->
-            <div class="cardBox">
-              <div class="card">
-                <div class="content">
-                  <div class="h3"> 🎮 Game Mario </div>
-                  <br><br>
-                  <img src="https://i.ibb.co/mcGJ2tx/mario.png" alt="pokedex" id="mario-world"
-                    style="border-radius: 16px; height: 90px; margin-top: 40px;" class="imagemProjeto">
-                  <button class="btn" onclick="openMarioModal()">Abrir Projeto</button>
-                </div>
-              </div>
-            </div>
-            <div class="modal-mario" id="modal-mario">
-              <div class="modal-content">
-                <span class="close" onclick="closeMarioModal()">&times;</span>
-                <img src="https://i.ibb.co/mcGJ2tx/mario.png" class="imagemModal" style="border-radius: 16px; "
-                  alt="pokedex">
-                <h2>Projeto inverted-world</h2>
-                <p>Game do Mário com a musica original e botão de restart para o usuário reiniciar a sessão,
-                  <br><br>
-                  Tecnologias utilizadas: JavaScript, HTML, CSS3!
-                </p>
-                <a href="https://joaopdeveloper-mario-game.vercel.app/">
-                  <h5 style="text-decoration: none; font-size: 16px;">
-                    Link do Projeto
-                  </h5>
-                </a>
-              </div>
-            </div>
-            <!--Fim Mario -->
-            <!-- Conversor de Dólar -->
-            <div class="cardBox">
-              <div class="card">
-                <div class="content">
-                  <div class="h3">💵 Conversor Dólar </div>
-                  <br><br>
-                  <img src="https://i.ibb.co/tDJfL8J/conversor-de-dolar.png" alt="pokedex" id="conversor-dolar"
-                    style="border-radius: 16px; width: 125px; height: 90px; margin-top: 40px;" class="imagemProjeto">
-                  <button class="btn" onclick="openDolarModal()">Abrir Projeto</button>
-                </div>
-              </div>
-            </div>
-            <div class="modal-dolar" id="modal-dolar">
-              <div class="modal-content">
-                <span class="close" onclick="closeDolarModal()">&times;</span>
-                <img src="https://i.ibb.co/tDJfL8J/conversor-de-dolar.png" class="imagemModal"
-                  style="border-radius: 16px; " alt="pokedex">
-                <h2>Projeto Conversor de Real Para Dolar</h2>
-                <p>Conversor de Dolares para Real utilizando a API do Banco Central que fornece os dados da moeda em
-                  tempo real, Projeto Feito totalmente em PHP
-                  <br><br>
-                  Tecnologias utilizadas: PHP, HTML, CSS3 e APi do banco central!
-                </p>
-                <a href="">
-                  <h5 style="text-decoration: none; font-size: 16px;">
-                    Link do Projeto
-                  </h5>
-                </a>
-              </div>
-            </div>
-            <!-- Fim Conversor de Dolar -->
-            <!-- Simulador Financeiro -->
-            <div class="cardBox">
-              <div class="card">
-                <div class="content">
-                  <div class="h3"> 🪙 Simulador Financeiro </div>
-                  <br><br>
-                  <img src="https://i.ibb.co/28P2dRP/simulador-financeiro.png" alt="financeiro"
-                    id="simulador-financeiro" style="border-radius: 16px; height: 90px; margin-top: 40px;"
-                    class="imagemProjeto">
-                  <button class="btn" onclick="openFinanceiroModal()">Abrir Projeto</button>
-                </div>
-              </div>
-            </div>
-            <div class="modal-financeiro" id="modal-financeiro">
-              <div class="modal-content">
-                <span class="close" onclick="closeFinanceiroModal()">&times;</span>
-                <img src="https://i.ibb.co/28P2dRP/simulador-financeiro.png" class="imagemModal"
-                  style="border-radius: 16px; " alt="pokedex">
-                <h2>Projeto Simulador Financeiro com SAC</h2>
-                <p>Projeto que trás informações e calculo baseado no valor que o usuario fornece, juntamente com o valor
-                  de entrada, porcentagem de juros e Prazo para a finalização do processo, Foi Adicionado uma nova
-                  função que é a Carência, com ela o usuário decide se quer a carência no eu financiamento e a
-                  quantidade de meses para o inicio da mesma!
-                  <br><br>
-                  Tecnologias utilizadas: JavaScript, HTML, CSS3
-                </p>
-                <a href="https://simulador-financeamento.vercel.app/">
-                  <h5 style="text-decoration: none; font-size: 16px;">
-                    Link do Projeto
-                  </h5>
-                </a>
-              </div>
-            </div>
-            <!-- Fim Simulador Financeiro -->
-            <div class="cardBox">
-              <div class="card">
-                <div class="content">
-                  <div class="h3">⚒️ Em Construção </div>
-                  <br><br>
-                  <img src="/assets/imgs/loading-animations-preloader-gifs-ui-ux-effects-11.gif" alt="financeiro"
-                    id="simulador-financeiro" style="border-radius: 16px;  height: 90px; margin-top: 40px;"
-                    class="imagemProjeto">
-                  <button class="btn" onclick="openLoadinModal()">Abrir Projeto</button>
-                </div>
-              </div>
-            </div>
-            <div class="modal-carregar" id="modal-carregar">
-              <div class="modal-content">
-                <span class="close" onclick="closeLoadingModal()">&times;</span>
-                <img src="/assets/imgs/loading-animations-preloader-gifs-ui-ux-effects-11.gif" class="imagemModal"
-                  style="border-radius: 16px; " alt="pokedex">
-                <h2>
-                  Tecnologias utilizadas: JavaScript,TypeScript,SQL,Angular or React</p>
-                  <!-- <a href="">
-                                      <h5 style="text-decoration: none; font-size: 16px;">
-                                        Link do Projeto
-                                      </h5> -->
-                  </a>
-              </div>
-            </div>
-          </section>
-          <a href="#" class="back-to-top">&uarr;</a>
+          </div>
+          
+          <a href="#" class="" id="back-to-top">&uarr;</a>
           <footer id="footer">
             <div class="carde">
               <div class="card-info">
@@ -553,17 +256,18 @@
                 </a>
               </ul>
             </div>
-            </script>
           </footer>
       </div>
     </div>
   </div>
   </div>
   </div>
-  </div>
-  </script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+          <script src="/assets/js/index.js"></script>
+          <script src="/assets/js/listaProjetos.js"></script>
+          <script src="/assets/js/projetos.js"></script>
 </body>
-<script src="/js/loading.js"></script>
-<script src="/assets/js/index.js"></script>
 
 </html>
