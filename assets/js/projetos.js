@@ -3,7 +3,7 @@ listaProjetos.map((projeto, posicao) => {
 let card = `
     <div class="col-md-4">
         <div class="card m-2" onclick="zoomImg('${posicao}')" title="Clique aqui para obter detalhes!" style="cursor: pointer;">
-            <img src="${projeto.img}" class="card-img-top" alt="Imagem do projeto">
+            <img src="${projeto.img}" id="imgProjeto" class="card-img-top" alt="Imagem do projeto">
             <div class="card-body">
                 <h5 class="card-title">${projeto.nome}</h5>
                 <button class="btn btn-light btn-sm" onclick="zoomImg('${posicao}')" id="botaoCorProjeto" title="Clique aqui para verificar o Projeto">Sobre o Projeto.</button>

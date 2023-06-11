@@ -1,0 +1,140 @@
+[33mcommit 0bdae2d9a30d7c5ae09139b94a914f138df00100[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Sun Jun 11 03:30:45 2023 -0300
+
+    mudanças no tamanho das imagens
+
+[33mcommit adbb3cff5c13eb4eb1e449d08b2738b5cbb090f9[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Sun Jun 11 03:03:30 2023 -0300
+
+    mudanças no layout geral e utilização do bootstrap
+
+[33mcommit 8273ec93f93792721983ccd9f825d8feab27d575[m
+Merge: 1f02af3 699891d
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Fri Jun 9 20:58:08 2023 -0300
+
+    Merge branch 'main' of https://github.com/JoaoPDeveloper/portfolio
+
+[33mcommit 1f02af39956ad9246df1bb8b12eefa09afc06687[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Fri Jun 9 20:54:49 2023 -0300
+
+    mudanças no layout geral
+
+[33mcommit 699891dac35b4bc090eb519ce3bdd28961ec92bb[m
+Author: João Pedro Lima <95835981+JoaoPDeveloper@users.noreply.github.com>
+Date:   Thu May 25 17:07:57 2023 -0300
+
+    Update README.md
+
+[33mcommit 631ef6681f104adbe3eed2101aeb1527c7cc1dfd[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Sun May 21 21:58:34 2023 -0300
+
+    troca do link de acesso ao mario game
+
+[33mcommit ee1fbe8378549ae183c792b03ae9c5cfb0491348[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Sun May 21 21:20:02 2023 -0300
+
+    ajustes no layout e mudanças nos botões, add modal
+
+[33mcommit 55472b807f660c5655ac16d5ce96b4a2eb48eee1[m
+Author: JoaoPDeveloper <joao_rubronegro@hotmail.com>
+Date:   Sat May 20 15:10:19 2023 -0300
+
+    ajustes e adição de um modal na aba projeto
+
+[33mcommit 2dd4d2c22e83ceccf911fadd437c340da53a21ab[m
+Author: João Pedro Lima <95835981+JoaoPDeveloper@users.noreply.github.com>
+Date:   Wed May 10 18:51:09 2023 -0300
+
+    Atualizar o style_principal.css
+
+[33mcommit 4ffb324fddc7fc22392151464ac74d16d98208de[m
+Author: JoaoPDeveloper <joao_rubronegro@hotmail.com>
+Date:   Fri May 5 14:46:55 2023 -0300
+
+    correção do link e remoção de itens
+
+[33mcommit 75259cebefc4e924d0f01e4e85c39e7805faa694[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Thu May 4 21:40:02 2023 -0300
+
+    ajustes
+
+[33mcommit b7cb21d688f129d39c7c1841d83975c3f66895ba[m
+Author: JoaoPDeveloper <joao_rubronegro@hotmail.com>
+Date:   Thu May 4 17:41:51 2023 -0300
+
+    ultimos ajustes
+
+[33mcommit 8ac0bee1a3c34ebee82b10c915cc7bf87f066f63[m
+Author: JoaoPDeveloper <joao_rubronegro@hotmail.com>
+Date:   Thu May 4 17:39:45 2023 -0300
+
+    ajustes dos ultimos bugs, mudanças na formatação!
+
+[33mcommit f66f5169872a72c880a000cb2e73883bcc44b3a6[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Wed May 3 22:33:15 2023 -0300
+
+    last commit
+
+[33mcommit b935ccdbb203adeeccc2769ea4f127008ae0c5fb[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Wed May 3 22:32:29 2023 -0300
+
+    ajustes finais
+
+[33mcommit ec28909f6c6a4259e611ae0524068affbd8ac6ea[m
+Merge: 8b716f8 c1d32d7
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Mon May 1 16:17:22 2023 -0300
+
+    Merge branch 'main' of https://github.com/JoaoPDeveloper/portifolio
+
+[33mcommit 8b716f8c1a43a94190eb54ae9055ee1c99196578[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Mon May 1 16:17:20 2023 -0300
+
+    ultimos ajustes no template
+
+[33mcommit e39f608c8b386179907ae16ac5e0a61ac439efbc[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Mon May 1 16:17:11 2023 -0300
+
+    ultimos ajustes no template
+
+[33mcommit c1d32d780cb3a3f9598416edf41c76651be7185e[m
+Merge: 7e2dbe9 89cc62b
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Mon May 1 15:02:46 2023 -0300
+
+    Merge branch 'main' of https://github.com/JoaoPDeveloper/portifolio
+
+[33mcommit 7e2dbe92ca429476f056a56acb5fae3a45c6da58[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Mon May 1 15:02:44 2023 -0300
+
+    version : 2.4
+
+[33mcommit 89cc62b3f5bf4066d5bc3919f6b8d6ba975b2340[m
+Author: João Pedro Lima <95835981+JoaoPDeveloper@users.noreply.github.com>
+Date:   Sun Apr 30 20:04:19 2023 -0300
+
+    Update README.md
+
+[33mcommit 492b2ce81db8071282bd02960c8957285abf56da[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Sat Apr 29 21:44:58 2023 -0300
+
+    Update style_principal.css
+
+[33mcommit 645bed1df72860e64af7c23d6b3354b415f3358d[m
+Author: JoaoPDeveloper <joao_entreprise@hotmail.com>
+Date:   Sat Apr 29 21:35:55 2023 -0300
+
+    Initial commit
