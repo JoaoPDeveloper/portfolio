@@ -9,7 +9,7 @@
 .h3 {
   font-size: 19px;
 }
-#alterarTemaSite{
+#alterarTemaSite {
   background-color: none;
   font-size: 11px;
   border-radius: 12px;
@@ -42,7 +42,7 @@
 }
 #textAbout,
 #textoAbout,
-#aboutText{
+#aboutText {
   color: rgb(255, 255, 255);
 }
 .btn:hover {
@@ -72,6 +72,7 @@
 h5 {
   color: rgb(132, 127, 127);
   text-decoration: none;
+  font-size: 1.1rem;
 }
 h5:hover {
   color: bisque;
@@ -114,7 +115,7 @@ h5:hover {
 .imagemprincipal {
   margin-bottom: 8rem;
   border-radius: 215px;
-  width: 12rem;
+  width: 16rem;
 }
 .navbar {
   display: flex;
@@ -172,16 +173,7 @@ h5:hover {
   margin: 10px;
   align-items: center;
 }
-.conhecimentos {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-bottom: 200px;
-}
-.conhecimento {
-  top: 200px;
-  left: 25px;
-  margin-bottom: 200px;
-  position: relative;
-}
+
 .progress-bar::before {
   counter-reset: percentage var(--progress-value);
   content: counter(percentage) "%";
@@ -365,6 +357,11 @@ h4 {
 .vercel > h4 {
   top: 30px;
   position: relative;
+}
+.card-img-top {
+  width: auto;
+  height: auto;
+  border-radius: 6px;
 }
 
 .project {
@@ -602,13 +599,6 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.1);
 }
 @media only screen and (min-width: 320px) and (max-width: 420px) {
-  #mario-world {
-    width: 125px;
-  }
-  #inverted-world {
-    width: 120px;
-  }
-  
   .imagemProjeto {
     right: 12px;
     margin-top: 20px;
@@ -634,27 +624,11 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     margin-left: -70px;
   }
-  .conhecimentos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   .project,
   .sobreProjetos {
     text-align: center;
     width: 300px;
     margin-left: -117px;
-  }
-
-  .conhecimento {
-    font-size: 28px;
-    text-align: center;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em;
-    left: -71px;
-    position: relative;
-    top: 20px;
   }
   #textAbout,
   #textoAbout,
@@ -742,13 +716,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 22px;
     margin-left: -70px;
   }
-  #inverted-world {
-    width: 120px;
-  }
-  #mario-world {
-    width: 150px;
-    align-items: center;
-  }
+
   .imagemProjeto {
     margin-top: 20px;
     bottom: 20px;
@@ -796,13 +764,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-around;
   }
-  .conhecimento {
-    font-size: 28px;
-    text-align: center;
-    margin-left: -83px;
-    width: 7em;
-    position: relative;
-  }
+
   .sobremim,
   .project {
     font-size: 28px;
@@ -885,30 +847,14 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     right: 230px;
   }
-  #inverted-world {
-    width: 120px;
+  .card-img-top {
+    height: 320px;
+    width: 475px;
   }
-  #mario-world {
-    width: 150px;
-    align-items: center;
-  }
-  .imagemProjeto {
-    margin-top: 20px;
-    bottom: 20px;
-    width: auto;
-    position: relative;
-  }
-  /* .imagemprincipal {
-    left: 50%;
-    margin-bottom: 11rem;
-    position: relative;
-    top: 5rem;
-    width: 100%;
-  } */
   .linguagens {
-    margin-left: 0%;
+    margin-top: 50px;
     height: auto;
-    width: 80vw;
+    width: 74vw;
   }
 
   .sobreProjetos {
@@ -922,9 +868,7 @@ body::-webkit-scrollbar-thumb {
     width: 200px;
   }
   .carde {
-    width: 80vw;
-    position: relative;
-    right: 200px;
+    width: 74vw;
   }
   .headline p,
   .headline h2 {
@@ -932,27 +876,14 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1020px) {
+@media only screen and (min-width: 767px) and (max-width: 1020px) {
   .container {
     text-align: center;
   }
-  #inverted-world {
-    width: 180px;
+  .card-img-top {
+    width: 190px;
+    height: 160px;
   }
-  #buzzfeed {
-    width: 220px;
-  }
-  #mario-world {
-    width: 150px;
-    align-items: center;
-  }
-  .imagemProjeto {
-    /* margin-top: 20px; */
-    bottom: 20px;
-    width: 180px;
-    position: relative;
-  }
-
   section {
     grid-template-columns: 1fr 1fr;
     display: grid;
@@ -976,13 +907,6 @@ body::-webkit-scrollbar-thumb {
     position: relative;
     right: 230px;
   }
-  /* .imagemprincipal {
-    left: 50%;
-    margin-bottom: 11rem;
-    position: relative;
-    top: 5rem;
-    width: 11rem;
-  } */
   #projetos {
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
@@ -991,12 +915,7 @@ body::-webkit-scrollbar-thumb {
     margin: 4px;
     right: 10px;
   }
-  .conhecimento {
-    width: 41vw;
-    left: -86px;
-    margin-bottom: 200px;
-    position: relative;
-  }
+
   .joao-pedro-img > p {
     left: 55%;
     width: 85vw;
@@ -1010,30 +929,10 @@ body::-webkit-scrollbar-thumb {
     width: 87vw;
     display: inline-block;
   }
-  .conhecimento {
-    top: 200px;
-    left: -86px;
-    margin-bottom: 200px;
-    position: relative;
-    width: 41vw;
+  .card-img-top {
+    width: 270px;
+    height: 215px;
   }
-  #inverted-world {
-    width: 180px;
-  }
-  #buzzfeed {
-    width: 220px;
-  }
-  #mario-world {
-    width: 150px;
-    align-items: center;
-  }
-  .imagemProjeto {
-    /* margin-top: 20px; */
-    bottom: 20px;
-    width: 180px;
-    position: relative;
-  }
-
   .sobreProjetos {
     width: 450px;
     right: 6rem;
@@ -1043,14 +942,6 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: 1fr 1fr 1fr;
     display: grid;
   }
-
-  /* .imagemprincipal {
-    left: 50%;
-    top: 9rem;
-    margin-bottom: 11rem;
-    position: relative;
-    width: 11rem;
-  } */
   .square {
     margin-top: -20px;
   }
@@ -1076,13 +967,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media only screen and (min-width: 1960px) {
-  /* .imagemprincipal {
-    left: 38%;
-    margin-bottom: 11rem;
-    position: relative;
-    top: 14rem;
-    width: 11rem;
-  } */
+
   .sobremim {
     margin-left: 100px;
   }

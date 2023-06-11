@@ -9,7 +9,7 @@ let listaProjetos = [
   },
   {
     nome: "BuzzFeed",
-    img: "https://i.ibb.co/tXw2TCJ/buzzfeed.png",
+    img: "https://i.ibb.co/9N36zk6/buzzfeed.png",
     descricao:
       "Projeto de um Clone do Buzz-feed utilizando TypeScript, Angular e Json para gerar novas perguntas eno final dar um resultado para o usuário, o Grande desafio desse projeto foi fazer as rotas para as perguntas e puxar um resultado final para o usuário,Site ficou totalmente responsivo sendo perfeitopara se utilizar em Mobile, utilizei o Vercel para dar o deploy e host para o site! Tecnologias utilizadas: JavaScript,TypeScript,Angular, HTML5 e CSS3",
     linkProjeto: "https://joaopdeveloper-buzzquizz.vercel.app/",
