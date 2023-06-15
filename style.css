@@ -231,11 +231,7 @@ h5:hover {
   flex: 1;
   padding-bottom: 96px;
 }
-#about {
-  width: 42vw;
-  margin-left: 25%;
-  text-align: center;
-}
+
 .progress-bar {
   width: 70px;
   height: 70px;
@@ -675,17 +671,14 @@ body::-webkit-scrollbar-thumb {
   transform: scale(1.1);
 }
 @media only screen and (min-width: 300px) and (max-width: 420px) {
-
+  #about{
+    margin: 0;
+    width: auto;
+  }
   .linguagens {
-    position: relative;
-    height: auto;
-    top: 55vh;
-    display: inline-block;
-    margin-bottom: 25vh;
-    width: 93vw;
-    bottom: -34%;
-    justify-items: center;
-    right: 4px;
+width: auto;
+height: auto;
+margin-top: 250px;
   }
   .modal-header{
     flex-direction: column;
@@ -694,11 +687,20 @@ body::-webkit-scrollbar-thumb {
     width: 280px;
     height: auto;
   }
+  .navbar{
+    margin-top: 20px;
+  }
+  .navbar .logo{
+    font-size: 20px;
+  }
+  #alterarTemaSite{
+    margin-top:  10px;
+  }
 }
 @media only screen and (min-width: 424px) and (max-width: 520px) {
  
   .linguagens {
-    margin-top: 100px;
+    margin-top: 150px;
 width: auto;
 height: auto;
   }
