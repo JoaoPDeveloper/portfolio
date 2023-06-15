@@ -13,7 +13,79 @@
   background-color: none;
   font-size: 11px;
   border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
 }
+
+#tecnologia1,
+#tecnologia2,
+#tecnologia3{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  image-rendering: optimizeQuality;
+  gap: 1rem;
+}
+.modal-header{
+  justify-content: center;
+  gap: 20px;
+}
+/* .icon {
+  width: 50px;
+  height: 50px;
+  background-image: url('https://www.svgrepo.com/show/434191/party-popper.svg');
+  background-size: cover;
+  position: relative;
+  animation: cair 2s ease-in-out infinite;
+}
+
+.icon2 {
+  width: 50px;
+  height: 50px;
+  background-image: url('https://www.svgrepo.com/show/245681/learning-school.svg');
+  background-size: cover;
+  position: relative;
+  animation: cair 2s ease-in-out infinite;
+} */
+.icon3 {
+  width: 50px;
+  height: 50px;
+  background-image: url('https://www.svgrepo.com/show/494569/rocket-innovation-space.svg');
+  background-size: cover;
+  position: relative;
+  fill: rgb(255, 255, 255);
+  margin-bottom: 100px;
+  animation: cair 2s ease-in-out infinite, girar 3s linear infinite;
+}
+
+@keyframes cair {
+  0% {
+    top: -50px;
+  }
+  25%{
+    top: -50px;
+  }
+  50%{
+    top: -50px;
+  }
+  75%{
+    top: 50px
+  }
+  100% {
+    top: -50px;
+  }
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(135deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+
 .btn {
   font-size: 17px;
   border: none;
@@ -175,6 +247,7 @@ h5:hover {
 }
 #imgProjeto{
   height: 300px;
+  image-rendering: optimizeQuality;
   width: auto;
 }
 .progress-bar::before {
@@ -389,9 +462,9 @@ summary {
 #back-to-top {
   background-color: #110332;
   color: #ffffff;
-  width: 50px;
+  width: 60px;
   height: 50px;
-  top: 50px;
+  top: 60px;
   position: relative;
   border-radius: 25px;
   cursor: pointer;
@@ -601,70 +674,8 @@ body::-webkit-scrollbar-thumb {
 .card-avatar-image:hover {
   transform: scale(1.1);
 }
-@media only screen and (min-width: 320px) and (max-width: 420px) {
-  .imagemProjeto {
-    right: 12px;
-    margin-top: 20px;
-    bottom: 20px;
-    width: auto;
-    position: relative;
-  }
-  .card-img-top {
-    height: 270px;
-    width: 270px;
-  }
-  #projetos {
-    grid-template-columns: 1fr 1fr;
-  }
-  section {
-    grid-template-columns: 1fr 1fr;
-    margin: 2px;
-    top: 25%;
-    position: relative;
-  }
-  .headline h2 {
-    width: 320px;
-    text-align: center;
-  }
-  .sobremim {
-    width: 200px;
-    text-align: center;
-    margin-left: -70px;
-  }
-  .project,
-  .sobreProjetos {
-    text-align: center;
-    width: 300px;
-    margin-left: -117px;
-  }
-  #textAbout,
-  #textoAbout,
-  #aboutText {
-    margin-left: -66px;
-    width: 280px;
-    font-size: 17px;
-    color: yellow;
-  }
-  .joao-pedro-img > p {
-    font-size: 18px;
-    text-align: center;
-    margin: 0;
-    bottom: -4rem;
-    width: 320px;
-    position: relative;
-    margin-top: 80px;
-    transform: translate(-50%, -50%);
-  }
-  .headline p {
-    width: 320px;
-  }
-  .buttons {
-    flex-direction: column;
-  }
+@media only screen and (min-width: 300px) and (max-width: 420px) {
 
-  .card-social__item {
-    margin-left: -20px;
-  }
   .linguagens {
     position: relative;
     height: auto;
@@ -676,323 +687,83 @@ body::-webkit-scrollbar-thumb {
     justify-items: center;
     right: 4px;
   }
-  .square {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 70px;
-    height: 70px;
-  }
-
-  .square img {
-    max-width: 50px;
-    max-height: 50px;
-    border-radius: 10px;
-    position: relative;
-    bottom: 20px;
-  }
-  .linguagens > h1 {
-    font-size: 28px;
-    text-align: center;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10em;
-    position: relative;
-  }
-  .navbar {
+  .modal-header{
     flex-direction: column;
-    display: flex;
-    left: 0%;
-    position: relative;
   }
-  .navbar .logo {
-    font-size: 18px;
-    display: flex;
-    position: relative;
-    left: 1%;
-    margin-top: 40px;
+  .card-img-top{
+    width: 280px;
+    height: auto;
   }
 }
 @media only screen and (min-width: 424px) and (max-width: 520px) {
-  body {
-    max-width: 440px;
-  }
-  #textAbout,
-  #textoAbout,
-  #aboutText {
-    width: 350px;
-    font-size: 22px;
-    margin-left: -70px;
-  }
-  .card-img-top {
-    height: 210px;
-    width: 300px;
-  }
-  .imagemProjeto {
-    margin-top: 20px;
-    bottom: 20px;
-    width: auto;
-    position: relative;
-  }
-
-  .headline p {
-    width: 370px;
-    position: relative;
-    font-size: 26px;
-    flex-direction: column;
-    margin-bottom: 40px;
-  }
-  .headline h2 {
-    width: 420px;
-    text-align: center;
-  }
-  .joao-pedro-img > p {
-    font-size: 18px;
-    text-align: center;
-    margin: 0;
-    margin-top: 30%;
-    width: 100vw;
-    top: -127px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .card-social__item {
-    margin-left: -20px;
-  }
-  .buttons {
-    flex-direction: column;
-  }
-  label {
-    position: relative;
-    bottom: 100%;
-    font-size: 12px;
-    text-decoration: none;
-    margin: 0;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    height: 12px;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .sobremim,
-  .project {
-    font-size: 28px;
-    text-align: center;
-    right: 8rem;
-    width: 320px;
-    position: relative;
-  }
+ 
   .linguagens {
-    position: relative;
+    margin-top: 100px;
+width: auto;
+height: auto;
+  }
+  .card-img-top{
+    width: 400px;
     height: auto;
-    top: 55vh;
-    margin-bottom: 25vh;
-    width: 93vw;
-    margin-top: -80px;
-    bottom: -34%;
-    justify-items: center;
   }
-  .linguagens > h1 {
-    font-size: 28px;
-    text-align: center;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10em;
-    position: relative;
-  }
-  .sobreProjetos {
-    width: 320px;
-    right: 100px;
-    position: relative;
-  }
-
-  .navbar {
+  .modal-header{
     flex-direction: column;
-    display: flex;
-    left: 0%;
-    margin-bottom: 10rem;
-    position: relative;
-  }
-  .navbar .logo {
-    font-size: 25px;
-    display: flex;
-    position: relative;
-    left: 0%;
-    margin-top: 40px;
-  }
-  section {
-    grid-template-columns: 1fr 1fr;
-    margin: 2px;
-    top: 25%;
-    position: relative;
-  }
-  #projetos {
-    grid-template-columns: 1fr 1fr;
-  }
-  .sobreProjetos {
-    width: 291px;
-    right: 100px;
-    position: relative;
-  }
-  .cardBox {
-    width: 43vw;
-    margin: 5px;
-  }
-  h4 {
-    margin-left: 0px;
-    font-size: 12px;
-    padding: 0;
   }
 }
 @media only screen and (min-width: 521px) and (max-width: 767px) {
-  #projetos {
-    grid-template-columns: 1fr 1fr;
-  }
-  .sobreProjetos {
-    text-align: center;
-    width: 620px;
-    margin: auto;
-    position: relative;
-    right: 230px;
-  }
-  .card-img-top {
-    height: 320px;
-    width: 475px;
-  }
-  .linguagens {
-    margin-top: 50px;
-    height: auto;
-    width: 74vw;
-  }
 
-  .sobreProjetos {
-    text-align: center;
-    width: 520px;
-    margin: auto;
-    position: relative;
-    right: 178px;
+  .linguagens {
+    margin-top: 100px;
+    height: auto;
+    width: auto;
   }
-  .sobremim {
-    width: 200px;
-  }
-  .carde {
-    width: 74vw;
-  }
-  .headline p,
-  .headline h2 {
-    width: 100vw;
-    text-align: center;
+  .card-img-top{
+    width: 450px;
+    height: auto;
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 1020px) {
-  .container {
-    text-align: center;
-  }
-  .card-img-top {
-    width: 190px;
-    height: 160px;
-  }
-  section {
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-  }
-  .square img {
-    bottom: 20px;
-  }
-  .square {
-    margin-top: -20px;
-  }
   .linguagens {
-    margin-left: 19px;
     height: auto;
-    width: 86vw;
+    width: auto;
     display: inline-block;
   }
-  .sobreProjetos {
-    text-align: center;
-    width: 620px;
-    margin: auto;
-    position: relative;
-    right: 230px;
+  #imgProjeto{
+    width: auto;
+    height: auto;
   }
-  #projetos {
-    grid-template-columns: 1fr 1fr 1fr;
-    display: grid;
-  }
-  .cardBox {
-    margin: 4px;
-    right: 10px;
-  }
+.card-img-top{
+  width: 450px;
+  height: auto;
+}
 
-  .joao-pedro-img > p {
-    left: 55%;
-    width: 85vw;
-    top: 55px;
-  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .linguagens {
-    margin-left: 23px;
     height: auto;
-    width: 87vw;
-    display: inline-block;
+    width: 78vw;
   }
-  .card-img-top {
-    width: 270px;
-    height: 215px;
-  }
-  .sobreProjetos {
-    width: 450px;
-    right: 6rem;
-    position: relative;
-  }
-  section {
-    grid-template-columns: 1fr 1fr 1fr;
-    display: grid;
-  }
-  .square {
-    margin-top: -20px;
-  }
-}
-@media only screen and (min-width: 1280px) and (max-width: 1950px) {
-  .sobreProjetos {
-    width: 520px;
-    margin: auto;
-    top: 50%;
-    position: relative;
-  }
-  .linguagens {
-    height: auto;
-    width: 80vw;
-  }
-  .joao-pedro-img > p {
-    width: 900px;
+  #tecnologias{
+    margin-left: 200px;
   }
 
-  .sobremim {
-    left: 5%;
-    position: relative;
+
+}
+@media only screen and (min-width: 1280px) and (max-width: 1950px) {
+  .linguagens {
+    height: auto;
+    width: auto;
+  }
+
+  #tecnologias{
+    margin-left: 300px;
   }
 }
 @media only screen and (min-width: 1960px) {
 
-  .sobremim {
-    margin-left: 100px;
-  }
-  #about {
-    margin-left: 0;
-    width: auto;
-  }
   .linguagens {
     margin-top: 100px;
     height: auto;
-  }
-  .sobreProjetos,
-  .project {
-    position: relative;
-    margin-bottom: 100px;
-    left: 10%;
+    width: auto;
   }
 }
