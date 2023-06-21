@@ -38,9 +38,10 @@ function alterarTemaSite() {
    document.querySelector("#aboutText").style.color = 'white'
    document.querySelector("#textoInicial").style.color = "black"
    document.querySelector("#textoPrincipal").style.color = "black"
+   document.querySelector("#projectsContainer").style.color = 'white';
    document.querySelector(".icon3 img").src = "/assets/img/icon3.svg";
-   document.querySelector("#nomeProjeto").style.color = 'white';
-   
+   document.querySelector("#nomeProjeto").style.color = 'yellow';
+   document.querySelector("#square").text.color = 'yellow';
  } else {
    document.querySelector("html").setAttribute("data-bs-theme", 'dark');
    document.querySelector("#alterarTemaSite").innerHTML = `<i class="bi bi-brightness-high-fill"></i>`;
@@ -51,6 +52,8 @@ function alterarTemaSite() {
    document.querySelector("#textoPrincipal").style.color = "white"
    document.querySelector(".icon3 img").src = "/assets/img/icon3.svg";
    document.querySelector("#nomeProjeto").style.color = 'white';
+   document.querySelector("#projectsContainer").style.color = 'yellow';
+   document.querySelector("#square").style.color = 'yellow';
  }
  
  let botoes = document.querySelectorAll("#botaoCorProjeto");

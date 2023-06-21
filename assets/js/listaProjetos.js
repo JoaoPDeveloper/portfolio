@@ -33,6 +33,17 @@ let listaProjetos = [
     tecnologia3: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg',
   },
   {
+    nome: "My daily agenda",
+    img: "https://i.ibb.co/8DFZpfr/Screenshot-2023-06-21-171354.png",
+    descricao:
+      "Projeto para parametrização de projetos ou eventos feitos pelo usuário, com campos para adicionar o nome do projeto, e-mail Principal ou adicionar mais um e-mail adicional, Descrição da atividade, telefone para contato (opicional) e por fim a data de início e fim do Projeto/Evento, ao fim da data de fim do projeto, o mesmo recebe uma notificação, os dados ficam salvos localmente com a utilização do LocalStorage, Tecnologias utilizadas: JavaScript, HTML, CSS3 e Bootstrap",
+    linkProjeto: "https://daily-agenda-joaopdeveloper.vercel.app/",
+    linkGithub: "https://github.com/JoaoPDeveloper/my-daily-agenda",
+    tecnologia1: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
+    tecnologia2: 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg',
+    tecnologia3: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg',
+  },
+  {
     nome: "Game Mario",
     img: "https://i.ibb.co/71PzqFw/Mario.png",
     descricao:
@@ -40,17 +51,6 @@ let listaProjetos = [
     linkProjeto: "https://joaopdeveloper-mario-game.vercel.app/",
     linkGithub: "https://github.com/JoaoPDeveloper/javascript-mario-game",
     tecnologia1: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
-    tecnologia2: 'https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg',
-    tecnologia3: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg',
-  },
-  {
-    nome: "Conversor Dólar ",
-    img: "https://i.ibb.co/LR6kXtK/Dolar.png",
-    descricao:
-      "Conversor de Dolares para Real utilizando a API do Banco Central que fornece os dados da moeda em tempo real, Projeto Feito totalmente em PHP , Tecnologias utilizadas: PHP, HTML, CSS3 e APi do banco central!",
-    linkProjeto: "#",
-    linkGithub: "",
-    tecnologia1: 'https://www.php.net/images/logos/new-php-logo.svg',
     tecnologia2: 'https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg',
     tecnologia3: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg',
   },
@@ -84,5 +84,6 @@ const tecnologias =  {
   css: 'https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg',
   html: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg',
   angular: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg',
-  php: 'https://www.php.net/images/logos/new-php-logo.svg'
+  php: 'https://www.php.net/images/logos/new-php-logo.svg',
+  bootstrap: 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg',
 }
