@@ -34,7 +34,7 @@ let listaProjetos = [
   },
   {
     nome: "My daily agenda",
-    img: "https://i.ibb.co/8DFZpfr/Screenshot-2023-06-21-171354.png",
+    img: "https://i.ibb.co/FDnqF4B/Screenshot-2023-06-21-171354.png",
     descricao:
       "Projeto para parametrização de projetos ou eventos feitos pelo usuário, com campos para adicionar o nome do projeto, e-mail Principal ou adicionar mais um e-mail adicional, Descrição da atividade, telefone para contato (opicional) e por fim a data de início e fim do Projeto/Evento, ao fim da data de fim do projeto, o mesmo recebe uma notificação, os dados ficam salvos localmente com a utilização do LocalStorage, Tecnologias utilizadas: JavaScript, HTML, CSS3 e Bootstrap",
     linkProjeto: "https://daily-agenda-joaopdeveloper.vercel.app/",
