@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-bs-theme="Light">
+<html lang="pt-br" data-bs-theme="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -23,11 +23,13 @@
 </head>
 
 <body>
+  <div id="particles-js" class="particles"></div>
   <button id="alterarTemaSite" class="btn btn-secondary mb-lg-5 position-absolute top-0 end-0"
     onclick="alterarTemaSite()" title="Dark Mode!">
-    <i class="bi bi-moon-stars"></i>
+    <i class="bi bi-brightness-high-fill"></i>
   </button>
   <div class="container">
+
     <div class="content">
       <nav class="navbar">
         <h2 class="logo">!=JoaoPDeveloper_</h2>
@@ -41,10 +43,10 @@
         </h2>
         <p alt="sobre-mim" class="text-center" id="textoPrincipal">
 
-          Meu Nome é João Pedro e sou um desenvolvedor web, Estou sempre em busca de novos desafios e oportunidades para
+          Meu Nome é João Pedro e sou desenvolvedor web, Estou sempre em busca de novos desafios e oportunidades para
           crescer como profissional no mundo do desenvolvimento! 🚀😁
         </p>
-        <div class="icon3"> <img src="https://www.svgrepo.com/show/494569/rocket-innovation-space.svg'" alt=""></div>
+        <div class="icon3"> <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f680.svg" alt=""></div>
       </div>
       <div class="icon"></div>
       <div class="icon2"></div>
@@ -62,17 +64,17 @@
           <div class="col-md-6">
             <br><br>
             <div id="about">
-              <p class="text-center" id="textAbout">🏫 Atualmente estou cursando Análise e Desenvolvimento de Sistemas
+              <p id="textoAbout">🏢 Estou em mudança de área de Suporte para o Desenvolvimento Web.</p>
+              <p id="textAbout">🏫 Atualmente estou cursando Análise e Desenvolvimento de Sistemas
                 na Faculdade Estácio.</p>
-              <p class="text-center" id="textoAbout">🏢 Estou em mudança de área de Suporte para Desenvolvimento.</p>
-              <p class="text-center" id="aboutText">😁 Fique à vontade para entrar em contato comigo e quem sabe podemos
+              <p id="aboutText">😁 Fique à vontade para entrar em contato comigo e quem sabe podemos
                 trabalhar juntos para criar projetos incríveis!</p>
             </div>
           </div>
         </div>
         <section>
           <div preloader class="linguagens">
-            <h1>Principais <strong>Tecnologias</strong> e Frameworks</h1>
+            <h1>Stack Tecnológico </h1>
             <br><br><br>
             <div class="square">
               <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"
@@ -233,7 +235,7 @@
                 <p id="modalZoomImgDescricaoProjeto" class="mt-4"></p>
                 <a class="btn btn-primary btn-sm mt-1 " href="" id="ButtonProjeto" onclick="" role="button">Ir Para o
                   Projeto</a>
-                <a class="btn btn-light mt-1" href="" id="ButtonGitHub" onclick="" role="button">Ir Para o
+                <a class="btn btn-light btn-sm mt-1" href="" id="ButtonGitHub" onclick="" role="button">Ir Para o
                   Repositório</a>
               </div>
             </div>
@@ -290,6 +292,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
   <script src="/assets/js/index.js"></script>
   <script src="/assets/js/listaProjetos.js"></script>
   <script src="/assets/js/projetos.js"></script>

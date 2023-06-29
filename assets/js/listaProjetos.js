@@ -1,13 +1,13 @@
 let listaProjetos = [
   {
-    nome: "Pokedex",
-    img: "https://i.ibb.co/g7wkCx7/pokedex.png",
+    nome: "My daily agenda",
+    img: "https://i.ibb.co/FDnqF4B/Screenshot-2023-06-21-171354.png",
     descricao:
-      "Esse projeto foi um grande desafio puxar os dados da Api e aplicar no front-end, porém com muito estudo e dedicação, consegui concluir ele de maneira até que rápida, Adicionei um Modal para cada Pokemon e utilizando a cor de cada elemento que também é puxada da API!Tecnologias utilizadas:       JavaScript, HTML, CSS3 e APi do Pokemon!",
-    linkProjeto: "https://pokedex-joaopdeveloper.netlify.app/",
-    linkGithub: "https://github.com/JoaoPDeveloper/pokedex-lab",
+      "Projeto para parametrização de projetos ou eventos feitos pelo usuário, com campos para adicionar o nome do projeto, e-mail Principal ou adicionar mais um e-mail adicional, Descrição da atividade, telefone para contato (opicional) e por fim a data de início e fim do Projeto/Evento, ao fim da data de fim do projeto, o mesmo recebe uma notificação, os dados ficam salvos localmente com a utilização do LocalStorage, Tecnologias utilizadas: JavaScript, HTML, CSS3 e Bootstrap",
+    linkProjeto: "https://daily-agenda-joaopdeveloper.vercel.app/",
+    linkGithub: "https://github.com/JoaoPDeveloper/my-daily-agenda",
     tecnologia1: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
-    tecnologia2: 'https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg',
+    tecnologia2: 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg',
     tecnologia3: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg',
   },
   {
@@ -33,14 +33,14 @@ let listaProjetos = [
     tecnologia3: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg',
   },
   {
-    nome: "My daily agenda",
-    img: "https://i.ibb.co/FDnqF4B/Screenshot-2023-06-21-171354.png",
+    nome: "Pokedex",
+    img: "https://i.ibb.co/g7wkCx7/pokedex.png",
     descricao:
-      "Projeto para parametrização de projetos ou eventos feitos pelo usuário, com campos para adicionar o nome do projeto, e-mail Principal ou adicionar mais um e-mail adicional, Descrição da atividade, telefone para contato (opicional) e por fim a data de início e fim do Projeto/Evento, ao fim da data de fim do projeto, o mesmo recebe uma notificação, os dados ficam salvos localmente com a utilização do LocalStorage, Tecnologias utilizadas: JavaScript, HTML, CSS3 e Bootstrap",
-    linkProjeto: "https://daily-agenda-joaopdeveloper.vercel.app/",
-    linkGithub: "https://github.com/JoaoPDeveloper/my-daily-agenda",
+      "Esse projeto foi um grande desafio puxar os dados da Api e aplicar no front-end, porém com muito estudo e dedicação, consegui concluir ele de maneira até que rápida, Adicionei um Modal para cada Pokemon e utilizando a cor de cada elemento que também é puxada da API!Tecnologias utilizadas:       JavaScript, HTML, CSS3 e APi do Pokemon!",
+    linkProjeto: "https://pokedex-joaopdeveloper.netlify.app/",
+    linkGithub: "https://github.com/JoaoPDeveloper/pokedex-lab",
     tecnologia1: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
-    tecnologia2: 'https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg',
+    tecnologia2: 'https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg',
     tecnologia3: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg',
   },
   {
