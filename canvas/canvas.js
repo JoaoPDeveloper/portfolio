@@ -1,25 +1,11 @@
-ScrollReveal().reveal(".headline", { delay: 300 });
-ScrollReveal().reveal(".container-about", { delay: 800 });
-ScrollReveal().reveal(".container", { delay: 800 });
-ScrollReveal().reveal(".square", { delay: 800 });
-ScrollReveal().reveal(".particles",{delay:1000})
 
-window.onscroll = function () {
-  var backToTopBtn = document.querySelector(".back-to-top");
-  if (window.pageYOffset > 300) {
-    backToTopBtn.style.display = "block";
-  } else {
-    backToTopBtn.style.display = "none";
-  }
-<<<<<<< HEAD
-};
 particlesJS("particles-js", {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
     color: { value: "#959595" },
     shape: {
       type: "polygon",
-      stroke: { width: 0, color: "#000" },
+      stroke: { width: 0, color: "#ffffff" },
       polygon: { nb_sides: 3 },
       image: { src: "img/github.svg", width: 100, height: 100 },
     },
@@ -45,9 +31,9 @@ particlesJS("particles-js", {
     },
     line_linked: {
       enable: true,
-      distance: 110,
-      color: "#ff0000",
-      opacity: 1.9839939789262425,
+      distance: 150,
+      color: "#ffff00",
+      opacity: 0.0839939789262425,
       width: 1.0975915704967394,
     },
     move: {
@@ -69,7 +55,7 @@ particlesJS("particles-js", {
       resize: true,
     },
     modes: {
-      grab: { distance: 400, line_linked: { opacity: 0.51415601500706484 } },
+      grab: { distance: 400, line_linked: { opacity: 0.41415601500706484 } },
       bubble: {
         distance: 400,
         size: 40,
@@ -90,7 +76,6 @@ stats.setMode(0);
 stats.domElement.style.position = "absolute";
 stats.domElement.style.left = "0px";
 stats.domElement.style.top = "0px";
-stats.domElement.style.color = "yellow"
 document.body.appendChild(stats.domElement);
 count_particles = document.querySelector(".js-count-particles");
 update = function () {
@@ -102,6 +87,3 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
-=======
-};
->>>>>>> 3f954ef68184814fa6f1825f01c6f2dc475ede24
