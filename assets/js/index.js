@@ -11,7 +11,6 @@ window.onscroll = function () {
   } else {
     backToTopBtn.style.display = "none";
   }
-<<<<<<< HEAD
 };
 particlesJS("particles-js", {
   particles: {
@@ -102,6 +101,3 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
-=======
-};
->>>>>>> 3f954ef68184814fa6f1825f01c6f2dc475ede24
