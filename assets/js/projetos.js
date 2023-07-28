@@ -40,7 +40,6 @@ function alterarTemaSite() {
    document.querySelector("#textoPrincipal").style.color = "black"
    document.querySelector("#projectsContainer").style.color = 'white';
    document.querySelector(".icon3 img").src = "https://www.svgrepo.com/show/494569/rocket-innovation-space.svg'";
-   document.querySelector("#nomeProjeto").style.color = 'yellow';
    document.querySelector(".logo").style.color = 'black';
    document.querySelector("#square").text.color = 'yellow';
  } else {
@@ -53,7 +52,6 @@ function alterarTemaSite() {
    document.querySelector("#textoPrincipal").style.color = "white"
    document.querySelector(".logo").style.color = "white"
    document.querySelector(".icon3 img").src = "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f680.svg";
-   document.querySelector("#nomeProjeto").style.color = 'white';
    document.querySelector("#projectsContainer").style.color = 'yellow';
    document.querySelector("#square").style.color = 'yellow';
  }

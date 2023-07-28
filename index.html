@@ -40,7 +40,7 @@
 
       </nav>
 
-      <div class="headline" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+      <div class="headline" style="display: flex; justify-content: center; align-items: center;">
 
         <h2 alt="texto-iniciativo" class="text-center" id="textoInicial">
           < Olá, Seja bem vindo ao web portfólio \>
@@ -224,21 +224,21 @@
           <div class="row" id="cards">
           </div>
         </div>
-        <div class="modal fade" id="modalZoomImg" tabindex="-1" aria-labelledby="modalZoomImgNomeProjeto"
-          aria-hidden="true">
+        <div class="modal fade" id="modalZoomImg" tabindex="-1" aria-labelledby="modalZoomImgNomeProjeto" aria-hidden="true">
           <div class="modal-dialog modal-xl">
             <div class="modal-content">
               <div class="modal-header">
+                <button type="button" class="btn-close custom-close-button text-warning" id="close-button" data-bs-dismiss="modal" aria-label="Fechar"></button>
                 <h1 class="modal-title fs-5" id="modalZoomImgNomeProjeto">Carregando...</h1>
                 <p class=" text-lowercase text-opacity-25 text-center" id="tecnologias">Tecnologias utilizadas : </p>
                 <img src="" alt="Tecnologias" id="tecnologia1" class="card-img-top">
                 <img src="" alt="Tecnologias" id="tecnologia2" class="card-img-top">
                 <img src="" alt="Tecnologias" id="tecnologia3" class="card-img-top">
               </div>
-              <div class="modal-body">
+              <div class="modal-body" id="myModal">
                 <img src="" id="modalZoomImgProjeto" class="card-img-top" alt="Imagem do Projeto">
                 <p id="modalZoomImgDescricaoProjeto" class="mt-4"></p>
-                <a class="btn btn-primary btn-sm mt-1 " href="" id="ButtonProjeto" onclick="" role="button">Ir Para o
+                <a class="btn btn-dark btn-sm mt-1 " href="" id="ButtonProjeto" onclick="" role="button">Ir Para o
                   Projeto</a>
                 <a class="btn btn-light btn-sm mt-1" href="" id="ButtonGitHub" onclick="" role="button">Ir Para o
                   Repositório</a>

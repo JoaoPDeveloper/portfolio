@@ -5,10 +5,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   image-rendering: optimizeQuality;
+  scroll-behavior: smooth;
   font-family: "Space Mono";
 }
 .h3 {
   font-size: 19px;
+}
+#close-button {
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
+  margin: 30px;
+  border: solid white;
 }
 #alterarTemaSite {
   background-color: none;
@@ -34,6 +41,7 @@
 }
 .icon3 {
   width: 50px;
+ margin-top: 160px;
   z-index: -1;
   height: 50px;
   background-image: url("https://www.svgrepo.com/show/494569/rocket-innovation-space.svg");
@@ -103,10 +111,19 @@ canvas {
 .count-particles {
   border-radius: 0 0 3px;
 }
-#botaoCorProjeto,
+#botaoCorProjeto{
+  color: rgb(17, 0, 255);
+}
 #ButtonProjeto {
-  color: rgb(2, 162, 127);
+  color: rgb(255, 255, 255);
+  background-color: rgba(46, 7, 129, 0.375);
   font-family: "Inter";
+  transition: 0.5s;
+  border: none;
+}
+#ButtonProjeto:hover{
+  background-color: rgb(170, 170, 63);
+  color: rgb(255, 255, 255);
 }
 #textAbout,
 #textoAbout,
@@ -419,7 +436,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (min-width: 300px) and (max-width: 420px) {
   #about {
-    margin-bottom: 100px;
+    margin-bottom: 210px;
     width: auto;
   }
   .linguagens {

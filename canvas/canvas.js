@@ -5,7 +5,7 @@ particlesJS("particles-js", {
     color: { value: "#959595" },
     shape: {
       type: "polygon",
-      stroke: { width: 0, color: "#ffffff" },
+      stroke: { width: 0, color: "#000" },
       polygon: { nb_sides: 3 },
       image: { src: "img/github.svg", width: 100, height: 100 },
     },
@@ -31,9 +31,9 @@ particlesJS("particles-js", {
     },
     line_linked: {
       enable: true,
-      distance: 150,
-      color: "#ffff00",
-      opacity: 0.0839939789262425,
+      distance: 110,
+      color: "#ff0000",
+      opacity: 1.9839939789262425,
       width: 1.0975915704967394,
     },
     move: {
@@ -55,7 +55,7 @@ particlesJS("particles-js", {
       resize: true,
     },
     modes: {
-      grab: { distance: 400, line_linked: { opacity: 0.41415601500706484 } },
+      grab: { distance: 400, line_linked: { opacity: 0.51415601500706484 } },
       bubble: {
         distance: 400,
         size: 40,
@@ -76,6 +76,7 @@ stats.setMode(0);
 stats.domElement.style.position = "absolute";
 stats.domElement.style.left = "0px";
 stats.domElement.style.top = "0px";
+stats.domElement.style.color = "yellow"
 document.body.appendChild(stats.domElement);
 count_particles = document.querySelector(".js-count-particles");
 update = function () {
