@@ -11,11 +11,18 @@
 .h3 {
   font-size: 19px;
 }
+.mt-1 {
+  transition: 0.5s;
+}
 #close-button {
   color: rgb(255, 0, 0);
   background-color: rgb(255, 255, 255);
   margin: 30px;
   border: solid white;
+}
+#modalZoomImg {
+  background-color: rgba(0, 0, 0, 0.631);
+  backdrop-filter: blur(5px);
 }
 #alterarTemaSite {
   background-color: none;
@@ -41,7 +48,7 @@
 }
 .icon3 {
   width: 50px;
- margin-top: 160px;
+  margin-top: 160px;
   z-index: -1;
   height: 50px;
   background-image: url("https://www.svgrepo.com/show/494569/rocket-innovation-space.svg");
@@ -79,11 +86,19 @@
     transform: rotate(135deg);
   }
 }
-canvas {
-  display: block;
-
-}
 #particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-position: 50% 50%;
+}
+#particles2-js {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -100,7 +115,6 @@ canvas {
 }
 #stats,
 .count-particles {
-
   margin-top: 5px;
   margin-left: 5px;
 }
@@ -111,7 +125,7 @@ canvas {
 .count-particles {
   border-radius: 0 0 3px;
 }
-#botaoCorProjeto{
+#botaoCorProjeto {
   color: rgb(17, 0, 255);
 }
 #ButtonProjeto {
@@ -121,7 +135,7 @@ canvas {
   transition: 0.5s;
   border: none;
 }
-#ButtonProjeto:hover{
+#ButtonProjeto:hover {
   background-color: rgb(170, 170, 63);
   color: rgb(255, 255, 255);
 }
@@ -220,9 +234,9 @@ h5:hover {
 }
 #container-about {
   background-color: #0a0914;
-  align-items: center;
+  z-index: 99999;
   border-radius: 35px;
-  justify-content: center;
+  position: relative;
 }
 .joao-pedro-img > p {
   font-size: 18px;
@@ -322,11 +336,12 @@ summary {
   background-color: #110332;
   color: #ffffff;
   width: 60px;
-  height: 50px;
-  top: 60px;
+  height: 45px;
+  top: 65px;
   font-size: 28px;
   position: relative;
-  border-radius: 25px;
+  text-decoration: none;
+  border-radius: 12px;
   cursor: pointer;
   z-index: 999;
   transition: 0.5s ease-in-out;
@@ -372,7 +387,8 @@ body::-webkit-scrollbar-thumb {
   border-radius: 1rem;
   transition: box-shadow 0.3s ease, transform 0.2s ease;
   margin-top: 20%;
-  /* margin-bottom: 20px; */
+  z-index: 99999;
+  position: relative;
   text-align: center;
 }
 .card-info {
@@ -384,7 +400,6 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
-/*Image*/
 .card-avatar-image {
   --size: 60px;
   background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
@@ -395,7 +410,6 @@ body::-webkit-scrollbar-thumb {
   transition: transform 0.2s ease;
   margin-bottom: 1rem;
 }
-/*Card footer*/
 .card-social {
   transform: translateY(200%);
   display: flex;
@@ -500,7 +514,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 100px;
   }
 }
-@media only screen and (min-width: 767px) and (max-width: 1020px) {
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
   .linguagens {
     height: auto;
     width: auto;
@@ -522,6 +536,10 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     width: 78vw;
   }
+  .card-img-top {
+    width: 700px;
+    height: auto;
+  }
   #tecnologias {
     margin-left: 200px;
   }
@@ -531,7 +549,7 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     width: auto;
   }
-  #imgProjeto{
+  #imgProjeto {
     width: 100%;
     height: 300px;
     -webkit-font-smoothing: antialiased;
@@ -547,7 +565,7 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     width: auto;
   }
-  #imgProjeto{
+  #imgProjeto {
     width: 100%;
     height: 300px;
     -webkit-font-smoothing: antialiased;

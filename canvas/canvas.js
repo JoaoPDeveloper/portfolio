@@ -7,7 +7,7 @@ particlesJS("particles-js", {
       type: "polygon",
       stroke: { width: 0, color: "#000" },
       polygon: { nb_sides: 3 },
-      image: { src: "img/github.svg", width: 100, height: 100 },
+      image: { src: "img/github.svg", width: 100, height: 200 },
     },
     opacity: {
       value: 0.33711741093828423,
@@ -88,3 +88,6 @@ update = function () {
   requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
+const canvas = document.getElementById('particles');
+canvas.width = 800; // Definindo a largura do canvas para 800 pixels
+canvas.height = 600; // Definindo a altura do canvas para 600 pixels
