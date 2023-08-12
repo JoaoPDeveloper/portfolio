@@ -1,16 +1,16 @@
 
 particlesJS("particles-js", {
  particles: {
-   number: { value: 80, density: { enable: true, value_area: 800 } },
+   number: { value: 60, density: { enable: true, value_area: 1000 } },
    color: { value: "#959595" },
    shape: {
      type: "polygon",
-     stroke: { width: 0, color: "#000" },
-     polygon: { nb_sides: 3 },
+     stroke: { width: 100, color: "#ff000" },
+     polygon: { nb_sides: 0 },
      image: { src: "img/github.svg", width: 100, height: 200 },
    },
    opacity: {
-     value: 0.33711741093828423,
+     value: 0.10711741093828423,
      random: false,
      anim: {
        enable: false,
@@ -32,7 +32,7 @@ particlesJS("particles-js", {
    line_linked: {
      enable: true,
      distance: 110,
-     color: "#ff0000",
+     color: "#fff",
      opacity: 1.9839939789262425,
      width: 1.0975915704967394,
    },
@@ -55,13 +55,13 @@ particlesJS("particles-js", {
      resize: true,
    },
    modes: {
-     grab: { distance: 400, line_linked: { opacity: 0.51415601500706484 } },
+     grab: { distance: 300, line_linked: { opacity: 0.91415601500706484 } },
      bubble: {
        distance: 400,
-       size: 40,
+       size: 10,
        duration: 2,
-       opacity: 0.49010943099098525,
-       speed: 3,
+       opacity: 0.99010943099098525,
+       speed: 10,
      },
      repulse: { distance: 200, duration: 0.4 },
      push: { particles_nb: 4 },
@@ -70,6 +70,7 @@ particlesJS("particles-js", {
  },
  retina_detect: true,
 });
+
 var count_particles, stats, update;
 stats = new Stats();
 stats.setMode(0);
