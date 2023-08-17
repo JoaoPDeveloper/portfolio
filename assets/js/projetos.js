@@ -30,30 +30,30 @@ new bootstrap.Modal('#modalZoomImg').show();
 function alterarTemaSite() {  
  let tema = document.querySelector("html").getAttribute("data-bs-theme");
  
- if (tema === 'dark') {
-   document.querySelector("html").setAttribute("data-bs-theme", 'light');
-   document.querySelector("#alterarTemaSite").innerHTML = ` <i class="bi bi-moon-stars"></i>`;
-   document.querySelector("#textAbout").style.color = "white"
-   document.querySelector("#textoAbout").style.color = 'white'
-   document.querySelector("#aboutText").style.color = 'white'
-   document.querySelector("#textoInicial").style.color = "black"
-   document.querySelector("#textoPrincipal").style.color = "black"
-   document.querySelector("#projectsContainer").style.color = 'white';
-   document.querySelector(".icon3 img").src = "https://www.svgrepo.com/show/494569/rocket-innovation-space.svg'";
-   document.querySelector(".logo").style.color = 'black';
-   document.querySelector("#square").text.color = 'yellow';
+ if (tema === 'light') {
+  document.querySelector("html").setAttribute("data-bs-theme", 'dark');
+  document.querySelector("#alterarTemaSite").innerHTML = `<i class="bi bi-brightness-high-fill"></i>`;
+  document.querySelector("#textAbout").style.color = "yellow"
+  document.querySelector("#textoAbout").style.color = 'yellow'
+  document.querySelector("#aboutText").style.color = 'yellow'
+  document.querySelector("#textoInicial").style.color = "yellow"
+  document.querySelector("#textoPrincipal").style.color = "white"
+  document.querySelector(".logo").style.color = "white"
+  document.querySelector(".icon3 img").src = "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f680.svg";
+  document.querySelector("#projectsContainer").style.color = 'yellow';
+  document.querySelector("#square").style.color = 'yellow';
  } else {
-   document.querySelector("html").setAttribute("data-bs-theme", 'dark');
-   document.querySelector("#alterarTemaSite").innerHTML = `<i class="bi bi-brightness-high-fill"></i>`;
-   document.querySelector("#textAbout").style.color = "yellow"
-   document.querySelector("#textoAbout").style.color = 'yellow'
-   document.querySelector("#aboutText").style.color = 'yellow'
-   document.querySelector("#textoInicial").style.color = "yellow"
-   document.querySelector("#textoPrincipal").style.color = "white"
-   document.querySelector(".logo").style.color = "white"
-   document.querySelector(".icon3 img").src = "https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f680.svg";
-   document.querySelector("#projectsContainer").style.color = 'yellow';
-   document.querySelector("#square").style.color = 'yellow';
+  document.querySelector("html").setAttribute("data-bs-theme", 'light');
+  document.querySelector("#alterarTemaSite").innerHTML = ` <i class="bi bi-moon-stars"></i>`;
+  document.querySelector("#textAbout").style.color = "white"
+  document.querySelector("#textoAbout").style.color = 'white'
+  document.querySelector("#aboutText").style.color = 'white'
+  document.querySelector("#textoInicial").style.color = "black"
+  document.querySelector("#textoPrincipal").style.color = "black"
+  document.querySelector("#projectsContainer").style.color = 'white';
+  document.querySelector(".icon3 img").src = "https://www.svgrepo.com/show/494569/rocket-innovation-space.svg'";
+  document.querySelector(".logo").style.color = 'black';
+  document.querySelector("#square").text.color = 'yellow';
  }
  
  let botoes = document.querySelectorAll("#botaoCorProjeto");
