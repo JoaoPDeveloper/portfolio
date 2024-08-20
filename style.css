@@ -385,7 +385,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 1rem;
   transition: box-shadow 0.3s ease, transform 0.2s ease;
   margin-top: 20%;
-  z-index: 99999;
+  /* z-index: 99999; */
   position: relative;
   text-align: center;
 }

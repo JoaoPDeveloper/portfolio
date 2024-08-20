@@ -1,5 +1,17 @@
 let listaProjetos = [
   {
+    nome: "Get Temperature",
+    img: "https://i.ibb.co/Dw6sHrd/Captura-de-tela-2024-08-20-101507.png",
+    descricao:
+      "Projeto visa verificar a temperatura disponibilizada por uma API da ThinkSpeak de um Sensor de Temperaturas, assim, o usuário consegue verificar os dias anteriores desse sensor, Tecnologias utilizadas: PHP, JavaScript",
+    linkProjeto: "https://temperature.jsbdistribuidora.com.br/",
+    linkGithub: "https://github.com/JoaoPDeveloper/temperature-api",
+    tecnologia1: 'https://www.svgrepo.com/show/303656/php-logo.svg',
+    tecnologia2: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
+    tecnologia3: 'https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg',
+    tecnologia4: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg',
+  },
+  {
     nome: "My daily agenda",
     img: "https://i.ibb.co/FDnqF4B/Screenshot-2023-06-21-171354.png",
     descricao:
@@ -64,7 +76,7 @@ let listaProjetos = [
     tecnologia1: 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png',
     tecnologia2: 'https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg',
     tecnologia3: 'https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg',
-  },
+  }
   // {
   //  nome: "",
   //  img: "",
