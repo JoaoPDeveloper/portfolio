@@ -1,5 +1,4 @@
 import inertia from '@inertiajs/vite';
-import { wayfinder } from '@laravel/vite-plugin-wayfinder';
 import tailwindcss from '@tailwindcss/vite';
 import vue from '@vitejs/plugin-vue';
 import laravel from 'laravel-vite-plugin';
@@ -7,8 +6,6 @@ import { defineConfig } from 'vite';
 import { execSync } from 'child_process';
 
 // Detecta se o PHP está disponível no ambiente de build.
-// Em plataformas como Vercel (builder Node apenas) o PHP pode não existir,
-// então pulamos a execução/registro do Wayfinder para evitar falhas.
 const phpAvailable = (() => {
     try {
         execSync('php -v', { stdio: 'ignore' });
@@ -18,8 +15,8 @@ const phpAvailable = (() => {
     }
 })();
 
-export default defineConfig({
-    plugins: [
+export default defineConfig(async () => {
+    const plugins: any[] = [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.ts'],
             refresh: true,
@@ -34,12 +31,24 @@ export default defineConfig({
                 },
             },
         }),
-        ...(phpAvailable
-            ? [
-                  wayfinder({
-                      formVariants: true,
-                  }),
-              ]
-            : []),
-    ],
+    ];
+
+    if (phpAvailable) {
+        try {
+            const mod = await import('@laravel/vite-plugin-wayfinder');
+            if (mod && typeof mod.wayfinder === 'function') {
+                plugins.push(mod.wayfinder({ formVariants: true }));
+            }
+        } catch (e) {
+            // Não falhar o build só por não conseguir carregar o plugin
+            // (por exemplo, problema temporário no npm install).
+            // Registrar no console para facilitar debug remoto.
+            // eslint-disable-next-line no-console
+            console.warn('Could not load @laravel/vite-plugin-wayfinder:', e);
+        }
+    }
+
+    return {
+        plugins,
+    };
 });
