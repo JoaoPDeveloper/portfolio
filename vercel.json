@@ -1,5 +1,0 @@
-{
- "routes": [
-   { "src": "/canvas/(.*)", "dest": "/canvas/$1" }
- ]
-}
