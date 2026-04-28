@@ -71,7 +71,8 @@ class PublicPortfolioController extends Controller
                 'intro' => 'Laravel, Vue, JavaScript e interfaces bem acabadas.',
                 'bio' => '',
                 'about_points' => [],
-                'resolved_avatar_url' => '/assets/imgs/95835981.png',
+                // Use asset() to generate a full URL for the default avatar fallback.
+                'resolved_avatar_url' => asset('assets/imgs/95835981.png'),
                 'email' => 'joao_entreprise@hotmail.com',
                 'location' => 'Brasil',
                 'resume_url' => null,
