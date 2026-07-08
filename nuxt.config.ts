@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     },
   },
   app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
     head: {
       htmlAttrs: { lang: 'en' },
       title: 'Joao Pedro Lima Pereira - Portfolio',
@@ -25,6 +26,12 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: 'https://cdn-icons-png.flaticon.com/512/10456/10456439.png' },
+      ],
+      script: [
+        {
+          innerHTML: `(function(){var d=document.documentElement;var t=localStorage.getItem('appearance')||'system';if(t==='dark'||(t==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches)){d.classList.add('dark')}else{d.classList.remove('dark')}})();`,
+          type: 'text/javascript',
+        },
       ],
     },
   },

@@ -21,12 +21,10 @@ export function useAppearance() {
   }
 
   function applyTheme(value: Appearance) {
-    if (value === 'system') {
-      const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      document.documentElement.classList.toggle('dark', isDark);
-    } else {
-      document.documentElement.classList.toggle('dark', value === 'dark');
-    }
+    const isDark =
+      value === 'dark' ||
+      (value === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.classList.toggle('dark', isDark);
   }
 
   onMounted(() => {
