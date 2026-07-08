@@ -15,15 +15,15 @@ const translations: Record<string, Record<Locale, string>> = {
   'about.label': { pt: 'Sobre', en: 'About' },
   'about.title': { pt: 'Sobre mim.', en: 'About me.' },
 
-  // Stack
-  'stack.label': { pt: 'Tech stack', en: 'Tech stack' },
-  'stack.title': { pt: 'Ferramentas que uso para construir.', en: 'Tools I use to build.' },
-  'stack.description': { pt: 'Stack atual com dados editáveis diretamente no repositório.', en: 'Current stack with data editable directly in the repository.' },
-
   // Projects
   'projects.label': { pt: 'Projetos', en: 'Projects' },
   'projects.title': { pt: 'Trabalho selecionado.', en: 'Selected work.' },
   'projects.description': { pt: 'Projetos publicados com tecnologias, links e imagens atualizáveis.', en: 'Published projects with updatable technologies, links and images.' },
+
+  // Stack
+  'stack.label': { pt: 'Tech stack', en: 'Tech stack' },
+  'stack.title': { pt: 'Ferramentas que uso para construir.', en: 'Tools I use to build.' },
+  'stack.description': { pt: 'Stack atual com dados editáveis diretamente no repositório.', en: 'Current stack with data editable directly in the repository.' },
 
   // Footer
   'footer.subtitle': { pt: 'Vamos construir algo com boa base e boa cara.', en: "Let's build something with a solid foundation and great design." },

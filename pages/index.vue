@@ -68,8 +68,8 @@ useHead({
         <NuxtLink to="/" class="font-semibold tracking-tight">JoaoPDeveloper</NuxtLink>
 
         <div class="flex items-center gap-2 text-sm">
-          <a href="#projetos" class="hidden text-[#5f6b66] transition-all duration-500 ease-in-out hover:text-[#121512] sm:inline dark:text-[#a8b4ae] dark:hover:text-white">{{ t('nav.projects') }}</a>
           <a href="#stack" class="hidden text-[#5f6b66] transition-all duration-500 ease-in-out hover:text-[#121512] sm:inline dark:text-[#a8b4ae] dark:hover:text-white">{{ t('nav.stack') }}</a>
+          <a href="#projetos" class="hidden text-[#5f6b66] transition-all duration-500 ease-in-out hover:text-[#121512] sm:inline dark:text-[#a8b4ae] dark:hover:text-white">{{ t('nav.projects') }}</a>
           <a href="#contato" class="hidden text-[#5f6b66] transition-all duration-500 ease-in-out hover:text-[#121512] sm:inline dark:text-[#a8b4ae] dark:hover:text-white">{{ t('nav.contact') }}</a>
 
           <!-- Language toggle -->

@@ -1,13 +1,11 @@
 {
-  "name": "Joao Pedro Lima Pereira",
+  "name": "João Pedro Lima Pereira",
   "role": { "pt": "Desenvolvedor Full Stack", "en": "Full Stack Developer" },
   "headline": {
-    "pt": "Desenvolvedor Full Stack há 3 anos de experiência, atualmente atuando como Analista de Desenvolvimento de Software na Dataprev.",
-    "en": "Full Stack Developer with 3 years of experience, currently working as a Software Development Analyst at Dataprev."
+
   },
   "intro": {
-    "pt": "Sou desenvolvedor Full Stack há 3 anos de experiência no desenvolvimento de aplicações web, atuando atualmente como Analista de Desenvolvimento de Software na Dataprev. Tenho experiência na construção de soluções escaláveis, integrações de APIs e desenvolvimento de sistemas utilizando tecnologias modernas.",
-    "en": "I'm a Full Stack Developer with 3 years of experience building web applications, currently working as a Software Development Analyst at Dataprev. I have experience building scalable solutions, API integrations and system development using modern technologies."
+
   },
   "bio": {
     "pt": "Atuo profissionalmente como Desenvolvedor Full Stack há 3 anos e atualmente faço parte da equipe da Dataprev como Analista de Desenvolvimento de Software. Trabalho no desenvolvimento e manutenção de sistemas corporativos, participando de todas as etapas do ciclo de desenvolvimento, desde a implementação de novas funcionalidades até a correção de problemas e evolução de aplicações. Busco sempre escrever código limpo, escalável e de fácil manutenção, além de estar em constante evolução técnica.",
