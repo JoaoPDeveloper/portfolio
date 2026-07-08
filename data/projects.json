@@ -1,0 +1,138 @@
+[
+  {
+    "title": "SCI - Sistema de Controle Interno",
+    "slug": "sci-sistema-controle-interno",
+    "shortDescription": {
+      "pt": "Sistema ERP corporativo com múltiplos módulos e funcionalidades integradas.",
+      "en": "Corporate ERP system with multiple integrated modules and features."
+    },
+    "description": {
+      "pt": "Sistema de Controle Interno que funciona como um ERP, onde os usuários podem realizar operações como Pagamentos, Checklists, Viagens, Nota Fiscais e outras opções.",
+      "en": "Internal Control System that works as an ERP, where users can perform various integrated operations in a single environment."
+    },
+    "imageUrl": "https://i.ibb.co/PZJDKbT2/Captura-de-tela-2026-04-22-162835.png",
+    "projectUrl": null,
+    "githubUrl": null,
+    "isFeatured": true,
+    "technologies": ["laravel", "vue", "typescript", "php", "sql"]
+  },
+  {
+    "title": "Get Temperature",
+    "slug": "get-temperature",
+    "shortDescription": {
+      "pt": "Dashboard para acompanhar dados de temperatura de um sensor via API.",
+      "en": "Dashboard to track temperature data from a sensor via API."
+    },
+    "description": {
+      "pt": "Projeto para consultar a temperatura disponibilizada por uma API do ThingSpeak conectada a um sensor. A interface permite visualizar leituras recentes e histórico, ajudando o usuário a acompanhar os dados do equipamento com mais clareza.",
+      "en": "Project to query temperature data provided by a ThingSpeak API connected to a sensor. The interface allows viewing recent readings and history, helping users track equipment data more clearly."
+    },
+    "imageUrl": "https://i.ibb.co/Dw6sHrd/Captura-de-tela-2024-08-20-101507.png",
+    "projectUrl": "https://temperature.jsbdistribuidora.com.br/",
+    "githubUrl": "https://github.com/JoaoPDeveloper/temperature-api",
+    "isFeatured": true,
+    "technologies": ["php", "javascript", "css", "html"]
+  },
+  {
+    "title": "My Daily Agenda",
+    "slug": "my-daily-agenda",
+    "shortDescription": {
+      "pt": "Agenda web para organizar eventos, projetos e notificações.",
+      "en": "Web agenda to organize events, projects and notifications."
+    },
+    "description": {
+      "pt": "Aplicação para parametrização de projetos e eventos com nome, e-mails, descrição, telefone opcional e período de execução. Os dados ficam salvos localmente com LocalStorage e a experiência foi pensada para uso rápido no navegador.",
+      "en": "Application for parameterizing projects and events with name, emails, description, optional phone and execution period. Data is saved locally with LocalStorage and the experience was designed for quick browser use."
+    },
+    "imageUrl": "https://i.ibb.co/FDnqF4B/Screenshot-2023-06-21-171354.png",
+    "projectUrl": "https://daily-agenda-joaopdeveloper.vercel.app/",
+    "githubUrl": "https://github.com/JoaoPDeveloper/my-daily-agenda",
+    "isFeatured": true,
+    "technologies": ["javascript", "bootstrap", "html", "css"]
+  },
+  {
+    "title": "BuzzFeed Quiz",
+    "slug": "buzzfeed-quiz",
+    "shortDescription": {
+      "pt": "Clone de quiz inspirado no BuzzFeed, feito com Angular e TypeScript.",
+      "en": "BuzzFeed-inspired quiz clone, built with Angular and TypeScript."
+    },
+    "description": {
+      "pt": "Projeto de quiz com perguntas dinâmicas e resultado final para o usuário. O principal desafio foi estruturar rotas, estados e resultado do questionário em uma experiência responsiva para desktop e mobile.",
+      "en": "Quiz project with dynamic questions and final result for the user. The main challenge was structuring routes, states and quiz results in a responsive experience for desktop and mobile."
+    },
+    "imageUrl": "https://i.ibb.co/9N36zk6/buzzfeed.png",
+    "projectUrl": "https://joaopdeveloper-buzzquizz.vercel.app/",
+    "githubUrl": "https://github.com/JoaoPDeveloper/buzz-quiz-angular",
+    "isFeatured": true,
+    "technologies": ["typescript", "angular", "html", "css"]
+  },
+  {
+    "title": "Mundo Invertido",
+    "slug": "mundo-invertido",
+    "shortDescription": {
+      "pt": "Landing page interativa inspirada em Stranger Things.",
+      "en": "Interactive landing page inspired by Stranger Things."
+    },
+    "description": {
+      "pt": "Projeto criado em comemoração à quarta temporada de Stranger Things. A página alterna a experiência visual de acordo com a escolha do usuário e inclui formulário integrado ao Firebase.",
+      "en": "Project created to celebrate the fourth season of Stranger Things. The page alternates the visual experience according to user choice and includes a form integrated with Firebase."
+    },
+    "imageUrl": "https://i.ibb.co/dPn3jKR/inverted-world.png",
+    "projectUrl": "https://inverted-world-z4rk01.netlify.app/",
+    "githubUrl": "https://github.com/JoaoPDeveloper/mundo-invertido",
+    "isFeatured": false,
+    "technologies": ["javascript", "html", "css", "firebase"]
+  },
+  {
+    "title": "Pokedex",
+    "slug": "pokedex",
+    "shortDescription": {
+      "pt": "Consulta de Pokémon com dados vindos de API pública.",
+      "en": "Pokémon lookup with data from a public API."
+    },
+    "description": {
+      "pt": "Aplicação que consome uma API pública para listar Pokémon e exibir detalhes em modal. A interface usa cores associadas aos elementos de cada Pokémon e foi construída com JavaScript, HTML e CSS.",
+      "en": "Application that consumes a public API to list Pokémon and display details in a modal. The interface uses colors associated with each Pokémon's elements and was built with JavaScript, HTML and CSS."
+    },
+    "imageUrl": "https://i.ibb.co/g7wkCx7/pokedex.png",
+    "projectUrl": "https://pokedex-joaopdeveloper.netlify.app/",
+    "githubUrl": "https://github.com/JoaoPDeveloper/pokedex-lab",
+    "isFeatured": false,
+    "technologies": ["javascript", "html", "css"]
+  },
+  {
+    "title": "Game Mario",
+    "slug": "game-mario",
+    "shortDescription": {
+      "pt": "Jogo simples do Mario com interação, som e reinício.",
+      "en": "Simple Mario game with interaction, sound and restart."
+    },
+    "description": {
+      "pt": "Game no navegador com música, colisão e botão para reiniciar a sessão. Foi construído como exercício prático de animações, eventos e manipulação de DOM com JavaScript.",
+      "en": "Browser game with music, collision and restart button. Built as a practical exercise in animations, events and DOM manipulation with JavaScript."
+    },
+    "imageUrl": "https://i.ibb.co/71PzqFw/Mario.png",
+    "projectUrl": "https://joaopdeveloper-mario-game.vercel.app/",
+    "githubUrl": "https://github.com/JoaoPDeveloper/javascript-mario-game",
+    "isFeatured": false,
+    "technologies": ["javascript", "html", "css"]
+  },
+  {
+    "title": "Simulador Financeiro",
+    "slug": "simulador-financeiro",
+    "shortDescription": {
+      "pt": "Simulador de financiamento com entrada, juros, prazo e carência.",
+      "en": "Financing simulator with down payment, interest, term and grace period."
+    },
+    "description": {
+      "pt": "Projeto que calcula informações financeiras a partir de valor, entrada, juros e prazo. A aplicação também permite configurar carência e quantidade de meses para início do pagamento.",
+      "en": "Project that calculates financial information from value, down payment, interest and term. The application also allows configuring grace period and number of months before payment starts."
+    },
+    "imageUrl": "https://i.ibb.co/tMDKDBD/Simulador.png",
+    "projectUrl": "https://simulador-financeamento.vercel.app/",
+    "githubUrl": "https://github.com/JoaoPDeveloper/simulador-financeamento",
+    "isFeatured": false,
+    "technologies": ["javascript", "html", "css"]
+  }
+]

@@ -1,0 +1,19 @@
+[
+  { "name": "JavaScript", "slug": "javascript", "color": "#F7DF1E", "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png", "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" },
+  { "name": "Vue", "slug": "vue", "color": "#42B883", "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg", "url": "https://vuejs.org/" },
+  { "name": "React", "slug": "react", "color": "#61DAFB", "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg", "url": "https://react.dev/" },
+  { "name": "PHP", "slug": "php", "color": "#777BB4", "iconUrl": "https://www.php.net/images/logos/new-php-logo.svg", "url": "https://www.php.net/" },
+  { "name": "Laravel", "slug": "laravel", "color": "#FF2D20", "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg", "url": "https://laravel.com/" },
+  { "name": "SQL", "slug": "sql", "color": "#2F6DB5", "iconUrl": "https://upload.wikimedia.org/wikipedia/en/6/68/Oracle_SQL_Developer_logo.svg", "url": "https://www.oracle.com/br/database/technologies/appdev/sql.html" },
+  { "name": "Angular", "slug": "angular", "color": "#DD0031", "iconUrl": "https://www.svgrepo.com/show/353396/angular-icon.svg", "url": "https://angular.io/" },
+  { "name": "TypeScript", "slug": "typescript", "color": "#3178C6", "iconUrl": "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg", "url": "https://www.typescriptlang.org/" },
+  { "name": "Bootstrap", "slug": "bootstrap", "color": "#7952B3", "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg", "url": "https://getbootstrap.com/" },
+  { "name": "HTML5", "slug": "html", "color": "#E34F26", "iconUrl": "https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg", "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTML" },
+  { "name": "CSS3", "slug": "css", "color": "#1572B6", "iconUrl": "https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg", "url": "https://developer.mozilla.org/pt-BR/docs/Web/CSS" },
+  { "name": "Firebase", "slug": "firebase", "color": "#FFCA28", "iconUrl": "https://www.svgrepo.com/show/353735/firebase.svg", "url": "https://firebase.google.com/?hl=pt" },
+  { "name": "AWS", "slug": "aws", "color": "#FF9900", "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg", "url": "https://aws.amazon.com/pt/" },
+  { "name": "Git", "slug": "git", "color": "#F05032", "iconUrl": "https://git-scm.com/images/logos/downloads/Git-Logo-2Color.svg", "url": "https://git-scm.com/" },
+  { "name": "Tailwind", "slug": "tailwind", "color": "#38BDF8", "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg", "url": "https://tailwindcss.com/" },
+  { "name": "Java", "slug": "java", "color": "#007396", "iconUrl": "https://www.svgrepo.com/show/184143/java.svg", "url": "https://www.java.com/pt-BR/" },
+  { "name": "SpringBoot", "slug": "SpringBoot", "color": "#007396", "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg", "url": "https://www.java.com/pt-BR/" }
+]

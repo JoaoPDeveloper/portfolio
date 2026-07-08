@@ -1,0 +1,35 @@
+{
+  "name": "Joao Pedro Lima Pereira",
+  "role": { "pt": "Desenvolvedor Full Stack", "en": "Full Stack Developer" },
+  "headline": {
+    "pt": "Desenvolvedor Full Stack com 2 anos de experiência, atualmente atuando como Analista de Desenvolvimento de Software na Dataprev.",
+    "en": "Full Stack Developer with 2 years of experience, currently working as a Software Development Analyst at Dataprev."
+  },
+  "intro": {
+    "pt": "Sou desenvolvedor Full Stack com 2 anos de experiência no desenvolvimento de aplicações web, atuando atualmente como Analista de Desenvolvimento de Software na Dataprev. Tenho experiência na construção de soluções escaláveis, integrações de APIs e desenvolvimento de sistemas utilizando tecnologias modernas.",
+    "en": "I'm a Full Stack Developer with 2 years of experience building web applications, currently working as a Software Development Analyst at Dataprev. I have experience building scalable solutions, API integrations and system development using modern technologies."
+  },
+  "bio": {
+    "pt": "Atuo profissionalmente como Desenvolvedor Full Stack há 3 anos e atualmente faço parte da equipe da Dataprev como Analista de Desenvolvimento de Software. Trabalho no desenvolvimento e manutenção de sistemas corporativos, participando de todas as etapas do ciclo de desenvolvimento, desde a implementação de novas funcionalidades até a correção de problemas e evolução de aplicações. Busco sempre escrever código limpo, escalável e de fácil manutenção, além de estar em constante evolução técnica.",
+    "en": "I've been working professionally as a Full Stack Developer for 3 years and currently I'm part of the Dataprev team as a Software Development Analyst. I work on the development and maintenance of corporate systems, participating in all stages of the development cycle, from implementing new features to fixing issues and evolving applications. I always strive to write clean, scalable and maintainable code, while constantly evolving technically."
+  },
+  "aboutPoints": {
+    "pt": [
+      "Experiência profissional como Desenvolvedor FullStack.",
+      "Atualmente Analista de Desenvolvimento de Software na Dataprev.",
+      "Experiência com Laravel, PHP, Vue.js, JavaScript, TypeScript, SQL e desenvolvimento de APIs REST.",
+      "Vivência com manutenção e evolução de sistemas corporativos de grande porte.",
+      "Sempre buscando aprender novas tecnologias e desenvolver soluções com qualidade."
+    ],
+    "en": [
+      "Professional experience as a FullStack Developer.",
+      "Currently Software Development Analyst at Dataprev.",
+      "Experience with Laravel, PHP, Vue.js, JavaScript, TypeScript, SQL and REST API development.",
+      "Hands-on experience maintaining and evolving large-scale corporate systems.",
+      "Always seeking to learn new technologies and deliver quality solutions."
+    ]
+  },
+  "avatarUrl": "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDJiOXI3Yng5cWN1ZmFyNm5nazB3Nno1MGMyZjMxZmVobDlmcDNpZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif",
+  "email": "joao_entreprise@hotmail.com",
+  "location": { "pt": "Brasil", "en": "Brazil" }
+}

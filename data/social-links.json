@@ -1,0 +1,6 @@
+[
+  { "label": "GitHub", "url": "https://github.com/JoaoPDeveloper", "icon": "Github" },
+  { "label": "LinkedIn", "url": "https://www.linkedin.com/in/joao-dev-starter/", "icon": "Linkedin" },
+  { "label": "Email", "url": "mailto:joao_entreprise@hotmail.com", "icon": "Mail" },
+  { "label": "Ko-fi", "url": "https://ko-fi.com/joaopdeveloper", "icon": "Coffee" }
+]
