@@ -55,8 +55,11 @@ export function useI18n() {
 
   onMounted(() => {
     const saved = localStorage.getItem('locale') as Locale | null;
-    if (saved && (saved === 'pt' || saved === 'en')) {
+    if (saved === 'pt' || saved === 'en') {
       locale.value = saved;
+    } else {
+      const browserLang = navigator.language.toLowerCase();
+      locale.value = browserLang.startsWith('pt') ? 'pt' : 'en';
     }
   });
 
