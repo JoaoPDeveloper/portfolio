@@ -25,7 +25,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'Full Stack Developer - Laravel, Vue, JavaScript' },
       ],
       link: [
-        { rel: 'icon', type: 'image/png', href: 'https://cdn-icons-png.flaticon.com/512/10456/10456439.png' },
+        { rel: 'icon', type: 'image/png', href: 'https://img.icons8.com/?size=100&id=nqg2tDAxO1LG&format=png&color=000000' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap' },

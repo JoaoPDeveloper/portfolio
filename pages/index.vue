@@ -9,7 +9,7 @@ import technologies from '~/data/technologies.json';
 import socialLinks from '~/data/social-links.json';
 import projects from '~/data/projects.json';
 
-const { resolvedAppearance, updateAppearance } = useAppearance();
+const { resolvedAppearance: _ra, updateAppearance: _ua } = useAppearance();
 const { locale, t, toggleLocale } = useI18n();
 
 const profile = computed(() => ({
@@ -33,7 +33,7 @@ const profile = computed(() => ({
 const featuredProjects = computed(() => projects.filter((p) => p.isFeatured));
 const iconMap: Record<string, any> = { Coffee, Github, Linkedin, Mail };
 const socialIcon = (icon?: string | null) => icon && icon in iconMap ? iconMap[icon] : ArrowUpRight;
-const toggleTheme = () => updateAppearance(resolvedAppearance.value === 'dark' ? 'light' : 'dark');
+const toggleTheme = () => {};
 const getTechBySlug = (slug: string) => technologies.find((t) => t.slug === slug);
 const localizedShort = (p: typeof projects[0]) => p.shortDescription[locale.value];
 
@@ -278,9 +278,8 @@ useHead({ title: `${profileData.name} ${profileData.lastName} - Portfolio` });
             <Languages class="size-3.5" />
             {{ locale === 'pt' ? 'EN' : 'PT' }}
           </button>
-          <button type="button" class="ml-1 inline-flex size-9 items-center justify-center rounded-full border border-white/14 text-[#9aa3b4] transition hover:border-[#11b5a4]/50 hover:text-white" @click="toggleTheme">
-            <Sun v-if="resolvedAppearance === 'dark'" class="size-4" />
-            <Moon v-else class="size-4" />
+          <button type="button" class="ml-1 inline-flex size-9 items-center justify-center rounded-full border border-white/14 text-[#9aa3b4] transition hover:border-[#11b5a4]/50 hover:text-white" title="Dark mode only" disabled>
+            <Moon class="size-4" />
           </button>
         </div>
       </nav>

@@ -20,11 +20,8 @@ export function useAppearance() {
     }
   }
 
-  function applyTheme(value: Appearance) {
-    const isDark =
-      value === 'dark' ||
-      (value === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    document.documentElement.classList.toggle('dark', isDark);
+  function applyTheme(_value: Appearance) {
+    document.documentElement.classList.add('dark');
   }
 
   onMounted(() => {
