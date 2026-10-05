@@ -1,33 +1,262 @@
 {
-  "name": "João Pedro Lima Pereira",
+  "name": "João Pedro",
+  "lastName": "Lima Pereira",
   "role": { "pt": "Desenvolvedor Full Stack", "en": "Full Stack Developer" },
   "headline": {
-
+    "pt": "Desenvolvedor Back-End & Full Stack, focado em Java, PHP e sistemas corporativos.",
+    "en": "Back-End & Full Stack Developer, focused on Java, PHP and corporate systems."
   },
   "intro": {
-
+    "pt": "Construindo sistemas que escalam, com código limpo e foco em resultado.",
+    "en": "Building systems that scale, with clean code and a focus on results."
   },
   "bio": {
-    "pt": "Atuo profissionalmente como Desenvolvedor Full Stack há 3 anos e atualmente faço parte da equipe da Dataprev como Analista de Desenvolvimento de Software. Trabalho no desenvolvimento e manutenção de sistemas corporativos, participando de todas as etapas do ciclo de desenvolvimento, desde a implementação de novas funcionalidades até a correção de problemas e evolução de aplicações. Busco sempre escrever código limpo, escalável e de fácil manutenção, além de estar em constante evolução técnica.",
-    "en": "I've been working professionally as a Full Stack Developer for 3 years and currently I'm part of the Dataprev team as a Software Development Analyst. I work on the development and maintenance of corporate systems, participating in all stages of the development cycle, from implementing new features to fixing issues and evolving applications. I always strive to write clean, scalable and maintainable code, while constantly evolving technically."
+    "pt": "Desenvolvedor Full Stack com mais de 3 anos de experiência profissional, atuando em manutenção e evolução de sistemas corporativos de grande porte. Atualmente na Dataprev como Desenvolvedor de Software, trabalhando com Java, Spring Boot, TypeScript, React e AWS. Apaixonado por resolver problemas e otimizar processos.",
+    "en": "Full Stack Developer with 3+ years of professional experience, working on maintenance and evolution of large-scale corporate systems. Currently at Dataprev as a Software Developer, working with Java, Spring Boot, TypeScript, React and AWS. Passionate about solving problems and optimizing processes."
   },
   "aboutPoints": {
     "pt": [
-      "Experiência profissional como Desenvolvedor FullStack.",
-      "Atualmente Analista de Desenvolvimento de Software na Dataprev.",
-      "Experiência com Laravel, PHP, Vue.js, JavaScript, TypeScript, SQL e desenvolvimento de APIs REST.",
-      "Vivência com manutenção e evolução de sistemas corporativos de grande porte.",
-      "Sempre buscando aprender novas tecnologias e desenvolver soluções com qualidade."
+      "Desenvolvedor Full Stack com 3+ anos de experiência profissional.",
+      "Atualmente Desenvolvedor de Software na Dataprev.",
+      "Forte conhecimento em PHP, Java, Spring Boot, Laravel, Vue.js e SQL.",
+      "Experiência com AWS, Microsoft Azure, Git e sistemas legados.",
+      "Inglês avançado (escrita e leitura) e intermediário (conversação)."
     ],
     "en": [
-      "Professional experience as a FullStack Developer.",
-      "Currently Software Development Analyst at Dataprev.",
-      "Experience with Laravel, PHP, Vue.js, JavaScript, TypeScript, SQL and REST API development.",
-      "Hands-on experience maintaining and evolving large-scale corporate systems.",
-      "Always seeking to learn new technologies and deliver quality solutions."
+      "Full Stack Developer with 3+ years of professional experience.",
+      "Currently Software Developer at Dataprev.",
+      "Strong knowledge in PHP, Java, Spring Boot, Laravel, Vue.js and SQL.",
+      "Experience with AWS, Microsoft Azure, Git and legacy systems.",
+      "Advanced English (writing & reading) and intermediate speaking."
     ]
   },
+  "stats": {
+    "pt": [
+      { "value": "3+", "label": "anos de experiência" },
+      { "value": "10+", "label": "projetos entregues" },
+      { "value": "3", "label": "empresas" },
+      { "value": "EN · ES", "label": "Inglês avançado · Espanhol avançado" }
+    ],
+    "en": [
+      { "value": "3+", "label": "years of experience" },
+      { "value": "10+", "label": "projects delivered" },
+      { "value": "3", "label": "companies" },
+      { "value": "EN · ES", "label": "Advanced English · Advanced Spanish" }
+    ]
+  },
+  "experience": [
+    {
+      "role": { "pt": "Desenvolvedor de Software", "en": "Software Developer" },
+      "company": "Dataprev",
+      "type": { "pt": "CLT · Híbrido", "en": "Full-time · Hybrid" },
+      "start": { "pt": "Mai 2026", "en": "May 2026" },
+      "end": { "pt": "atual", "en": "present" },
+      "duration": { "pt": "atual", "en": "present" },
+      "description": {
+        "pt": "Manutenção de sistemas legados em Java e desenvolvimento com tecnologias modernas em uma das maiores empresas de tecnologia do governo federal brasileiro.",
+        "en": "Maintenance of legacy Java systems and development with modern technologies at one of the largest technology companies of the Brazilian federal government."
+      },
+      "highlights": {
+        "pt": [
+          "Manutenção de sistemas legados em Java.",
+          "Uso e manutenção de sistemas com Spring Boot, Services e AWS.",
+          "Criação de queries SQL e procedures.",
+          "Desenvolvimento com TypeScript, React e Node.js."
+        ],
+        "en": [
+          "Maintenance of legacy Java systems.",
+          "Use and maintenance of systems with Spring Boot, Services and AWS.",
+          "Creation of SQL queries and procedures.",
+          "Development with TypeScript, React and Node.js."
+        ]
+      },
+      "technologies": ["Java", "Spring Boot", "TypeScript", "React", "Node.js", "AWS", "SQL"]
+    },
+    {
+      "role": { "pt": "Desenvolvedor de Software Full Stack", "en": "Full Stack Software Developer" },
+      "company": "ADTR Software",
+      "type": { "pt": "CLT · Presencial", "en": "Full-time · On-site" },
+      "start": { "pt": "Abr 2025", "en": "Apr 2025" },
+      "end": { "pt": "Abr 2026", "en": "Apr 2026" },
+      "duration": { "pt": "1 ano", "en": "1 year" },
+      "description": {
+        "pt": "Criação de projetos e novas funcionalidades para o produto interno da empresa, com foco em PHP, Vue.js e Laravel.",
+        "en": "Creation of projects and new features for the company's internal product, focused on PHP, Vue.js and Laravel."
+      },
+      "highlights": {
+        "pt": [
+          "Criação de projetos e novas funcionalidades para o produto interno.",
+          "Manutenção de software com PHP, Vue.js e Laravel.",
+          "Criação de novos relatórios e queries SQL.",
+          "Participação em todo o ciclo de desenvolvimento do produto."
+        ],
+        "en": [
+          "Creation of projects and new features for the internal product.",
+          "Software maintenance with PHP, Vue.js and Laravel.",
+          "Creation of new reports and SQL queries.",
+          "Participation in the full product development cycle."
+        ]
+      },
+      "technologies": ["PHP", "Vue.js", "Laravel", "SQL", "Git"]
+    },
+    {
+      "role": { "pt": "Assistente de TI T2", "en": "IT Assistant T2" },
+      "company": "JSB Distribuidora",
+      "type": { "pt": "CLT · Presencial", "en": "Full-time · On-site" },
+      "start": { "pt": "Abr 2022", "en": "Apr 2022" },
+      "end": { "pt": "Abr 2025", "en": "Apr 2025" },
+      "duration": { "pt": "3 anos", "en": "3 years" },
+      "description": {
+        "pt": "Manutenção, atualização e desenvolvimento de sistemas internos. Suporte a usuários, criação de queries, views e desenvolvimento de projetos.",
+        "en": "System maintenance, updates and development. User support, creation of queries, views and project development."
+      },
+      "highlights": {
+        "pt": [
+          "Manutenção e desenvolvimento de sistemas internos com PHP e SQL.",
+          "Criação de dashboards e relatórios com PowerBI.",
+          "Suporte técnico a usuários e resolução de problemas.",
+          "Criação de dashboard de monitoramento de temperatura via API IoT."
+        ],
+        "en": [
+          "Maintenance and development of internal systems with PHP and SQL.",
+          "Creation of dashboards and reports with PowerBI.",
+          "Technical user support and troubleshooting.",
+          "Creation of temperature monitoring dashboard via IoT API."
+        ]
+      },
+      "technologies": ["PHP", "SQL", "PowerBI", "JavaScript", "HTML", "CSS"]
+    }
+  ],
   "avatarUrl": "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDJiOXI3Yng5cWN1ZmFyNm5nazB3Nno1MGMyZjMxZmVobDlmcDNpZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif",
   "email": "joao_entreprise@hotmail.com",
-  "location": { "pt": "Brasil", "en": "Brazil" }
+  "whatsapp": "https://wa.me/5586999854094",
+  "location": { "pt": "Brasil", "en": "Brazil" },
+  "cases": [
+    {
+      "tag": "IoT · Dashboard",
+      "context": "JSB Distribuidora",
+      "title": {
+        "pt": "Dashboard de monitoramento de temperatura em tempo real",
+        "en": "Real-time temperature monitoring dashboard"
+      },
+      "problem": {
+        "pt": "A empresa precisava acompanhar a temperatura de equipamentos em tempo real, mas não tinha nenhuma interface visual para os dados do sensor IoT conectado à API ThingSpeak.",
+        "en": "The company needed to monitor equipment temperature in real time, but had no visual interface for the IoT sensor data connected to the ThingSpeak API."
+      },
+      "approach": {
+        "pt": "Desenvolvi um dashboard em PHP e JavaScript que consome a API do ThingSpeak, exibe leituras recentes e histórico em gráficos, com atualização automática a cada intervalo configurável.",
+        "en": "I developed a PHP and JavaScript dashboard that consumes the ThingSpeak API, displays recent readings and history in charts, with automatic refresh at a configurable interval."
+      },
+      "result": {
+        "pt": "A equipe passou a monitorar os equipamentos em tempo real pelo navegador, reduzindo o tempo de resposta a falhas e eliminando a necessidade de verificações manuais.",
+        "en": "The team started monitoring equipment in real time via browser, reducing response time to failures and eliminating the need for manual checks."
+      },
+      "technologies": ["PHP", "JavaScript", "ThingSpeak API", "HTML", "CSS"]
+    },
+    {
+      "tag": "ERP · Full Stack",
+      "context": "ADTR Software",
+      "title": {
+        "pt": "Módulos integrados para sistema ERP corporativo",
+        "en": "Integrated modules for corporate ERP system"
+      },
+      "problem": {
+        "pt": "O produto interno da empresa precisava de novos módulos — pagamentos, viagens e notas fiscais — integrados ao sistema existente sem quebrar fluxos já em produção.",
+        "en": "The company's internal product needed new modules — payments, travel and invoices — integrated into the existing system without breaking flows already in production."
+      },
+      "approach": {
+        "pt": "Desenvolvi os módulos com Laravel no back-end e Vue.js no front-end, criando APIs REST, queries SQL otimizadas e componentes reutilizáveis que se encaixaram na arquitetura existente.",
+        "en": "I built the modules with Laravel on the back-end and Vue.js on the front-end, creating REST APIs, optimized SQL queries and reusable components that fit into the existing architecture."
+      },
+      "result": {
+        "pt": "Os módulos foram entregues dentro do prazo e adotados por todos os clientes do produto, reduzindo processos manuais e centralizando operações financeiras em uma única plataforma.",
+        "en": "The modules were delivered on time and adopted by all product clients, reducing manual processes and centralizing financial operations in a single platform."
+      },
+      "technologies": ["PHP", "Laravel", "Vue.js", "TypeScript", "SQL"]
+    },
+    {
+      "tag": "Finance · Front-End",
+      "context": "Projeto Pessoal",
+      "title": {
+        "pt": "Simulador de financiamento com cálculo de carência e juros",
+        "en": "Financing simulator with grace period and interest calculation"
+      },
+      "problem": {
+        "pt": "Usuários precisavam simular financiamentos com variáveis como entrada, taxa de juros, prazo e carência, mas as ferramentas disponíveis eram complexas ou não cobriam todos os parâmetros.",
+        "en": "Users needed to simulate financing with variables like down payment, interest rate, term and grace period, but available tools were complex or didn't cover all parameters."
+      },
+      "approach": {
+        "pt": "Construí uma SPA em JavaScript puro com interface limpa, cálculo em tempo real conforme o usuário preenche os campos, e suporte a carência configurável por número de meses.",
+        "en": "I built a pure JavaScript SPA with a clean interface, real-time calculation as the user fills in the fields, and support for a configurable grace period by number of months."
+      },
+      "result": {
+        "pt": "Aplicação publicada e acessível publicamente, com feedback imediato ao usuário e zero dependências externas — demonstrando domínio de lógica financeira e manipulação de DOM.",
+        "en": "Application published and publicly accessible, with immediate user feedback and zero external dependencies — demonstrating mastery of financial logic and DOM manipulation."
+      },
+      "technologies": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+      "tag": "PowerBI · Analytics",
+      "context": "JSB Distribuidora",
+      "title": {
+        "pt": "Dashboards analíticos para gestão operacional",
+        "en": "Analytical dashboards for operational management"
+      },
+      "problem": {
+        "pt": "A gestão não tinha visibilidade consolidada sobre indicadores operacionais. Os dados existiam no banco, mas não havia forma prática de acompanhá-los sem rodar queries manualmente.",
+        "en": "Management had no consolidated visibility over operational indicators. The data existed in the database, but there was no practical way to track it without running queries manually."
+      },
+      "approach": {
+        "pt": "Criei views e queries SQL otimizadas para expor os dados necessários, depois construí dashboards no PowerBI conectados diretamente ao banco, com filtros por período e categoria.",
+        "en": "I created optimized SQL views and queries to expose the required data, then built PowerBI dashboards connected directly to the database, with filters by period and category."
+      },
+      "result": {
+        "pt": "A gestão passou a tomar decisões com base em dados atualizados diariamente, eliminando relatórios manuais em planilhas e reduzindo o tempo de análise de horas para minutos.",
+        "en": "Management started making decisions based on daily updated data, eliminating manual spreadsheet reports and reducing analysis time from hours to minutes."
+      },
+      "technologies": ["SQL", "PowerBI", "PHP"]
+    }
+  ],
+  "testimonials": [
+    {
+      "initials": "HL",
+      "name": "Henrique Leal",
+      "role": "IT Manager",
+      "company": "JSB Distribuidora",
+      "quote": {
+        "pt": "Profissional extremamente competente e ágil, consegue encontrar soluções e formas de desenvolver e resolver problemas, altamente centrado e direcionado sempre às melhores causas da empresa.",
+        "en": "Extremely competent and agile professional, able to find solutions and ways to develop and solve problems, highly focused and always directed towards the best interests of the company."
+      }
+    },
+        {
+      "initials": "DW",
+      "name": "Daniel Wanderley",
+      "role": "Senior Programming Manager",
+      "company": "ADTR Software",
+      "quote": {
+        "pt": "Rápida linha de aprendizado; tornou-se um programador completo, apto a trabalhar com grandes projetos, arquitetando estruturas complexas e de grande fluxo de informações. Recomendo pelo caráter proativo e grande espírito de equipe.",
+        "en": "Rapid learning curve; became a well-rounded programmer capable of handling large-scale projects and architecting complex structures involving high data volume. I recommend him for his proactive attitude and strong team spirit."
+      }
+    },
+     {
+      "initials": "EA",
+      "name": "Eurico Araujo",
+      "role": "Mid-level Full Stack Developer",
+      "company": "Sisloc",
+      "quote": {
+        "pt": "Conhece com profundidade a linguagem PHP e Java, tem ótimos insights que facilitam o trabalho do dia a dia. Foi uma excelente referência para todo o time e contribuiu ativamente para o sucesso do projeto.",
+        "en": "He has deep knowledge of PHP and Java and offers great insights that streamline day-to-day work. He was an excellent resource for the entire team and actively contributed to the project's success."
+      }
+    },
+      {
+      "initials": "MF",
+      "name": "Marcelo Freire",
+      "role": "IT Analyst Developer – Manager",
+      "company": "DATAPREV",
+      "quote": {
+        "pt": "conhecimento profundo em react, Javascript, rápida forma de agir e pensar em solução de problemas, ótimo conhecimento com Java e Springboot, ajudando com novas demandas e ideias de soluções internas.",
+        "en": "In-depth knowledge of React and JavaScript; quick to act and think when solving problems; strong expertise in Java and Spring Boot; assisting with new requirements and ideas for internal solutions."
+      }
+    }
+  ]
 }

@@ -29,6 +29,30 @@ const translations: Record<string, Record<Locale, string>> = {
   'footer.subtitle': { pt: 'Vamos construir algo com boa base e boa cara.', en: "Let's build something with a solid foundation and great design." },
   'footer.title': { pt: 'Entre em contato.', en: 'Get in touch.' },
 
+  // Experience
+  'experience.label': { pt: 'Trajetória', en: 'Experience' },
+  'experience.title': { pt: 'Trajetória profissional.', en: 'Professional journey.' },
+  'experience.present': { pt: 'atual', en: 'present' },
+
+  // Cases
+  'cases.label': { pt: 'Cases', en: 'Cases' },
+  'cases.title': { pt: 'Cases de sucesso.', en: 'Success cases.' },
+  'cases.description': { pt: 'Problemas reais, abordagem e resultado.', en: 'Real problems, approach and result.' },
+  'cases.problem': { pt: 'Problema', en: 'Problem' },
+  'cases.approach': { pt: 'Abordagem', en: 'Approach' },
+  'cases.result': { pt: 'Resultado', en: 'Result' },
+  'cases.empty': { pt: 'Um case de sucesso foi quando eu consegui concluir uma implantação e finalização de um projeto em tempo recorde, era um projeto voltado para a utilização em Camaras no estado do maranhão e piaui, onde ele puxava os dados para o cliente e os transformava em uma planilha de forma resumida e prática .'
+    , en: 'A success story involved successfully completing the implementation and finalization of a project in record time; the project was designed for use by Chambers of Commerce in the states of Maranhão and Piauí, retrieving data for the client and transforming it into a concise, practical spreadsheet.' },
+
+  // Testimonials
+  'testimonials.label': { pt: 'Depoimentos', en: 'Testimonials' },
+  'testimonials.title': { pt: 'O que dizem sobre mim.', en: 'What people say.' },
+  'testimonials.empty': { pt: 'Depoimentos em breve.', en: 'Testimonials coming soon.' },
+
+  // Contact
+  'contact.open': { pt: 'Aberto para vagas nacionais e internacionais.', en: 'Open to national and international opportunities.' },
+  'contact.whatsapp': { pt: 'WhatsApp', en: 'WhatsApp' },
+
   // Project detail
   'project.label': { pt: 'Projeto', en: 'Project' },
   'project.back': { pt: 'Voltar', en: 'Back' },
@@ -57,10 +81,8 @@ export function useI18n() {
     const saved = localStorage.getItem('locale') as Locale | null;
     if (saved === 'pt' || saved === 'en') {
       locale.value = saved;
-    } else {
-      const browserLang = navigator.language.toLowerCase();
-      locale.value = browserLang.startsWith('pt') ? 'pt' : 'en';
     }
+    // default is already 'en' from useState initializer
   });
 
   return { locale, t, toggleLocale };
