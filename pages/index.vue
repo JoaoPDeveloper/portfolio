@@ -112,18 +112,82 @@ onMounted(() => {
   if (!tc) return;
   const gctx = tc.getContext('2d')!;
 
-  // Connections: index pairs that make sense (back-end cluster, front-end cluster, etc.)
-  // technologies order: Java(0) Spring(1) PHP(2) Laravel(3) TS(4) Vue(5) React(6) Angular(7)
-  // Node(8) JS(9) SQL(10) AWS(11) Git(12) Tailwind(13) Firebase(14) Bootstrap(15) HTML(16) CSS(17)
-  const edges = [
-    [0,1],[0,10],[0,11],[1,10],[1,11],[1,12],
-    [2,3],[2,10],[2,16],[2,17],[3,5],[3,10],[3,12],
-    [4,5],[4,6],[4,7],[4,8],[4,9],
-    [5,13],[5,16],[5,17],[6,13],[6,16],[6,17],
-    [7,16],[7,17],[8,9],[8,10],
-    [9,16],[9,17],[9,14],[9,15],
-    [11,12],[13,17],[14,16],[15,16],[15,17],
-  ];
+  // Java(0), Spring(1), PHP(2), Laravel(3), TS(4), Vue(5), React(6), Angular(7),
+// Node(8), JS(9), SQL(10), AWS(11), Git(12), Tailwind(13), Firebase(14), Bootstrap(15),
+// HTML(16), CSS(17), docker(18), postgreSql(19), LLMs(20), ElasticSearch(21), Nextjs(22),
+// NestJS(23), Redis(24), Kubernetes(25), Python(26)
+
+const edges = [
+  // Back-end Java + Spring
+  [0, 1], [0, 10], [0, 11], [1, 10], [1, 11], [1, 12],
+
+  // PHP + Laravel
+  [2, 3], [2, 10], [2, 16], [2, 17], [3, 5], [3, 10], [3, 12],
+
+  // Front-end: TypeScript + frameworks
+  [4, 5], [4, 6], [4, 7], [4, 8], [4, 9],
+  [5, 13], [5, 16], [5, 17],
+  [6, 13], [6, 16], [6, 17],
+  [22, 5], [22, 3], [22, 2],
+  [7, 16], [7, 17],
+
+  // Node.js + JS
+  [8, 9], [8, 10], [8, 18], [8, 23], [8, 24], // Node → JS, SQL, docker, Nest, Redis
+  [9, 16], [9, 17], [9, 14], [9, 15],
+
+  // Docker, Deploy, Estilo
+  [11, 12], [13, 17], [14, 16], [15, 16], [15, 17],
+
+  // Banco de dados relacional
+  [10, 19], // SQL → PostgreSQL
+  [3, 19],  // Laravel → PostgreSQL
+  [1, 19],  // Spring → PostgreSQL
+
+  // NestJS: framework back-end moderno (Node + TS)
+  [23, 4],  // Nest → TypeScript
+  [23, 8],  // Nest → Node.js
+  [23, 19], // Nest → PostgreSQL
+  [23, 24], // Nest → Redis
+  [23, 21], // Nest → Elasticsearch (logs, search)
+  [23, 20], // Nest → LLMs (integração com IA)
+
+  // Redis: cache e mensageria
+  [24, 19], // Redis ↔ PostgreSQL (cache do banco)
+  [24, 8],  // Redis ← Node.js
+  [24, 23], // Redis ← NestJS
+
+  // Elasticsearch: busca e análise
+  [21, 19], // Elasticsearch ← PostgreSQL (sync de dados)
+  [21, 24], // Elasticsearch ← Redis (eventos, cache)
+  [21, 8],  // Elasticsearch ← Node.js
+  [21, 23], // Elasticsearch ← NestJS
+  [21, 20], // Elasticsearch → LLMs (RAG: retriever)
+
+  // LLMs: modelos de linguagem
+  [20, 4],  // LLMs ← TypeScript
+  [20, 8],  // LLMs ← Node.js
+  [20, 21], // LLMs ← Elasticsearch (busca semântica)
+  [20, 19], // LLMs ← PostgreSQL (contexto estruturado)
+  [20, 9],  // LLMs ← JS
+  [20, 26], // LLMs ← Python (fine-tuning, treinamento)
+
+  // Containerização & orquestração
+  [18, 25], // docker → Kubernetes
+  [23, 18], // Nest → docker
+  [24, 18], // Redis → docker
+  [19, 18], // PostgreSQL → docker
+  [21, 18], // Elasticsearch → docker
+  [8,  18], // Node → docker
+
+  [25, 11], // Kubernetes → AWS (cloud)
+  [18, 11], // docker → AWS
+
+  // Python: uso em IA e scripts
+  [26, 20], // Python → LLMs (treinamento)
+  [26, 21], // Python → Elasticsearch (análise de dados)
+  [26, 19], // Python → PostgreSQL (ETL)
+  [26, 18], // Python → docker
+];
 
   type Node = { x: number; y: number; vx: number; vy: number; ox: number; oy: number; t: number; img: HTMLImageElement | null; loaded: boolean; };
   const nodes: Node[] = [];

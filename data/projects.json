@@ -16,39 +16,22 @@
     "isFeatured": true,
     "technologies": ["laravel", "vue", "typescript", "php", "sql"]
   },
-  {
-    "title": "Get Temperature",
-    "slug": "get-temperature",
+    {
+    "title": "NovaTech - Blog",
+    "slug": "blog",
     "shortDescription": {
-      "pt": "Dashboard de monitoramento de temperatura em tempo real via API IoT (ThingSpeak).",
-      "en": "Real-time temperature monitoring dashboard via IoT API (ThingSpeak)."
+      "pt": "Blog pessoal com consumo de IA via API, utilizando Tokens para geração de novas matérias diariamente de forma autonoma de fontes confiáveis.",
+      "en": "A personal blog that consumes AI via an API, using tokens to autonomously generate new articles on a daily basis from reliable sources."
     },
     "description": {
-      "pt": "Projeto para consultar a temperatura disponibilizada por uma API do ThingSpeak conectada a um sensor. A interface permite visualizar leituras recentes e histórico, ajudando o usuário a acompanhar os dados do equipamento com mais clareza.",
-      "en": "Project to query temperature data provided by a ThingSpeak API connected to a sensor. The interface allows viewing recent readings and history, helping users track equipment data more clearly."
+      "pt": "Blog de noticias sobre Inteligência Artificial, Jogos e Animes & mangás, com coleta automatizada de fontes externas, geração de artigos assistida por IA (Google Gemini) e publicação via painel administrativo.",
+      "en": "A news blog covering Artificial Intelligence, Games, and Anime & Manga, featuring automated collection from external sources, AI-assisted article generation (Google Gemini), and publication via an administrative dashboard."
     },
-    "imageUrl": "https://i.ibb.co/Dw6sHrd/Captura-de-tela-2024-08-20-101507.png",
-    "projectUrl": "https://temperature.jsbdistribuidora.com.br/",
-    "githubUrl": "https://github.com/JoaoPDeveloper/temperature-api",
-    "isFeatured": true,
-    "technologies": ["php", "javascript", "css", "html"]
-  },
-  {
-    "title": "Simulador Financeiro",
-    "slug": "simulador-financeiro",
-    "shortDescription": {
-      "pt": "Simulador de financiamento com cálculo de entrada, juros, prazo e carência.",
-      "en": "Financing simulator with down payment, interest rate, term and grace period calculation."
-    },
-    "description": {
-      "pt": "Projeto que calcula informações financeiras a partir de valor, entrada, juros e prazo. A aplicação também permite configurar carência e quantidade de meses para início do pagamento.",
-      "en": "Project that calculates financial information from value, down payment, interest and term. The application also allows configuring grace period and number of months before payment starts."
-    },
-    "imageUrl": "https://i.ibb.co/tMDKDBD/Simulador.png",
-    "projectUrl": "https://simulador-financeamento.vercel.app/",
-    "githubUrl": "https://github.com/JoaoPDeveloper/simulador-financeamento",
-    "isFeatured": true,
-    "technologies": ["javascript", "html", "css"]
+    "imageUrl": "https://i.ibb.co/g7wkCx7/pokedex.png",
+    "projectUrl": "https://blog-xi-umber.vercel.app/",
+    "githubUrl": "https://github.com/JoaoPDeveloper/Blog",
+    "isFeatured": false,
+    "technologies": ["php", "next", "typescript","redis","sql", "LLMs", "elasticSearch","docker"]
   },
   {
     "title": "My Daily Agenda",
@@ -68,21 +51,38 @@
     "technologies": ["javascript", "bootstrap", "html", "css"]
   },
   {
-    "title": "BuzzFeed Quiz",
-    "slug": "buzzfeed-quiz",
+    "title": "Get Temperature",
+    "slug": "get-temperature",
     "shortDescription": {
-      "pt": "Clone de quiz inspirado no BuzzFeed, com Angular e TypeScript.",
-      "en": "BuzzFeed-inspired quiz clone built with Angular and TypeScript."
+      "pt": "Dashboard de monitoramento de temperatura em tempo real via API IoT (ThingSpeak).",
+      "en": "Real-time temperature monitoring dashboard via IoT API (ThingSpeak)."
     },
     "description": {
-      "pt": "Projeto de quiz com perguntas dinâmicas e resultado final para o usuário. O principal desafio foi estruturar rotas, estados e resultado do questionário em uma experiência responsiva para desktop e mobile.",
-      "en": "Quiz project with dynamic questions and final result for the user. The main challenge was structuring routes, states and quiz results in a responsive experience for desktop and mobile."
+      "pt": "Projeto para consultar a temperatura disponibilizada por uma API do ThingSpeak conectada a um sensor. A interface permite visualizar leituras recentes e histórico, ajudando o usuário a acompanhar os dados do equipamento com mais clareza.",
+      "en": "Project to query temperature data provided by a ThingSpeak API connected to a sensor. The interface allows viewing recent readings and history, helping users track equipment data more clearly."
     },
-    "imageUrl": "https://i.ibb.co/9N36zk6/buzzfeed.png",
-    "projectUrl": "https://joaopdeveloper-buzzquizz.vercel.app/",
-    "githubUrl": "https://github.com/JoaoPDeveloper/buzz-quiz-angular",
-    "isFeatured": false,
-    "technologies": ["typescript", "angular", "html", "css"]
+    "imageUrl": "https://i.ibb.co/Dw6sHrd/Captura-de-tela-2024-08-20-101507.png",
+    "projectUrl": "https://temperature.jsbdistribuidora.com.br/",
+    "githubUrl": "https://github.com/JoaoPDeveloper/temperature-api",
+    "isFeatured": true,
+    "technologies": ["php", "javascript", "css", "html"]
+  },
+  {
+    "title": "BuzzFeed",
+    "slug": "BuzzFeed",
+    "shortDescription": {
+      "pt": "Projeto de quiz com perguntas dinamicas e resultado final para o usuário. O principal desafio foi estruturar rotas, estados e resultado do questionario em uma experiencia responsiva para desktop e mobile.",
+      "en": "A quiz project featuring dynamic questions and a final result for the user. The main challenge lay in structuring the routes, states, and quiz outcomes into a responsive experience for both desktop and mobile."
+    },
+    "description": {
+      "pt": "a ideia desse projeto, é o usuário responder perguntas e com base nisso, direcionar o mesmo para qual curso certo ele tem que fazer, o projeto foi feito em PHP, Laravel, Vue e as respostas s�o armazenadas no Firebase",
+      "en": "The idea behind this project is for the user to answer questions, which then helps determine the right course for them to take. The project was built using PHP, Laravel, and Vue, and the responses are stored in Firebase."
+    },
+    "imageUrl": "https://i.ibb.co/B5Y2Q3hZ/image.png",
+    "projectUrl": "https://testesbuzzfeed.vercel.app/",
+    "githubUrl": "https://github.com/JoaoPDeveloper/testesbuzzfeed",
+    "isFeatured": true,
+    "technologies": ["javascript", "html", "css"]
   },
   {
     "title": "Mundo Invertido",
@@ -100,23 +100,6 @@
     "githubUrl": "https://github.com/JoaoPDeveloper/mundo-invertido",
     "isFeatured": false,
     "technologies": ["javascript", "html", "css", "firebase"]
-  },
-  {
-    "title": "Pokédex",
-    "slug": "pokedex",
-    "shortDescription": {
-      "pt": "Pokédex com consumo de API pública, listagem e detalhes em modal.",
-      "en": "Pokédex consuming a public API with listing and modal details."
-    },
-    "description": {
-      "pt": "Aplicação que consome uma API pública para listar Pokémon e exibir detalhes em modal. A interface usa cores associadas aos elementos de cada Pokémon e foi construída com JavaScript, HTML e CSS.",
-      "en": "Application that consumes a public API to list Pokémon and display details in a modal. The interface uses colors associated with each Pokémon's elements and was built with JavaScript, HTML and CSS."
-    },
-    "imageUrl": "https://i.ibb.co/g7wkCx7/pokedex.png",
-    "projectUrl": "https://pokedex-joaopdeveloper.netlify.app/",
-    "githubUrl": "https://github.com/JoaoPDeveloper/pokedex-lab",
-    "isFeatured": false,
-    "technologies": ["javascript", "html", "css"]
   },
   {
     "title": "Mario Game",

@@ -16,5 +16,14 @@
   { "name": "Firebase",    "slug": "firebase",   "color": "#FFCA28", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",                    "url": "https://firebase.google.com/" },
   { "name": "Bootstrap",   "slug": "bootstrap",  "color": "#7952B3", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",                "url": "https://getbootstrap.com/" },
   { "name": "HTML5",       "slug": "html",       "color": "#E34F26", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",                        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML" },
-  { "name": "CSS3",        "slug": "css",        "color": "#1572B6", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",                          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS" }
+  { "name": "CSS3",        "slug": "css",        "color": "#1572B6", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",                          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+  { "name": "Python",      "slug": "python",     "color": "#3776AB", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",                      "url": "https://www.python.org/" },
+  { "name": "Docker",      "slug": "docker",     "color": "#0DB7ED", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",                      "url": "https://www.docker.com/" },
+  { "name": "Kubernetes",  "slug": "k8s",        "color": "#326CE5", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",                "url": "https://kubernetes.io/" },
+  { "name": "NestJS",      "slug": "nestjs",     "color": "#EA2850", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",                        "url": "https://nestjs.com/" },
+  { "name": "Nextjs",       "slug": "nextjs",     "color": "#000000", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",                        "url": "https://nextjs.org/" },
+  { "name": "Redis",        "slug": "redis",      "color": "#DC382D", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",                          "url": "https://redis.io/" },
+  { "name": "PostgreSQL",   "slug": "postgresql", "color": "#336791", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",           "url": "https://www.postgresql.org/" },
+  { "name": "Elasticsearch","slug": "elasticsearch", "color": "#005571", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg", "url": "https://www.elastic.co/elasticsearch/" },
+  { "name": "LLMs",         "slug": "llms",       "color": "#5A6FFF", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg",                     "url": "https://en.wikipedia.org/wiki/Large_language_model" }
 ]
