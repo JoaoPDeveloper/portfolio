@@ -6,17 +6,22 @@
     "build": "nuxt generate",
     "dev": "nuxt dev",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "test": "vitest --run"
   },
   "dependencies": {
+    "lucide-vue-next": "^0.468.0",
     "nuxt": "^3.17.5",
     "vue": "^3.5.13",
-    "vue-router": "^4.5.1",
-    "lucide-vue-next": "^0.468.0"
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "@vue/test-utils": "2.5.1",
+    "fast-check": "4.10.2",
+    "happy-dom": "21.0.4",
     "tailwindcss": "^4.1.11",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "5.0.5"
   }
 }

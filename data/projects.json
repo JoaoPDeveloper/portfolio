@@ -24,14 +24,14 @@
       "en": "A personal blog that consumes AI via an API, using tokens to autonomously generate new articles on a daily basis from reliable sources."
     },
     "description": {
-      "pt": "Blog de noticias sobre Inteligência Artificial, Jogos e Animes & mangás, com coleta automatizada de fontes externas, geração de artigos assistida por IA (Google Gemini) e publicação via painel administrativo.",
-      "en": "A news blog covering Artificial Intelligence, Games, and Anime & Manga, featuring automated collection from external sources, AI-assisted article generation (Google Gemini), and publication via an administrative dashboard."
+      "pt": "Blog de noticias sobre Inteligência Artificial, Jogos e Animes & mangás, com coleta automatizada de fontes externas, geração de artigos assistida por IA e publicação via painel administrativo.",
+      "en": "A news blog covering Artificial Intelligence, Games, and Anime & Manga, featuring automated collection from external sources, AI-assisted article generation, and publication via an administrative dashboard."
     },
-    "imageUrl": "https://i.ibb.co/g7wkCx7/pokedex.png",
+    "imageUrl": "https://i.ibb.co/Q3tHnk35/Captura-de-tela-2026-10-27-160918.png",
     "projectUrl": "https://blog-xi-umber.vercel.app/",
     "githubUrl": "https://github.com/JoaoPDeveloper/Blog",
     "isFeatured": false,
-    "technologies": ["php", "next", "typescript","redis","sql", "LLMs", "elasticSearch","docker"]
+    "technologies": ["php", "nextjs", "typescript","redis","sql", "llms", "elasticsearch","docker", "nuxtjs"]
   },
   {
     "title": "My Daily Agenda",
@@ -75,14 +75,14 @@
       "en": "A quiz project featuring dynamic questions and a final result for the user. The main challenge lay in structuring the routes, states, and quiz outcomes into a responsive experience for both desktop and mobile."
     },
     "description": {
-      "pt": "a ideia desse projeto, é o usuário responder perguntas e com base nisso, direcionar o mesmo para qual curso certo ele tem que fazer, o projeto foi feito em PHP, Laravel, Vue e as respostas s�o armazenadas no Firebase",
+      "pt": "a ideia desse projeto, é o usuário responder perguntas e com base nisso, direcionar o mesmo para qual curso certo ele tem que fazer, o projeto foi feito em PHP, Laravel, Vue e as respostas são armazenadas no Firebase",
       "en": "The idea behind this project is for the user to answer questions, which then helps determine the right course for them to take. The project was built using PHP, Laravel, and Vue, and the responses are stored in Firebase."
     },
     "imageUrl": "https://i.ibb.co/B5Y2Q3hZ/image.png",
     "projectUrl": "https://testesbuzzfeed.vercel.app/",
     "githubUrl": "https://github.com/JoaoPDeveloper/testesbuzzfeed",
     "isFeatured": true,
-    "technologies": ["javascript", "html", "css"]
+    "technologies": ["javascript", "firebase","bootstrap","vue", "laravel", "php"]
   },
   {
     "title": "Mundo Invertido",
@@ -99,7 +99,7 @@
     "projectUrl": "https://inverted-world-z4rk01.netlify.app/",
     "githubUrl": "https://github.com/JoaoPDeveloper/mundo-invertido",
     "isFeatured": false,
-    "technologies": ["javascript", "html", "css", "firebase"]
+    "technologies": ["javascript", "html", "css", "firebase", "bootstrap"]
   },
   {
     "title": "Mario Game",

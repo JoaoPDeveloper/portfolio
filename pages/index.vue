@@ -4,6 +4,10 @@ import {
 } from 'lucide-vue-next';
 import { useAppearance } from '~/composables/useAppearance';
 import { useI18n } from '~/composables/useI18n';
+import { useOpenJob } from '~/composables/useOpenJob';
+import { usePendingScroll } from '~/composables/usePendingScroll';
+import { useSmoothAnchors } from '~/composables/useSmoothAnchors';
+import { useSmoothScroll } from '~/composables/useSmoothScroll';
 import profileData from '~/data/profile.json';
 import technologies from '~/data/technologies.json';
 import socialLinks from '~/data/social-links.json';
@@ -37,8 +41,36 @@ const toggleTheme = () => {};
 const getTechBySlug = (slug: string) => technologies.find((t) => t.slug === slug);
 const localizedShort = (p: typeof projects[0]) => p.shortDescription[locale.value];
 
-const openJob = ref<number | null>(0);
+const openJob = useOpenJob();
 const toggleJob = (i: number) => { openJob.value = openJob.value === i ? null : i; };
+
+// Smooth anchors (delegated click handler) and programmatic scrolling
+useSmoothAnchors();
+const { scrollToSection, scrollToHash } = useSmoothScroll();
+const pendingScroll = usePendingScroll();
+
+// Consumes a pending search navigation or scrolls to location.hash after mount.
+// Registered in its own onMounted so the early `return` of the tech graph setup
+// below cannot skip it.
+let initialScrollTimer: ReturnType<typeof setTimeout> | null = null;
+onMounted(() => {
+  initialScrollTimer = setTimeout(() => {
+    initialScrollTimer = null;
+    const p = pendingScroll.consume();
+    if (p) {
+      if (p.jobIndex !== undefined) openJob.value = p.jobIndex;
+      scrollToSection(p.sectionId);
+    } else if (location.hash) {
+      scrollToHash(location.hash);
+    }
+  }, 100);
+});
+onBeforeUnmount(() => {
+  if (initialScrollTimer !== null) {
+    clearTimeout(initialScrollTimer);
+    initialScrollTimer = null;
+  }
+});
 
 // Tech graph
 const techCanvas = ref<HTMLCanvasElement | null>(null);
@@ -115,7 +147,7 @@ onMounted(() => {
   // Java(0), Spring(1), PHP(2), Laravel(3), TS(4), Vue(5), React(6), Angular(7),
 // Node(8), JS(9), SQL(10), AWS(11), Git(12), Tailwind(13), Firebase(14), Bootstrap(15),
 // HTML(16), CSS(17), docker(18), postgreSql(19), LLMs(20), ElasticSearch(21), Nextjs(22),
-// NestJS(23), Redis(24), Kubernetes(25), Python(26)
+// NestJS(23), Redis(24), Kubernetes(25), Python(26), NuxtJs(27)
 
 const edges = [
   // Back-end Java + Spring
@@ -129,7 +161,9 @@ const edges = [
   [5, 13], [5, 16], [5, 17],
   [6, 13], [6, 16], [6, 17],
   [22, 5], [22, 3], [22, 2],
-  [7, 16], [7, 17],
+  [7, 16], [7, 17], [27 ,3],
+  [4, 27], [27, 5], [27, 9],
+  [23, 27], [27, 8], [27, 13],
 
   // Node.js + JS
   [8, 9], [8, 10], [8, 18], [8, 23], [8, 24], // Node → JS, SQL, docker, Nest, Redis
@@ -338,6 +372,7 @@ useHead({ title: `${profileData.name} ${profileData.lastName} - Portfolio` });
           <a href="#experiencia" class="hidden px-3 py-2 text-[#9aa3b4] transition-colors hover:text-white sm:inline">{{ t('experience.label') }}</a>
           <a href="#cases" class="hidden px-3 py-2 text-[#9aa3b4] transition-colors hover:text-white sm:inline">{{ t('cases.label') }}</a>
           <a href="#contato" class="hidden px-3 py-2 text-[#9aa3b4] transition-colors hover:text-white sm:inline">{{ t('nav.contact') }}</a>
+          <SearchTriggerButton class="ml-2" />
           <button type="button" class="ml-2 inline-flex h-9 items-center gap-1.5 rounded-full border border-white/14 px-3 font-mono text-xs text-[#9aa3b4] transition hover:border-[#11b5a4]/50 hover:text-white" @click="toggleLocale">
             <Languages class="size-3.5" />
             {{ locale === 'pt' ? 'EN' : 'PT' }}

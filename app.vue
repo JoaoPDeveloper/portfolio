@@ -9,6 +9,11 @@
       </div>
     </div>
     <NuxtPage />
+    <!-- Global UI mounted outside NuxtPage so position: fixed is not affected by the page transition transform -->
+    <BackToTopButton />
+    <ClientOnly>
+      <SearchModal />
+    </ClientOnly>
   </div>
 </template>
 
@@ -16,6 +21,7 @@
 import { useAppearance } from '~/composables/useAppearance';
 
 useAppearance();
+useSearchShortcut();
 
 const nuxtApp = useNuxtApp();
 const loading = ref(false);

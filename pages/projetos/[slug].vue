@@ -41,6 +41,9 @@ useHead({
           <ArrowLeft class="size-4" /> {{ t('project.back') }}
         </NuxtLink>
         <div class="flex items-center gap-2">
+          <!-- Search trigger -->
+          <SearchTriggerButton />
+
           <!-- Language toggle -->
           <button
             type="button"

@@ -155,6 +155,37 @@ html {
 .page-enter-from { opacity: 0; transform: translateY(8px); }
 .page-leave-to   { opacity: 0; transform: translateY(-8px); }
 
+/* ── Back to top button ── */
+.btt-enter-active,
+.btt-leave-active {
+  transition: opacity .2s ease;
+  cursor: pointer;
+}
+.btt-enter-from,
+.btt-leave-to {
+  opacity: 0;
+}
+.btt-tooltip {
+  transition: opacity .1s ease;
+}
+
+/* ── Search modal ── */
+.search-modal-enter-active,
+.search-modal-leave-active {
+  transition: opacity .2s ease;
+}
+.search-modal-enter-active .search-dialog,
+.search-modal-leave-active .search-dialog {
+  transition: transform .2s ease;
+}
+.search-modal-enter-from,
+.search-modal-leave-to {
+  opacity: 0;
+}
+.search-modal-enter-from .search-dialog,
+.search-modal-leave-to .search-dialog {
+  transform: scale(.96);
+}
 /* ── Timeline ── */
 .tl-line {
   position: absolute;
@@ -171,4 +202,13 @@ html {
   [data-reveal], [data-reveal-children] > * { transition: none; }
   .marquee-track { animation: none; }
   #cursor-glow   { display: none; }
+  .btt-enter-active,
+  .btt-leave-active { transition-duration: .05s; }
+  .btt-tooltip { transition-duration: .01s; }
+  .search-modal-enter-active,
+  .search-modal-leave-active { transition-duration: .15s; }
+  .search-modal-enter-active .search-dialog,
+  .search-modal-leave-active .search-dialog { transition: none; }
+  .search-modal-enter-from .search-dialog,
+  .search-modal-leave-to .search-dialog { transform: none; }
 }

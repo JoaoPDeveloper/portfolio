@@ -25,5 +25,6 @@
   { "name": "Redis",        "slug": "redis",      "color": "#DC382D", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",                          "url": "https://redis.io/" },
   { "name": "PostgreSQL",   "slug": "postgresql", "color": "#336791", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",           "url": "https://www.postgresql.org/" },
   { "name": "Elasticsearch","slug": "elasticsearch", "color": "#005571", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/elasticsearch/elasticsearch-original.svg", "url": "https://www.elastic.co/elasticsearch/" },
-  { "name": "LLMs",         "slug": "llms",       "color": "#5A6FFF", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg",                     "url": "https://en.wikipedia.org/wiki/Large_language_model" }
+  { "name": "LLMs",         "slug": "llms",       "color": "#5A6FFF", "iconUrl": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/openai/openai-original.svg",                     "url": "https://en.wikipedia.org/wiki/Large_language_model" },
+  { "name": "NuxtJs",       "slug":"nuxtjs",       "color":"#00C58E", "iconUrl":"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg",                       "url":"https://nuxtjs.org/"}
 ]
