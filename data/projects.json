@@ -28,7 +28,7 @@
       "en": "A news blog covering Artificial Intelligence, Games, and Anime & Manga, featuring automated collection from external sources, AI-assisted article generation, and publication via an administrative dashboard."
     },
     "imageUrl": "https://i.ibb.co/Q3tHnk35/Captura-de-tela-2026-10-27-160918.png",
-    "projectUrl": "https://blog-xi-umber.vercel.app/",
+    "projectUrl": "https://blog-novatech.vercel.app/",
     "githubUrl": "https://github.com/JoaoPDeveloper/Blog",
     "isFeatured": false,
     "technologies": ["php", "nextjs", "typescript","redis","sql", "llms", "elasticsearch","docker", "nuxtjs"]
